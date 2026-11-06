@@ -27,7 +27,10 @@
   const W = 1200, H = 600;
   const svg = d3.select(box).append("svg").attr("viewBox", `0 0 ${W} ${H}`).attr("role", "img")
     .attr("aria-label", "Map of countries where Agave Advisory clients are based");
-  const proj = d3.geoNaturalEarth1().rotate([-10, 0]).scale(290).translate([W / 2 - 60, H / 2 + 110]);
+  const VY = 20, VH = 473;  // окно карты: от 84° с.ш. до 58° ю.ш., без Антарктиды
+  svg.attr("viewBox", `0 ${VY} ${W} ${VH}`);
+  svg.append("image").attr("href", "img/map_world.jpg").attr("width", W).attr("height", H).attr("preserveAspectRatio", "none");
+  const proj = d3.geoEquirectangular().scale(W / (2 * Math.PI)).translate([W / 2, H / 2]);  // совпадает с растром
   const path = d3.geoPath(proj);
   const tip = d3.select(box).append("div").attr("class", "map-tip");
   const list = d3.select("#client-list");
@@ -56,7 +59,7 @@
       g.append("circle").attr("class", "core").attr("r", 4.5);
       const show = () => {
         g.classed("hot", true); arc.classed("hot", true);
-        tip.html(`<b>${c.name}</b><span>${c.fmt}</span>`).style("left", (x / W * 100) + "%").style("top", (y / H * 100) + "%").classed("on", true);
+        tip.html(`<b>${c.name}</b><span>${c.fmt}</span>`).style("left", (x / W * 100) + "%").style("top", ((y - VY) / VH * 100) + "%").classed("on", true);
         list.selectAll("li").classed("hot", d => d === c);
       };
       const hide = () => { g.classed("hot", false); arc.classed("hot", false); tip.classed("on", false); list.selectAll("li").classed("hot", false); };

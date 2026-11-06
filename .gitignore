@@ -8,3 +8,4 @@ icons/
 index_v1.html
 .DS_Store
 !robots.txt
+build/audit.js

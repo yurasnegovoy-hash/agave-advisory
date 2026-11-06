@@ -199,7 +199,7 @@ section.hero[data-ch]::after,section.quote[data-ch]::after{display:none}
 
 /* подвал: огромная контурная надпись */
 .ftr{position:relative;overflow:hidden}
-.ftr .word{font-family:var(--f-head);font-size:clamp(90px,13vw,200px);line-height:1;letter-spacing:.06em;color:transparent;-webkit-text-stroke:1px rgba(201,163,78,.25);white-space:nowrap;margin:40px 0 -20px -8px;user-select:none}
+.ftr .word{font-family:var(--f-head);font-size:clamp(60px,9.2vw,200px);line-height:1;letter-spacing:.06em;color:transparent;-webkit-text-stroke:1px rgba(201,163,78,.25);white-space:nowrap;margin:40px 0 -20px -8px;user-select:none}
 
 @media (max-width:980px){
   .chapters{display:none}
@@ -233,3 +233,19 @@ html[lang="es"] .hero h1{font-size:clamp(32px,4.4vw,62px)}
 .intro.plane-intro.go{opacity:0}
 .intro.plane-intro .plane{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:contrast(1.08) saturate(1.05) sepia(.12) brightness(.9)}
 .intro.plane-intro .edge{position:absolute;top:-20vh;height:140vh;width:2px;background:linear-gradient(transparent,#C9A34E 20%,#C9A34E 80%,transparent);box-shadow:0 0 18px rgba(201,163,78,.7);transform-origin:top center}
+
+/* заголовки без висячих слов на всех языках: строки выравниваются по длине, первая строка hero в RU и ES помещается в одну */
+h1,h2{text-wrap:balance}
+html[lang="ru"] .hero h1{font-size:clamp(28px,3.4vw,48px)}
+html[lang="es"] .hero h1{font-size:clamp(30px,3.7vw,52px)}
+
+/* телефон: сетки с колонками из разметки схлопываются, подвал в одну колонку, кнопки окна возраста не ломаются */
+@media (max-width:980px){.svc-grid{grid-template-columns:1fr 1fr!important}}
+@media (max-width:760px){.svc-grid{grid-template-columns:1fr!important}.ftr-top{grid-template-columns:1fr 1fr;gap:28px}.age-box .row{flex-wrap:wrap}.age-box .btn{white-space:nowrap;padding-left:22px;padding-right:22px}}
+@media (max-width:480px){.ftr-top{grid-template-columns:1fr;gap:22px}}
+
+/* карты в реализме: рельеф NASA, тонированный в цвета сайта; страны лишь контуром, клиентские с золотой подсветкой */
+.map-card .lmap-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#client-map{background:#0A0806}
+#client-map .country{fill:transparent;stroke:rgba(201,163,78,.16);stroke-width:.4}
+#client-map .country.on{fill:rgba(201,163,78,.14);stroke:rgba(201,163,78,.55);stroke-width:.6}

@@ -126,17 +126,17 @@ def steps_html():
         f'<div class="step rv"><span class="c">{ic(i)}</span><span class="num">0{n+1}</span><h3>{t}</h3><p>{d}</p></div>'
         for n, (i, t, d) in enumerate(STEPS)) + "</div>"
 
-LOCAL_MAP = """<svg viewBox="0 0 480 420" preserveAspectRatio="xMidYMid slice">
-  <defs><pattern id="gr" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="rgba(201,163,78,.08)"/></pattern></defs>
-  <rect width="480" height="420" fill="url(#gr)"/>
-  <path d="M60 120 C120 60 230 70 300 90 C380 110 430 170 420 240 C410 310 330 360 240 350 C150 340 70 300 50 230 C40 190 40 150 60 120Z" fill="rgba(201,163,78,.04)" stroke="rgba(201,163,78,.35)" stroke-dasharray="3 5"/>
-  <ellipse cx="320" cy="190" rx="90" ry="62" fill="rgba(201,163,78,.10)" stroke="#C9A34E" stroke-width="1"/>
-  <text x="320" y="122" fill="#C9A34E" font-family="Oswald" font-size="10" letter-spacing="3" text-anchor="middle">LOS ALTOS DE JALISCO</text>
-  <path d="M150 220 Q230 170 300 192" fill="none" stroke="#C9A34E" stroke-dasharray="2 4"/>
-  <circle cx="150" cy="220" r="7" fill="#E2C88E"/><circle cx="150" cy="220" r="15" fill="none" stroke="rgba(226,200,142,.4)"/>
-  <text x="150" y="250" fill="#E4E1D7" font-family="Oswald" font-size="11" letter-spacing="3" text-anchor="middle">GUADALAJARA</text>
-  <circle cx="300" cy="192" r="6" fill="#C9A34E"/><circle cx="345" cy="175" r="6" fill="#C9A34E"/><circle cx="330" cy="215" r="6" fill="#C9A34E"/>
-  <text x="240" y="40" fill="rgba(228,225,215,.45)" font-family="Oswald" font-size="10" letter-spacing="4" text-anchor="middle">JALISCO · MEXICO</text>
+LOCAL_MAP = """<img class="lmap-img" src="img/map_jalisco.jpg" alt="Relief map of Jalisco">
+<svg viewBox="0 0 1400 1229" preserveAspectRatio="xMidYMid slice">
+  <defs><radialGradient id="lm-v" cx="50%" cy="50%" r="70%"><stop offset="60%" stop-color="rgba(14,12,10,0)"/><stop offset="100%" stop-color="rgba(14,12,10,.6)"/></radialGradient></defs>
+  <rect width="1400" height="1229" fill="url(#lm-v)"/>
+  <ellipse cx="960" cy="625" rx="190" ry="120" fill="rgba(201,163,78,.10)" stroke="#C9A34E" stroke-width="2"/>
+  <text x="960" y="475" fill="#C9A34E" font-family="Oswald" font-size="28" letter-spacing="8" text-anchor="middle">LOS ALTOS DE JALISCO</text>
+  <path d="M729 637 Q813 547 897 594" fill="none" stroke="#C9A34E" stroke-width="2.5" stroke-dasharray="5 10"/>
+  <circle cx="729" cy="637" r="16" fill="#E2C88E"/><circle cx="729" cy="637" r="36" fill="none" stroke="rgba(226,200,142,.45)" stroke-width="2"/>
+  <text x="729" y="722" fill="#E4E1D7" font-family="Oswald" font-size="30" letter-spacing="8" text-anchor="middle">GUADALAJARA</text>
+  <circle cx="897" cy="594" r="14" fill="#C9A34E"/><circle cx="1014" cy="629" r="14" fill="#C9A34E"/><circle cx="969" cy="672" r="14" fill="#C9A34E"/>
+  <text x="700" y="90" fill="rgba(228,225,215,.55)" font-family="Oswald" font-size="26" letter-spacing="10" text-anchor="middle">JALISCO · MEXICO</text>
 </svg>"""
 
 MAP_JS = """<script src="vendor/d3.min.js"></script>
