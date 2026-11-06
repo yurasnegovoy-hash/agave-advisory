@@ -51,7 +51,8 @@
     const t0 = performance.now(), dur = 1600;
     (function tick(t) {
       const p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3);
-      el.textContent = pre + Math.round(to * e).toLocaleString("en-US").replace(/,/g, " ") + suf;
+      const n = Math.round(to * e);
+      el.textContent = pre + (to < 10000 ? String(n) : n.toLocaleString("en-US").replace(/,/g, " ")) + suf;  // год без разрядов
       if (p < 1) requestAnimationFrame(tick);
     })(t0);
   }

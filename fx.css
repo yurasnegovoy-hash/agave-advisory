@@ -218,3 +218,8 @@ main section.home-hero::after{z-index:1;background:linear-gradient(90deg,rgba(14
 .home-hero .lead{color:#E4E1D7;text-shadow:0 1px 18px rgba(0,0,0,.6)}
 .home-hero .scroll-hint{left:auto;right:4vw;transform:none;bottom:34px}
 @media(max-width:760px){main section.home-hero::after{background:linear-gradient(0deg,rgba(14,12,10,1) 10%,rgba(14,12,10,.7) 55%,rgba(14,12,10,.45))}.home-hero .scroll-hint{display:none}}
+
+/* RU и ES длиннее английского: первая строка заголовка переносится, кегль чуть меньше */
+html:not([lang="en"]) .nw{white-space:normal}
+html[lang="ru"] .hero h1{font-size:clamp(30px,4.1vw,58px)}
+html[lang="es"] .hero h1{font-size:clamp(32px,4.4vw,62px)}
