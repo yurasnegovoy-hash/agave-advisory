@@ -6,7 +6,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ICONS = re.search(r"<svg width=\"0\".*?</svg>", open(f"{ROOT}/index_v1.html", encoding="utf-8").read(), re.S).group(0)
 
 SERVICES = [
-    ("private-label", "Private Label & Turnkey", "bottle"),
+    ("private-label", "Private Label & Turnkey Development", "bottle"),
     ("bulk-tequila", "Bulk Tequila Supply", "barrel"),
     ("brand-market-advisory", "Brand & Market Advisory", "compass"),
     ("rtd", "RTD Development", "glass"),
@@ -181,9 +181,9 @@ def reviews_html():
 def cards_html():
     descr = {
         "private-label": "Your own tequila brand from product development to bottled and delivered goods",
-        "bulk-tequila": "Tequila selected to your specification, samples, agreed specs and organised supply",
+        "bulk-tequila": "Tequila selected to your requirements: samples, agreed specification and organised supply",
         "brand-market-advisory": "Positioning, product line, price architecture and preparation for your markets",
-        "rtd": "Tequila based ready-to-drink products with the right production and packaging partners",
+        "rtd": "Tequila-based ready-to-drink products with the right production and packaging partners",
         "barrel-aging": "Barrel selection and aging guidance to shape the flavour profile you want",
     }
     out = '<div class="cards">'
@@ -196,7 +196,7 @@ MARQ = "".join(f"<span>{t}</span>" for t in ["Mexico to the world","Since 2007",
 
 # процесс производства: видео под каждый шаг, img: для шагов, где ролика пока нет
 PROCESS = [
-    ("aerial_rows", "Highland fields", "Agave grows 6 to 8 years at 2000 metres", "Blue Weber agave of Los Altos grows slowly in the highlands. Bigger piñas, more sugar, more aroma", "Cultivation"),
+    ("aerial_rows", "Highland fields", "Agave grows for 6 to 8 years at 2000 metres", "Blue Weber agave of Los Altos grows slowly in the highlands. Bigger piñas, more sugar, more aroma", "Cultivation"),
     ("jimadores", "Harvest", "Jimadores cut the piña by hand with the coa", "Only ripe plants are harvested. A highland piña can weigh up to 110 kg", "Harvest"),
     ("cooking", "Cooking", "12 hours at 110 °C", "Slow cooking turns the starches of the piña into sugars and sets the foundation of flavour", "Cooking"),
     ("ferment", "Fermentation", "Where the character is born", "Yeast and time give each tequila its aroma. We follow every tank with our partner distillery", "Fermentation"),
@@ -215,7 +215,8 @@ def process_html():
 
 # ================= ГЛАВНАЯ =================
 home = f"""
-<section data-ch="I / IX" data-title="Home" class="hero" id="top">
+<section data-ch="I / IX" data-title="Home" class="hero home-hero" id="top">
+  <video class="home-video" src="video/hero.mp4" poster="video/hero.jpg" autoplay muted loop playsinline preload="auto"></video>
   <div class="side-txt">MEXICO TO THE WORLD</div>
   <div class="wrap">
     <div class="label rv">Tequila brand development · Los Altos de Jalisco</div>
@@ -251,7 +252,7 @@ home = f"""
   <div class="wrap">
     <div class="sec-head">
       <div class="rv"><div class="label line">How tequila is made</div><h2 class="sp">We stand at every stage<br><span class="g">from the field to the bottle</span></h2></div>
-      <p class="lead rv">Real footage from the fields and distilleries of Los Altos de Jalisco where we work every day</p>
+      <p class="lead rv">Real footage from the fields and distilleries of Los Altos de Jalisco, where we work every day</p>
     </div>
     {process_html()}
   </div>
@@ -264,7 +265,7 @@ home = f"""
       <h2 class="sp">Know where<br><span class="g">your tequila comes from</span></h2>
       <div class="rule"></div>
       <p class="lead">Many brands buy bulk tequila from different distilleries with no single quality standard. The taste of tequila depends on every stage: the agave, the cooking, the yeast, fermentation, distillation and filtration</p>
-      <p class="lead">We work with distilleries in Los Altos where we know where the agave grew and how the liquid was made. <em>That is how quality stays the same from batch to batch</em></p>
+      <p class="lead">We work with distilleries in Los Altos where we know the origin of the agave and how the liquid was made. <em>That is how quality stays the same from batch to batch</em></p>
     </div>
     <div class="media frame mask" style="aspect-ratio:4/5"><img src="img/ceo_68.jpg" alt="Cooked agave piña"></div>
   </div>
@@ -331,7 +332,7 @@ home = f"""
 
 <section class="quote" style="background-image:url(img/ceo_50.jpg)">
   <div class="wrap rv"><span class="mark">“</span>
-    <blockquote>We stand where your tequila is made, <span class="g">so you don't have to</span></blockquote>
+    <blockquote>We stand where your tequila is made, <span class="g">so you do not have to</span></blockquote>
     <cite class="label">Anastasia Strizheva · Founder &amp; CEO</cite>
   </div>
 </section>
