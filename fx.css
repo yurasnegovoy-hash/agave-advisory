@@ -223,3 +223,7 @@ main section.home-hero::after{z-index:1;background:linear-gradient(90deg,rgba(14
 html:not([lang="en"]) .nw{white-space:normal}
 html[lang="ru"] .hero h1{font-size:clamp(30px,4.1vw,58px)}
 html[lang="es"] .hero h1{font-size:clamp(32px,4.4vw,62px)}
+
+/* заголовки без висячих слов: «Your eyes and ears / in Jalisco» в две строки, процесс в три ровные */
+.split h2{font-size:clamp(28px,3.1vw,42px)}
+.sec-head h2{max-width:700px;font-size:clamp(28px,3.3vw,46px);text-wrap:balance}
