@@ -203,7 +203,7 @@ PROCESS = [
     ("distill", "Distillation", "Twice, in copper", "The first run removes heads and tails, the second sets the strength. Copper stills at our partner distillery are over a century old", "Distillation"),
     ("barrels", "Aging", "American and French oak", "Reposado from 2 months, añejo from 1 year, extra añejo from 3. Barrels rest in rooms with controlled humidity", "Aging"),
     ("bottling_line", "Bottling", "Under our supervision", "We stand at the line: packaging check, quality inspection, photo and video report, final approval before shipment", "Bottling"),
-    ("warehouse", "Delivery", "To your market", "Export documents, forwarder, port and door-to-door delivery on EXW, FOB, CIF or other terms", "Delivery"),
+    ("port", "Delivery", "To your market", "Export documents, forwarder, port and door-to-door delivery on EXW, FOB, CIF or other terms", "Delivery"),
 ]
 def process_html():
     media = "".join((f'<img src="img/{v[4:]}.jpg" alt="">' if v.startswith("img:") else f'<video src="video/{v}.mp4" poster="video/{v}.jpg" muted loop playsinline preload="metadata"></video>') for v, *_ in PROCESS)
