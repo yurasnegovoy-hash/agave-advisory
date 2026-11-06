@@ -121,8 +121,8 @@
   const runIntro = () => {
     const el = document.createElement("div"); el.className = "intro";
     el.innerHTML = `<div class="half l"></div><div class="half r"></div>
-      <svg viewBox="0 0 200 200"><circle class="draw" cx="100" cy="100" r="92"/><circle class="draw" cx="100" cy="100" r="84" style="animation-delay:.3s"/>
-      <image class="ag" href="img/seal_core.svg" x="40" y="40" width="120" height="120"/><text x="100" y="186" text-anchor="middle">AGAVE ADVISORY</text></svg>`;
+      <svg viewBox="0 0 200 250"><circle class="draw" cx="100" cy="100" r="92"/><circle class="draw" cx="100" cy="100" r="84" style="animation-delay:.3s"/>
+      <image class="ag" href="img/seal_core.svg" x="40" y="40" width="120" height="120"/><text x="100" y="238" text-anchor="middle">AGAVE ADVISORY</text></svg>`;
     document.body.appendChild(el); document.body.classList.add("lock");
     setTimeout(() => { el.classList.add("go"); document.body.classList.remove("lock"); try { sessionStorage.setItem("intro", "1"); } catch (e) {} setTimeout(() => el.remove(), 1800); }, 2300);
   };
@@ -167,4 +167,20 @@
   // перелив золота в заголовках, когда они в экране
   const gio = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); gio.unobserve(e.target); } }), { threshold: .3 });
   document.querySelectorAll("h1,h2,.quote").forEach(h => gio.observe(h));
+})();
+
+// ===== Языки: автоопределение при первом заходе и запоминание выбора =====
+(function () {
+  const lang = document.documentElement.lang || "en";
+  let saved = null; try { saved = localStorage.getItem("lang"); } catch (e) {}
+  document.querySelectorAll(".lang a[data-lang]").forEach(a => a.addEventListener("click", () => { try { localStorage.setItem("lang", a.dataset.lang); } catch (e) {} }));
+  if (lang === "en" && !saved) {
+    const nav = (navigator.languages || [navigator.language || ""]).join(",").toLowerCase();
+    const want = /(^|,)es/.test(nav) ? "es" : /(^|,)ru/.test(nav) ? "ru" : null;
+    if (want) {
+      try { localStorage.setItem("lang", want); } catch (e) {}
+      const page = location.pathname.split("/").pop() || "index.html";
+      location.replace(location.pathname.replace(/[^/]*$/, "") + want + "/" + page + location.hash);
+    }
+  }
 })();
