@@ -43,12 +43,13 @@ CONTACT = """<section class="pad cta" id="contact"><div class="wrap cta-grid">
       <div><span class="ic">""" + ic("mail") + """</span><span><small>E-mail</small><a href="mailto:agaveadvisoryagency@gmail.com">agaveadvisoryagency@gmail.com</a></span></div>
     </div>
   </div>
-  <form class="form rv" onsubmit="event.preventDefault();this.querySelector('.note').textContent='Thank you. We will be in touch shortly'">
+  <form class="form rv" action="https://formsubmit.co/ajax/agaveadvisoryagency@gmail.com" method="POST" onsubmit="return sendForm(event,this)" data-sending="Sending…" data-ok="Thank you. We will be in touch shortly" data-fail="Could not send. Please write to agaveadvisoryagency@gmail.com">
+    <input type="hidden" name="_subject" value="New request from the Agave Advisory website"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
     <h3>Request a consultation</h3>
-    <div class="f2"><div class="f"><label>Name</label><input required></div><div class="f"><label>Company</label><input></div></div>
-    <div class="f2"><div class="f"><label>E-mail</label><input type="email" required></div><div class="f"><label>Phone · WhatsApp</label><input type="tel"></div></div>
-    <div class="f"><label>Service</label><select>""" + "".join(f"<option>{t}</option>" for _, t, _ in SERVICES) + """<option>Not sure yet</option></select></div>
-    <div class="f"><label>Tell us about your project</label><textarea rows="2"></textarea></div>
+    <div class="f2"><div class="f"><label>Name</label><input name="name" required></div><div class="f"><label>Company</label><input name="company"></div></div>
+    <div class="f2"><div class="f"><label>E-mail</label><input type="email" name="email" required></div><div class="f"><label>Phone · WhatsApp</label><input type="tel" name="phone"></div></div>
+    <div class="f"><label>Service</label><select name="service">""" + "".join(f"<option>{t}</option>" for _, t, _ in SERVICES) + """<option>Not sure yet</option></select></div>
+    <div class="f"><label>Tell us about your project</label><textarea name="message" rows="2"></textarea></div>
     <button class="btn fill" type="submit">Discuss your project</button>
     <p class="note">Your request stays confidential</p>
   </form>
@@ -73,6 +74,7 @@ AGE = """<div class="age" id="age"><div class="age-box">
 </div></div>"""
 
 SCRIPT = """<script>
+window.sendForm=async function(e,f){e.preventDefault();var n=f.querySelector(".note"),b=f.querySelector("button");b.disabled=true;n.textContent=f.dataset.sending;try{var r=await fetch(f.action,{method:"POST",headers:{Accept:"application/json"},body:new FormData(f)});if(!r.ok)throw 0;n.textContent=f.dataset.ok;f.reset()}catch(x){n.textContent=f.dataset.fail}b.disabled=false;return false};
 try{if(sessionStorage.getItem('age'))document.getElementById('age').classList.add('hide')}catch(e){}
 const hdr=document.getElementById('hdr');const onS=()=>hdr.classList.toggle('solid',scrollY>60);addEventListener('scroll',onS,{passive:true});onS();
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
@@ -86,13 +88,14 @@ def page(fname, title, active, body, desc):
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <meta name="robots" content="noindex,nofollow">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="img/touch.png">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Agave Advisory"><meta property="og:title" content="{title}"><meta property="og:description" content="{desc}"><meta property="og:image" content="https://yurasnegovoy-hash.github.io/agave-advisory/img/og.jpg"><meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="fx.css">
 </head><body>
 {ICONS}
-<div class="sky"><video src="video/fly.mp4" poster="video/fly.jpg" muted playsinline preload="auto"></video></div>
+<div class="sky"><video data-hd="video/fly.mp4" data-sd="video/fly_1280.mp4" poster="video/fly.jpg" muted playsinline preload="auto"></video></div>
 {AGE}
 {header(active)}
 <main>
@@ -211,7 +214,7 @@ PROCESS = [
     ("port", "Delivery", "To your market", "Export documents, forwarder, port and door-to-door delivery on EXW, FOB, CIF or other terms", "Delivery"),
 ]
 def process_html():
-    media = "".join((f'<img src="img/{v[4:]}.jpg" alt="">' if v.startswith("img:") else f'<video src="video/{v}.mp4" poster="video/{v}.jpg" muted loop playsinline preload="metadata"></video>') for v, *_ in PROCESS)
+    media = "".join((f'<img src="img/{v[4:]}.jpg" alt="">' if v.startswith("img:") else f'<video src="video/{v}.mp4" poster="video/{v}.jpg" muted loop playsinline preload="none"></video>') for v, *_ in PROCESS)
     steps = "".join(f'<div class="pstep" data-cap="{cap}"><span class="num">{i+1:02d}</span><h3>{t}</h3><p class="tagline" style="font-size:19px">{sub}</p><p>{d}</p></div>' for i, (v, t, sub, d, cap) in enumerate(PROCESS))
     return f"""<div class="proc">
   <div class="steps-col"><div class="bar"><i></i></div>{steps}</div>

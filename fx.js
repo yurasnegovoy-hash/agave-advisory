@@ -75,10 +75,14 @@
     const apply = () => { if (sky.duration) sky.currentTime = sky.duration * cur; };
     const step = t => { lastTick = t; cur += (target - cur) * .12; if (Math.abs(target - cur) > .0004) apply(); requestAnimationFrame(step); };
     if (!reduce && innerWidth > 980) {
+      if (sky.dataset.sd) { sky.src = innerWidth >= 1600 ? sky.dataset.hd : sky.dataset.sd; sky.load(); }  // 1920 только на больших экранах
       addEventListener("scroll", () => { target = prog(); if (performance.now() - lastTick > 120) { cur = target; apply(); } }, { passive: true });
       target = cur = prog(); sky.addEventListener("loadedmetadata", apply); requestAnimationFrame(step);
     }
-    else { sky.removeAttribute("src"); sky.load(); }  // на телефоне только постер, 17 МБ видео не грузим
+    else { sky.removeAttribute("src"); sky.load(); }
+    // ролики шагов и внутренних страниц подгружаются, когда до них доскроллили
+    const lazy = new IntersectionObserver(es => es.forEach(x => { if (x.isIntersecting) { const v = x.target; if (v.preload === "none") { v.preload = "auto"; v.load(); } lazy.unobserve(v); } }), { rootMargin: "600px" });
+    document.querySelectorAll('video[preload="none"]').forEach(v => lazy.observe(v));  // на телефоне только постер, 17 МБ видео не грузим
   }
   const hint = document.querySelector(".scroll-hint");
   if (hint) addEventListener("scroll", () => hint.classList.toggle("off", scrollY > 80), { passive: true });

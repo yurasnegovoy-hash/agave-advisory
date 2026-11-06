@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><circle cx="200" cy="200" r="200" fill="#0E0C0A"/><defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E2C88E"/>
+      <stop offset=".5" stop-color="#C9A34E"/>
+      <stop offset="1" stop-color="#9C7A34"/>
+    </linearGradient>
+    <path id="top" d="M 62 200 A 138 138 0 0 1 338 200"/>
+    <path id="bot" d="M 50 200 A 150 150 0 0 0 350 200"/>
+  </defs>
+  <!-- агава: веер листьев из одной точки, как на обложке презентации -->
+  <g transform="translate(200 248)" fill="none" stroke="url(#gold)" stroke-width="2.2" stroke-linejoin="round">
+    <path d="M0 0 L-9 -62 L0 -118 L9 -62 Z"/>
+    <path d="M0 0 L-10 -56 L-30 -108 L-20 -52 Z" transform="rotate(-6)"/>
+    <path d="M0 0 L10 -56 L30 -108 L20 -52 Z" transform="rotate(6)"/>
+    <path d="M0 0 L-24 -46 L-62 -88 L-38 -40 Z"/>
+    <path d="M0 0 L24 -46 L62 -88 L38 -40 Z"/>
+    <path d="M0 0 L-38 -28 L-86 -52 L-50 -18 Z"/>
+    <path d="M0 0 L38 -28 L86 -52 L50 -18 Z"/>
+    <path d="M0 0 L-44 -8 L-94 -14 L-52 4 Z"/>
+    <path d="M0 0 L44 -8 L94 -14 L52 4 Z"/>
+    <path d="M0 0 V-100" stroke-width="1"/>
+  </g>
+  <path d="M150 262 H250" stroke="url(#gold)" stroke-width="1"/>
+  <g transform="translate(200 262)" fill="url(#gold)"><path d="M0 -4 L4 0 L0 4 L-4 0Z"/></g>
+</svg>

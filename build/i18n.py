@@ -8,7 +8,7 @@ PAGES = ["index", "about", "how-we-work", "clients", "private-label", "bulk-tequ
 LANGS = {"es": "Spanish (Mexico). Always formal usted, never tú. Always correct accents and ñ (decisión, línea, producción, añejo)", "ru": "Russian (business register, вежливое «вы»)"}
 KEY = os.environ.get("GEMINI_API_KEY")
 SKIP = re.compile(r"^(AGAVE|ADVISORY|EN|ES|RU|EN · ES · RU|LinkedIn|Instagram|agaveadvisoryagency@gmail\.com|\+52 33 1420 1317|©.*|[\d\s/·.,%°+–-]+|I|II|III|IV|V|VI|VII|VIII|IX)$")
-ATTR = re.compile(r'(\s(?:alt|placeholder|aria-label|data-title|data-cap|content)=")([^"]*)(")')
+ATTR = re.compile(r'(\s(?:alt|placeholder|aria-label|data-title|data-cap|data-sending|data-ok|data-fail|content)=")([^"]*)(")')
 TAG = re.compile(r"(<[^>]+>)")
 
 def pieces(html):
@@ -39,7 +39,7 @@ def collect():
                 items.append(part.strip())
             if kind == "tag":
                 for m in ATTR.finditer(part):
-                    if 'name="robots"' in part or 'name="viewport"' in part or 'charset' in part:
+                    if 'name="robots"' in part or 'name="viewport"' in part or 'charset' in part or 'property="og:' in part or 'name="twitter' in part:
                         continue
                     if need(m.group(2)):
                         items.append(m.group(2))
