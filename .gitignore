@@ -1,0 +1,10 @@
+# рабочие материалы клиентки и исходники не публикуем
+*.md
+*.txt
+ceo/
+src_img/
+logo/
+icons/
+index_v1.html
+.DS_Store
+!robots.txt
