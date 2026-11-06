@@ -249,3 +249,14 @@ html[lang="es"] .hero h1{font-size:clamp(30px,3.7vw,52px)}
 #client-map{background:#0A0806}
 #client-map .country{fill:transparent;stroke:rgba(201,163,78,.16);stroke-width:.4}
 #client-map .country.on{fill:rgba(201,163,78,.14);stroke:rgba(201,163,78,.55);stroke-width:.6}
+
+/* карта клиентов во всю ширину, список стран под ней в четыре колонки */
+.client-map-wrap{grid-template-columns:1fr!important;gap:40px;align-items:start}
+#client-map .cm-inner{position:relative;width:100%}
+#client-map .cm-inner::before,#client-map .cm-inner::after{content:"";position:absolute;left:0;right:0;height:14%;pointer-events:none;z-index:1}
+#client-map .cm-inner::before{top:-1px;background:linear-gradient(180deg,#0A0806,transparent)}
+#client-map .cm-inner::after{bottom:-1px;background:linear-gradient(0deg,#0A0806,transparent)}
+#client-list{columns:4;column-gap:40px;border-top:0}
+#client-list li{break-inside:avoid}
+@media (max-width:980px){#client-list{columns:2}}
+@media (max-width:560px){#client-list{columns:1}}
