@@ -92,7 +92,7 @@
       if (i === cur) return; cur = i;
       steps.forEach((s, k) => s.classList.toggle("on", k === i));
       media.forEach((m, k) => { m.classList.toggle("on", k === i); if (m.tagName === "VIDEO") { if (k === i) { m.currentTime = 0; m.play().catch(() => {}); } else m.pause(); } });
-      if (cap) cap.textContent = `0${i + 1} / 0${steps.length} · ${steps[i].dataset.cap || ""}`;
+      if (cap) cap.textContent = `${String(i + 1).padStart(2, "0")} / ${String(steps.length).padStart(2, "0")} · ${steps[i].dataset.cap || ""}`;
       if (bar) bar.style.height = ((i + 1) / steps.length * 100) + "%";
     };
     const sio = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) show(steps.indexOf(e.target)); }), { rootMargin: "-45% 0px -45% 0px" });
@@ -119,13 +119,44 @@
   // интро: один раз за сессию, печать рисует себя, шторы разъезжаются
   let seen = false; try { seen = sessionStorage.getItem("intro") === "1"; } catch (e) {}
   const age = document.getElementById("age");
-  const runIntro = () => {
+  const runSeal = () => {  // запасное интро: печать рисует себя, шторы разъезжаются
     const el = document.createElement("div"); el.className = "intro";
     el.innerHTML = `<div class="half l"></div><div class="half r"></div>
       <svg viewBox="0 0 200 250"><circle class="draw" cx="100" cy="100" r="92"/><circle class="draw" cx="100" cy="100" r="84" style="animation-delay:.3s"/>
       <image class="ag" href="img/seal_core.svg" x="40" y="40" width="120" height="120"/><text x="100" y="238" text-anchor="middle">AGAVE ADVISORY</text></svg>`;
     document.body.appendChild(el); document.body.classList.add("lock");
     setTimeout(() => { el.classList.add("go"); document.body.classList.remove("lock"); try { sessionStorage.setItem("intro", "1"); } catch (e) {} setTimeout(() => el.remove(), 1800); }, 2300);
+  };
+  // основное интро: кукурузник летит над агавой и разрезает экран, за хвостом открывается сайт
+  const base = (document.querySelector("base") || {}).href || "";
+  const plane = document.createElement("video");
+  plane.className = "plane"; plane.muted = true; plane.playsInline = true; plane.preload = "auto";
+  plane.src = base + "video/plane.mp4";
+  const PATH = [[0.3, 0], [0.4, 8], [0.9, 20], [1.4, 31], [1.9, 45], [2.4, 56], [2.9, 68], [3.4, 83], [3.9, 98], [4.4, 112], [4.9, 130]];  // секунда ролика → x носа самолёта в % ширины, снято по кадрам
+  const noseAt = t => { let a = PATH[0], b = PATH[PATH.length - 1]; for (let i = 1; i < PATH.length; i++) if (PATH[i][0] >= t) { a = PATH[i - 1]; b = PATH[i]; break; } const k = (t - a[0]) / Math.max(.001, b[0] - a[0]); return a[1] + (b[1] - a[1]) * Math.min(1, Math.max(0, k)); };
+  const runIntro = () => {
+    if (reduce || !plane.canPlayType("video/mp4")) return runSeal();
+    const el = document.createElement("div"); el.className = "intro plane-intro";
+    el.appendChild(plane);
+    const edge = document.createElement("div"); edge.className = "edge"; el.appendChild(edge);
+    document.body.appendChild(el); document.body.classList.add("lock");
+    let started = false;
+    const finish = () => { el.classList.add("go"); document.body.classList.remove("lock"); try { sessionStorage.setItem("intro", "1"); } catch (e) {} setTimeout(() => el.remove(), 900); };
+    const tick = () => {
+      if (!el.isConnected) return;
+      // видео 16:9 лежит в окне как object-fit:cover: переводим x носа из % ширины видео в % ширины окна
+      const dispW = Math.max(innerWidth, innerHeight * 16 / 9), off = (dispW - innerWidth) / 2;
+      const nose = (noseAt(plane.currentTime) / 100 * dispW - off) / innerWidth * 100;
+      const x = nose - 18 * dispW / innerWidth, tail = x - 14;  // разрез идёт позади хвоста, с наклоном
+      el.style.clipPath = `polygon(${x}% 0, 100% 0, 100% 100%, ${tail}% 100%)`;
+      edge.style.left = x + "%"; edge.style.transform = `rotate(${Math.atan2((x - tail) / 100 * innerWidth, innerHeight)}rad)`;
+      if (x > 112 || plane.ended) return finish();
+      requestAnimationFrame(tick);
+    };
+    plane.addEventListener("ended", finish, { once: true });  // страховка: вкладка в фоне, кадры анимации не идут
+    setTimeout(() => { if (el.isConnected && !el.classList.contains("go")) finish(); }, 7000);
+    const go = () => { if (started) return; started = true; plane.play().then(() => requestAnimationFrame(tick)).catch(() => { el.remove(); runSeal(); }); };
+    if (plane.readyState >= 3) go(); else { plane.addEventListener("canplay", go, { once: true }); setTimeout(() => { if (!started) { el.remove(); runSeal(); } }, 2500); }  // видео не успело: печать
   };
   if (!seen && !reduce) {
     if (age.classList.contains("hide")) runIntro();

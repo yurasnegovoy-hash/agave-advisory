@@ -227,3 +227,9 @@ html[lang="es"] .hero h1{font-size:clamp(32px,4.4vw,62px)}
 /* заголовки без висячих слов: «Your eyes and ears / in Jalisco» в две строки, процесс в три ровные */
 .split h2{font-size:clamp(28px,3.1vw,42px)}
 .sec-head h2{max-width:700px;font-size:clamp(28px,3.3vw,46px);text-wrap:balance}
+
+/* интро с кукурузником: видео поверх сайта, clip-path открывает страницу за хвостом */
+.intro.plane-intro{display:block;background:#0A0806;transition:opacity .8s}
+.intro.plane-intro.go{opacity:0}
+.intro.plane-intro .plane{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:contrast(1.08) saturate(1.05) sepia(.12) brightness(.9)}
+.intro.plane-intro .edge{position:absolute;top:-20vh;height:140vh;width:2px;background:linear-gradient(transparent,#C9A34E 20%,#C9A34E 80%,transparent);box-shadow:0 0 18px rgba(201,163,78,.7);transform-origin:top center}

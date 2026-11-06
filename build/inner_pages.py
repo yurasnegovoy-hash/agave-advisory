@@ -78,7 +78,7 @@ about = f"""
   <div class="wrap">
     <div class="sec-head">
       <div class="rv"><div class="label line">How we choose a distillery</div><h2 class="sp">Not every tequila<br><span class="g">is made the same way</span></h2></div>
-      <p class="lead rv">In Mexico there are around 200 certified producers and over 2500 tequila brands. The difference between them is in the process</p>
+      <p class="lead rv">In Mexico there are around 200 certified producers and over 3000 registered tequila brands. The difference between them is in the process</p>
     </div>
     {grid([("Agave", "Where it grew, how old it is, how much sugar it holds. Highland agave of Los Altos is larger and sweeter"), ("Cooking and yeast", "Slow cooking and the yeast strain decide the aromas: citrus, fruit, flowers, vanilla"), ("Distillation", "Copper or steel, how heads and tails are cut, how long the spirit is filtered"), ("Consistency", "Whether batch 10 tastes like batch 1. We look for distilleries where it does")], 4)}
     {facts_html()}
@@ -250,3 +250,32 @@ for n, (slug, title, icon) in enumerate(SERVICES):
 </div></section>
 """
     page(f"{slug}.html", f"{title} · Agave Advisory", "services", body, s["lead"].split(". ")[0])
+
+# ================= CONTACT =================
+contact = f"""
+{hero("Contact", 'Let us talk<br><span class="g">about your project</span>', "Write to us in English, Spanish or Russian. We reply within one working day and suggest a call if it helps", img="arches.jpg", cta=False)}
+<section class="pad"><div class="wrap">
+  <div class="sec-head"><div class="rv"><div class="label line">Where we are</div><h2 class="sp">Guadalajara<br><span class="g">and Los Altos de Jalisco</span></h2></div>
+  <p class="lead rv">Our office is in Guadalajara and our work is in the highlands, at the distilleries of Los Altos. Visits are welcome by appointment</p></div>
+  {maps_html()}
+</div></section>
+"""
+page("contact.html", "Contact · Agave Advisory", "contact", contact, "Contact Agave Advisory Agency: e-mail, WhatsApp and offices in Guadalajara and Los Altos de Jalisco")
+
+# ================= PRIVACY =================
+PRIV = [
+    ("Who we are", "Agave Advisory Agency, Guadalajara and Los Altos de Jalisco, Mexico. This notice explains what personal data we collect through this website and how we use it"),
+    ("What we collect", "Only what you send through the contact form or by e-mail: your name, company, e-mail address, phone number and the description of your project. The website does not use analytics cookies or advertising trackers"),
+    ("Why we collect it", "To answer your request, prepare a proposal and stay in touch about your project. We do not send newsletters and we do not sell or share your data with third parties, except the logistics and production partners involved in your project, and only with your consent"),
+    ("How long we keep it", "For as long as we work together and for the period required by Mexican law for business records. If no project follows, we delete your request within twelve months"),
+    ("Your rights", "You may ask at any time what data we hold about you, correct it, or ask us to delete it. Write to agaveadvisoryagency@gmail.com and we will respond within one working day"),
+    ("Age", "This website contains information about alcoholic beverages and is intended for visitors of legal drinking age in their country"),
+]
+privacy = f"""
+{hero("Privacy notice", 'Your data<br><span class="g">stays between us</span>', "A short and plain explanation of what we collect on this website and what we do with it", img="arches.jpg", cta=False)}
+<section class="pad"><div class="wrap">
+  <div class="svc-grid">{"".join(f'<div class="rv"><span class="num">0{i+1}</span><h3>{t}</h3><p>{d}</p></div>' for i, (t, d) in enumerate(PRIV))}</div>
+  <p class="note rv" style="margin-top:50px">Last updated: November 2026</p>
+</div></section>
+"""
+page("privacy.html", "Privacy Notice · Agave Advisory", "", privacy, "Privacy notice of Agave Advisory Agency")

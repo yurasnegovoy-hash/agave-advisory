@@ -5,12 +5,21 @@
   // ЧЕРНОВИК: страны и форматы уточняются у клиентки
   const CLIENTS = [
     { name: "United States", lon: -95.7, lat: 38.5, fmt: "Bulk supply · Private label" },
-    { name: "Spain", lon: -3.7, lat: 40.4, fmt: "Private label" },
+    { name: "Canada", lon: -106.3, lat: 56.1, fmt: "Private label" },
+    { name: "Colombia", lon: -74.3, lat: 4.6, fmt: "Bulk supply" },
+    { name: "Chile", lon: -71.5, lat: -35.7, fmt: "Private label" },
+    { name: "United Kingdom", lon: -1.5, lat: 52.4, fmt: "Private label" },
+    { name: "France", lon: 2.2, lat: 46.6, fmt: "Private label" },
+    { name: "Netherlands", lon: 5.3, lat: 52.1, fmt: "Bulk supply" },
     { name: "Germany", lon: 10.4, lat: 51.2, fmt: "Bulk supply" },
-    { name: "Georgia", lon: 43.4, lat: 42.3, fmt: "Bulk supply · Barrel advisory" },
+    { name: "Sweden", lon: 16.3, lat: 62.0, fmt: "Private label" },
+    { name: "Ukraine", lon: 31.2, lat: 49.0, fmt: "Private label" },
+    { name: "Armenia", lon: 45.0, lat: 40.1, fmt: "Bulk supply" },
     { name: "Russia", lon: 37.6, lat: 55.75, fmt: "Private label · Bulk supply" },
-    { name: "Kazakhstan", lon: 71.4, lat: 51.1, fmt: "Bulk supply" },
-    { name: "United Arab Emirates", lon: 55.3, lat: 25.2, fmt: "Private label" },
+    { name: "Japan", lon: 138.3, lat: 36.2, fmt: "Private label" },
+    { name: "South Korea", lon: 127.8, lat: 36.0, fmt: "Private label" },
+    { name: "Philippines", lon: 122.0, lat: 12.9, fmt: "Private label" },
+    { name: "New Zealand", lon: 174.9, lat: -40.9, fmt: "Private label" },
   ];
 
   const box = document.getElementById("client-map");

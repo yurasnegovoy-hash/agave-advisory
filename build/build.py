@@ -27,7 +27,7 @@ def header(active):
     <span class="dd"><a href="index.html#services"{on('services')}>Services</a><span class="dd-menu">{dd}</span></span>
     <a href="how-we-work.html"{on('process')}>How we work</a>
     <a href="clients.html"{on('clients')}>Clients &amp; partners</a>
-    <a href="#contact">Contact</a>
+    <a href="contact.html"{on('contact')}>Contact</a>
   </nav>
   <div class="hdr-r"><span class="lang"><b>EN</b> · ES · RU</span><a href="#contact" class="btn ghost">Discuss your project</a><button class="burger" aria-label="Menu"></button></div>
 </div></header>"""
@@ -59,10 +59,10 @@ FOOTER = """<footer class="ftr"><div class="wrap">
   <div class="ftr-top">
     <span class="seal" style="width:140px;height:140px"><img class="ring" src="img/seal_ring.svg" alt=""><img src="img/seal_core.svg" alt="Agave Advisory"></span>
     <div><h4>Services</h4>""" + "".join(f'<a href="{s}.html">{t}</a>' for s, t, _ in SERVICES) + """</div>
-    <div><h4>Agency</h4><a href="about.html">About</a><a href="how-we-work.html">How we work</a><a href="clients.html">Clients &amp; partners</a><a href="#contact">Contact</a></div>
+    <div><h4>Agency</h4><a href="about.html">About</a><a href="how-we-work.html">How we work</a><a href="clients.html">Clients &amp; partners</a><a href="contact.html">Contact</a></div>
     <div><h4>Follow</h4><a href="https://www.linkedin.com/in/anastasia-strizheva-489446122/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com/hacienda.la.capilla" target="_blank" rel="noopener">Instagram</a><p>agaveadvisoryagency@gmail.com</p></div>
   </div>
-  <div class="ftr-bot"><span>© 2026 Agave Advisory Agency</span><span>Guadalajara · Los Altos de Jalisco · Mexico</span><span>Privacy notice</span></div>
+  <div class="ftr-bot"><span>© 2026 Agave Advisory Agency</span><span>Guadalajara · Los Altos de Jalisco · Mexico</span><a href="privacy.html">Privacy notice</a></div>
 </div></footer>"""
 
 AGE = """<div class="age" id="age"><div class="age-box">
@@ -106,6 +106,9 @@ def page(fname, title, active, body, desc):
 {MAP_JS if 'id="client-map"' in body else ''}
 </body></html>
 """
+    for s, t, _ in SERVICES:  # на странице услуги в форме уже выбрана эта услуга
+        if s == fname[:-5]:
+            html = html.replace(f"<option>{t}</option>", f"<option selected>{t}</option>", 1)
     open(f"{ROOT}/{fname}", "w", encoding="utf-8").write(html)
     print("ok", fname)
 
@@ -196,18 +199,20 @@ MARQ = "".join(f"<span>{t}</span>" for t in ["Mexico to the world","Since 2007",
 
 # процесс производства: видео под каждый шаг, img: для шагов, где ролика пока нет
 PROCESS = [
-    ("aerial_rows", "Highland fields", "Agave grows for 6 to 8 years at 2000 metres", "Blue Weber agave of Los Altos grows slowly in the highlands. Bigger piñas, more sugar, more aroma", "Cultivation"),
+    ("aerial_rows", "Highland fields", "Agave grows for 6 to 8 years at 2000 metres", "Blue Weber agave of Los Altos grows slowly in red volcanic soil. Bigger piñas, more sugar, more aroma", "Cultivation"),
     ("jimadores", "Harvest", "Jimadores cut the piña by hand with the coa", "Only ripe plants are harvested. A highland piña can weigh up to 110 kg", "Harvest"),
     ("cooking", "Cooking", "12 hours at 110 °C", "Slow cooking turns the starches of the piña into sugars and sets the foundation of flavour", "Cooking"),
-    ("ferment", "Fermentation", "Where the character is born", "Yeast and time give each tequila its aroma. We follow every tank with our partner distillery", "Fermentation"),
+    ("img:milling", "Milling", "Agua miel and bagazo", "The cooked piñas are crushed in the mill. The sweet juice, agua miel, goes to fermentation. The fibre, bagazo, returns to the fields as fertiliser", "Milling"),
+    ("ferment", "Fermentation", "Up to 72 hours on the distillery's own yeast", "Yeast and time give each tequila its aroma: citrus, flowers and fruit from the agave, vanilla from the process. We follow every tank with our partner distillery", "Fermentation"),
     ("distill", "Distillation", "Twice, in copper", "The first run removes heads and tails, the second sets the strength. Copper stills at our partner distillery are over a century old", "Distillation"),
+    ("lab", "Filtration", "Clean, not stripped", "Filtration removes what does not belong in the glass and keeps the agave. Every batch is checked in the laboratory before it moves on", "Filtration"),
     ("barrels", "Aging", "American and French oak", "Reposado from 2 months, añejo from 1 year, extra añejo from 3. Barrels rest in rooms with controlled humidity", "Aging"),
     ("bottling_line", "Bottling", "Under our supervision", "We stand at the line: packaging check, quality inspection, photo and video report, final approval before shipment", "Bottling"),
     ("port", "Delivery", "To your market", "Export documents, forwarder, port and door-to-door delivery on EXW, FOB, CIF or other terms", "Delivery"),
 ]
 def process_html():
     media = "".join((f'<img src="img/{v[4:]}.jpg" alt="">' if v.startswith("img:") else f'<video src="video/{v}.mp4" poster="video/{v}.jpg" muted loop playsinline preload="metadata"></video>') for v, *_ in PROCESS)
-    steps = "".join(f'<div class="pstep" data-cap="{cap}"><span class="num">0{i+1}</span><h3>{t}</h3><p class="tagline" style="font-size:19px">{sub}</p><p>{d}</p></div>' for i, (v, t, sub, d, cap) in enumerate(PROCESS))
+    steps = "".join(f'<div class="pstep" data-cap="{cap}"><span class="num">{i+1:02d}</span><h3>{t}</h3><p class="tagline" style="font-size:19px">{sub}</p><p>{d}</p></div>' for i, (v, t, sub, d, cap) in enumerate(PROCESS))
     return f"""<div class="proc">
   <div class="steps-col"><div class="bar"><i></i></div>{steps}</div>
   <div class="vid-col"><div class="screen">{media}<div class="cap"></div></div></div>
@@ -231,7 +236,7 @@ home = f"""
 
 <section data-ch="II / IX" data-title="Why an agency" class="pad">
   <div class="wrap split">
-    <div class="media frame mask" style="aspect-ratio:4/5"><img src="img/ceo_still.jpg" alt="Copper still at a partner distillery in Jalisco"></div>
+    <div class="media frame mask" style="aspect-ratio:4/5"><img src="img/ceo_66.jpg" alt="Anastasia Strizheva at the agave ovens of a partner distillery in Jalisco"></div>
     <div class="rv">
       <div class="label line">Why an agency</div>
       <h2 class="sp"><span class="nw">Your eyes and ears</span><br><span class="g">in Jalisco</span></h2>
@@ -265,7 +270,7 @@ home = f"""
       <h2 class="sp">Know where<br><span class="g">your tequila comes from</span></h2>
       <div class="rule"></div>
       <p class="lead">Many brands buy bulk tequila from different distilleries with no single quality standard. The taste of tequila depends on every stage: the agave, the cooking, the yeast, fermentation, distillation and filtration</p>
-      <p class="lead">We work with distilleries in Los Altos where we know the origin of the agave and how the liquid was made. <em>That is how quality stays the same from batch to batch</em></p>
+      <p class="lead">Tequila may only be made in five Mexican states, and the highlands of Los Altos give the sweetest agave. We work with distilleries there, where we know the origin of the agave and how the liquid was made. <em>That is how quality stays the same from batch to batch</em></p>
     </div>
     <div class="media frame mask" style="aspect-ratio:4/5"><img src="img/ceo_68.jpg" alt="Cooked agave piña"></div>
   </div>

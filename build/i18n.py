@@ -4,7 +4,7 @@
 import os, re, json, urllib.request, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PAGES = ["index", "about", "how-we-work", "clients", "private-label", "bulk-tequila", "brand-market-advisory", "rtd", "barrel-aging"]
+PAGES = ["index", "about", "how-we-work", "clients", "private-label", "bulk-tequila", "brand-market-advisory", "rtd", "barrel-aging", "contact", "privacy"]
 LANGS = {"es": "Spanish (Mexico). Always formal usted, never tú. Always correct accents and ñ (decisión, línea, producción, añejo)", "ru": "Russian (business register, вежливое «вы»)"}
 KEY = os.environ.get("GEMINI_API_KEY")
 SKIP = re.compile(r"^(AGAVE|ADVISORY|EN|ES|RU|EN · ES · RU|LinkedIn|Instagram|agaveadvisoryagency@gmail\.com|\+52 33 1420 1317|©.*|[\d\s/·.,%°+–-]+|I|II|III|IV|V|VI|VII|VIII|IX)$")
