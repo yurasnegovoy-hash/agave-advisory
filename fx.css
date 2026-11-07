@@ -273,3 +273,7 @@ html[lang="es"] .hero h1{font-size:clamp(30px,3.7vw,52px)}
 /* подводки без висячих слов: короткие справа от заголовка балансируются, длинные абзацы не оставляют одно слово в последней строке */
 .sec-head .lead{text-wrap:balance}
 .lead,p{text-wrap:pretty}
+
+/* окно возраста: непрозрачный экран поверх всего сайта, прокрутка заблокирована, пока не нажали «Yes» */
+.age{position:fixed!important;inset:0;z-index:200;background:#0A0806}
+body:has(.age:not(.hide)){overflow:hidden}
