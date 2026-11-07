@@ -277,3 +277,8 @@ html[lang="es"] .hero h1{font-size:clamp(30px,3.7vw,52px)}
 /* окно возраста: непрозрачный экран поверх всего сайта, прокрутка заблокирована, пока не нажали «Yes» */
 .age{position:fixed!important;inset:0;z-index:200;background:#0A0806}
 body:has(.age:not(.hide)){overflow:hidden}
+
+/* логотип в шапке: воздух между агавой и надписью */
+.logo{gap:24px}
+.logo svg{width:42px;height:33px}
+.logo small{margin-top:7px}
