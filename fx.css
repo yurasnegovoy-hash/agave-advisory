@@ -282,3 +282,7 @@ body:has(.age:not(.hide)){overflow:hidden}
 .logo{gap:24px}
 .logo svg{width:42px;height:33px}
 .logo small{margin-top:7px}
+
+/* подвал: печать в углу убрана, контурная надпись стоит отдельно над колонками и не залезает под навигацию глав */
+.seal-corner{display:none!important}
+.ftr .word{margin:30px 0 56px -6px;font-size:clamp(56px,8.4vw,168px);max-width:100%;overflow:hidden}
