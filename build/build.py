@@ -81,6 +81,8 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.targ
 document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*0.07+'s';io.observe(el)});
 </script>"""
 
+import time
+BUILD_V = str(int(time.time()))  # версия сборки: браузеры и GitHub Pages не держат старые стили и скрипты
 def page(fname, title, active, body, desc):
     html = f"""<!doctype html>
 <html lang="en"><head>
@@ -88,11 +90,11 @@ def page(fname, title, active, body, desc):
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <meta name="robots" content="noindex,nofollow">
-<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="fonts.css?v={BUILD_V}">
 <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="img/touch.png">
 <meta property="og:type" content="website"><meta property="og:site_name" content="Agave Advisory"><meta property="og:title" content="{title}"><meta property="og:description" content="{desc}"><meta property="og:image" content="https://yurasnegovoy-hash.github.io/agave-advisory/img/og.jpg"><meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="fx.css">
+<link rel="stylesheet" href="style.css?v={BUILD_V}">
+<link rel="stylesheet" href="fx.css?v={BUILD_V}">
 </head><body>
 {ICONS}
 <div class="sky"><video data-hd="video/fly.mp4" data-sd="video/fly_1280.mp4" poster="video/fly.jpg" muted playsinline preload="auto"></video></div>
@@ -105,7 +107,7 @@ def page(fname, title, active, body, desc):
 {FOOTER}
 <div class="seal-corner"><img class="ring" src="img/seal_ring.svg" alt=""><img class="core" src="img/seal_core.svg" alt=""></div>
 {SCRIPT}
-<script src="vendor/gsap.min.js"></script><script src="vendor/ScrollTrigger.min.js"></script><script src="fx.js"></script>
+<script src="vendor/gsap.min.js"></script><script src="vendor/ScrollTrigger.min.js"></script><script src="fx.js?v={BUILD_V}"></script>
 {MAP_JS if 'id="client-map"' in body else ''}
 </body></html>
 """
@@ -145,7 +147,7 @@ LOCAL_MAP = """<img class="lmap-img" src="img/map_jalisco.jpg" alt="Relief map o
 MAP_JS = """<script src="vendor/d3.min.js"></script>
 <script src="vendor/topojson-client.min.js"></script>
 <script src="vendor/world-110m.js"></script>
-<script src="map.js"></script>"""
+<script src="map.js?v=""" + BUILD_V + """"></script>"""
 
 def client_map_html():
     return """<div class="client-map-wrap">
