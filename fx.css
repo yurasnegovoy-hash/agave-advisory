@@ -260,3 +260,6 @@ html[lang="es"] .hero h1{font-size:clamp(30px,3.7vw,52px)}
 #client-list li{break-inside:avoid}
 @media (max-width:980px){#client-list{columns:2}}
 @media (max-width:560px){#client-list{columns:1}}
+
+/* цифры-счётчики в фактах: наследуют золото и кегль заголовка, а не стиль подписи */
+.facts strong .cnt{display:inline-block;margin:0;color:inherit;font-size:inherit;line-height:inherit}
