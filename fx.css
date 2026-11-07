@@ -269,3 +269,7 @@ html[lang="es"] .hero h1{font-size:clamp(30px,3.7vw,52px)}
 .ceo-stats strong{white-space:nowrap;font-size:clamp(22px,1.85vw,27px);letter-spacing:.05em}
 @media (max-width:980px){.ceo-stats{grid-template-columns:repeat(3,auto);gap:16px}.ceo-stats strong{font-size:20px}}
 @media (max-width:520px){.ceo-stats{grid-template-columns:1fr 1fr}}
+
+/* подводки без висячих слов: короткие справа от заголовка балансируются, длинные абзацы не оставляют одно слово в последней строке */
+.sec-head .lead{text-wrap:balance}
+.lead,p{text-wrap:pretty}
