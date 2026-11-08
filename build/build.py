@@ -247,7 +247,7 @@ home = f"""
       <div class="label line">Why an agency</div>
       <h2 class="sp"><span class="nw">Your eyes and ears</span><br><span class="g">in Jalisco</span></h2>
       <div class="rule"></div>
-      <p class="lead">When you are thousands of kilometres away, working directly with a distillery is hard. We represent your interests on the ground</p>
+      <p class="lead">When you live in another country, working directly with a distillery is hard. You need people who will be your eyes and ears and represent your interests</p>
       <ul class="checks">
         <li>We choose the right distillery and suppliers for your project</li>
         <li>We coordinate documents, components and production</li>
