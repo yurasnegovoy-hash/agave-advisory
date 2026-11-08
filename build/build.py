@@ -205,13 +205,13 @@ MARQ = "".join(f"<span>{t}</span>" for t in ["Mexico to the world","Since 2007",
 
 # процесс производства: видео под каждый шаг, img: для шагов, где ролика пока нет
 PROCESS = [
-    ("aerial_rows", "Highland fields", "Agave grows for 6 to 8 years at 2000 metres", "Blue Weber agave of Los Altos grows slowly in red volcanic soil. Bigger piñas, more sugar, more aroma", "Cultivation"),
+    ("aerial_rows", "Highland fields", "Agave grows for 6 to 10 years at 2000 metres", "Blue Weber agave of Los Altos grows slowly in red volcanic soil. Bigger piñas, more sugar, more aroma", "Cultivation"),
     ("jimadores", "Harvest", "Jimadores cut the piña by hand with the coa", "Only ripe plants are harvested. A highland piña can weigh up to 110 kg", "Harvest"),
     ("cooking", "Cooking", "12 hours at 110 °C", "Slow cooking turns the starches of the piña into sugars and sets the foundation of flavour", "Cooking"),
     ("milling", "Milling", "Agua miel and bagazo", "The cooked piñas are crushed in the mill. The sweet juice, agua miel, goes to fermentation. The fibre, bagazo, returns to the fields as fertiliser", "Milling"),
     ("ferment", "Fermentation", "Up to 72 hours on the distillery's own yeast", "Yeast and time give each tequila its aroma: citrus, flowers and fruit from the agave, vanilla from the process. We follow every tank with our partner distillery", "Fermentation"),
     ("distill", "Distillation", "Twice, in copper", "The first run removes heads and tails, the second sets the strength. Copper stills at our partner distillery are over a century old", "Distillation"),
-    ("lab", "Filtration", "Clean, not stripped", "Filtration removes what does not belong in the glass and keeps the agave. Every batch is checked in the laboratory before it moves on", "Filtration"),
+    ("lab", "Filtration", "Clean, not stripped", "Filtration removes what does not belong in the glass and keeps the agave", "Filtration"),
     ("barrels", "Aging", "American and French oak", "Reposado from 2 months, añejo from 1 year, extra añejo from 3. Barrels rest in rooms with controlled humidity", "Aging"),
     ("bottling_line", "Bottling", "Under our supervision", "We stand at the line: packaging check, quality inspection, photo and video report, final approval before shipment", "Bottling"),
     ("port", "Delivery", "To your market", "Export documents, forwarder, port and door-to-door delivery on EXW, FOB, CIF or other terms", "Delivery"),

@@ -147,7 +147,7 @@ SVC = {
         ("Can the liquid be made to my taste?", "Yes. We work with the master distiller on the profile: sweeter or drier, longer or shorter aging, different barrels. You approve samples"),
         ("Do I need to come to Mexico?", "No. We represent you at every stage and send photo and video reports. You are welcome to visit at any time")]),
  "bulk-tequila": dict(video="tanks", side="video:lab",
-   h1='Bulk tequila<br><span class="g">supply</span>',
+   h1='Bulk<br><span class="g">tequila supply</span>',
    lead="Tequila selected to your requirements and supplied in bulk from trusted distilleries in Jalisco. Samples first, specification agreed, supply organised",
    who="For bottlers, spirits producers and distributors who need tequila as a liquid, in volumes and with a profile that stays the same from batch to batch",
    grid=[("Selection to your requirements", "Category, profile and character to your brief. 100% agave. Highland agave of Los Altos is larger and sweeter"),
@@ -253,10 +253,10 @@ for n, (slug, title, icon) in enumerate(SERVICES):
 
 # ================= CONTACT =================
 contact = f"""
-{hero("Contact", 'Let us talk<br><span class="g">about your project</span>', "Write to us in English, Spanish or Russian. We reply within one working day and suggest a call if it helps", img="arches.jpg", cta=False)}
+{hero("Contact", 'Let us talk<br><span class="g">about your project</span>', "Write to us in English, Spanish or Russian and we will suggest the next steps", img="arches.jpg", cta=False)}
 <section class="pad"><div class="wrap">
   <div class="sec-head"><div class="rv"><div class="label line">Where we are</div><h2 class="sp">Guadalajara<br><span class="g">and Los Altos de Jalisco</span></h2></div>
-  <p class="lead rv">Our office is in Guadalajara and our work is in the highlands, at the distilleries of Los Altos. Visits are welcome by appointment</p></div>
+  <p class="lead rv">Our office is in Guadalajara and our work is in the highlands, at the distilleries of Los Altos</p></div>
   {maps_html()}
 </div></section>
 """
@@ -266,9 +266,9 @@ page("contact.html", "Contact · Agave Advisory", "contact", contact, "Contact A
 PRIV = [
     ("Who we are", "Agave Advisory Agency, Guadalajara and Los Altos de Jalisco, Mexico. This notice explains what personal data we collect through this website and how we use it"),
     ("What we collect", "Only what you send through the contact form or by e-mail: your name, company, e-mail address, phone number and the description of your project. The website does not use analytics cookies or advertising trackers"),
-    ("Why we collect it", "To answer your request, prepare a proposal and stay in touch about your project. We do not send newsletters and we do not sell or share your data with third parties, except the logistics and production partners involved in your project, and only with your consent"),
-    ("How long we keep it", "For as long as we work together and for the period required by Mexican law for business records. If no project follows, we delete your request within twelve months"),
-    ("Your rights", "You may ask at any time what data we hold about you, correct it, or ask us to delete it. Write to agaveadvisoryagency@gmail.com and we will respond within one working day"),
+    ("Why we collect it", "To answer your request, prepare a proposal and stay in touch about your project. Requests from the form reach us through the FormSubmit e-mail service. We do not send newsletters or sell your data, and we share project details with logistics and production partners only with your consent"),
+    ("How long we keep it", "For as long as we work together and for the period required by Mexican law for business records"),
+    ("Your rights", "You may ask at any time what data we hold about you, correct it, or ask us to delete it. Write to agaveadvisoryagency@gmail.com"),
     ("Age", "This website contains information about alcoholic beverages and is intended for visitors of legal drinking age in their country"),
 ]
 privacy = f"""
