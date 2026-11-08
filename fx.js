@@ -82,7 +82,7 @@
     else { sky.removeAttribute("src"); sky.load(); }
     // ролики шагов и внутренних страниц подгружаются, когда до них доскроллили
     const lazy = new IntersectionObserver(es => es.forEach(x => { if (x.isIntersecting) { const v = x.target; if (v.preload === "none") { v.preload = "auto"; v.load(); } lazy.unobserve(v); } }), { rootMargin: "600px" });
-    document.querySelectorAll('video[preload="none"]').forEach(v => lazy.observe(v));  // на телефоне только постер, 17 МБ видео не грузим
+    document.querySelectorAll('video[preload="none"]').forEach(v => { if (!v.closest(".proc")) lazy.observe(v); });  // на телефоне только постер, 17 МБ видео не грузим
   }
   const hint = document.querySelector(".scroll-hint");
   if (hint) addEventListener("scroll", () => hint.classList.toggle("off", scrollY > 80), { passive: true });
@@ -95,11 +95,13 @@
     const show = i => {
       if (i === cur) return; cur = i;
       steps.forEach((s, k) => s.classList.toggle("on", k === i));
+      [i, i + 1].forEach(k => { const v = media[k]; if (v && v.tagName === "VIDEO" && v.preload === "none") { v.preload = "auto"; v.load(); } });  // грузим только текущий и следующий ролик
       media.forEach((m, k) => { m.classList.toggle("on", k === i); if (m.tagName === "VIDEO") { if (k === i) { m.currentTime = 0; m.play().catch(() => {}); } else m.pause(); } });
+      proc.style.setProperty("--p", ((i + 1) / steps.length * 100) + "%");
       if (cap) cap.textContent = `${String(i + 1).padStart(2, "0")} / ${String(steps.length).padStart(2, "0")} · ${steps[i].dataset.cap || ""}`;
       if (bar) bar.style.height = ((i + 1) / steps.length * 100) + "%";
     };
-    const sio = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) show(steps.indexOf(e.target)); }), { rootMargin: "-45% 0px -45% 0px" });
+    const sio = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) show(steps.indexOf(e.target)); }), { rootMargin: matchMedia("(max-width:980px)").matches ? "-74% 0px -24% 0px" : "-45% 0px -45% 0px" });
     steps.forEach(s => sio.observe(s));
     show(0);
   }
@@ -219,4 +221,33 @@
       location.replace(location.pathname.replace(/[^/]*$/, "") + want + "/" + page + location.hash);
     }
   }
+})();
+
+// мобильное меню: собирается из пунктов шапки, поэтому всегда на языке страницы
+(function () {
+  const burger = document.querySelector(".burger"), nav = document.querySelector(".nav"), hdr = document.getElementById("hdr");
+  if (!burger || !nav) return;
+  const m = document.createElement("div"); m.className = "mnav"; m.id = "mnav";
+  const list = document.createElement("div"); list.className = "mnav-list";
+  [...nav.children].forEach(el => {
+    if (el.classList.contains("dd")) {
+      const t = el.querySelector(":scope > a").cloneNode(true); list.appendChild(t);
+      const sub = document.createElement("div"); sub.className = "mnav-sub";
+      el.querySelectorAll(".dd-menu a").forEach(a => sub.appendChild(a.cloneNode(true)));
+      list.appendChild(sub);
+    } else list.appendChild(el.cloneNode(true));
+  });
+  m.appendChild(list);
+  const foot = document.createElement("div"); foot.className = "mnav-foot";
+  const lang = document.querySelector(".hdr .lang"), cta = document.querySelector(".hdr .btn");
+  if (lang) foot.appendChild(lang.cloneNode(true));
+  if (cta) foot.appendChild(cta.cloneNode(true));
+  m.appendChild(foot);
+  document.body.appendChild(m);
+  burger.setAttribute("aria-expanded", "false"); burger.setAttribute("aria-controls", "mnav");
+  const set = open => { m.classList.toggle("on", open); burger.classList.toggle("on", open); burger.setAttribute("aria-expanded", String(open)); document.documentElement.style.overflow = open ? "hidden" : ""; document.body.style.overflow = open ? "hidden" : ""; if (hdr) hdr.classList.toggle("menu-open", open); };
+  burger.addEventListener("click", () => set(!m.classList.contains("on")));
+  m.addEventListener("click", e => { if (e.target.closest("a")) set(false); });
+  addEventListener("keydown", e => { if (e.key === "Escape") set(false); });
+  addEventListener("resize", () => { if (innerWidth > 980) set(false); });
 })();

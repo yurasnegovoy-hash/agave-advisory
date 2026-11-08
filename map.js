@@ -22,6 +22,13 @@
     { name: "New Zealand", lon: 174.9, lat: -40.9, fmt: "Private label" },
   ];
 
+  // подписи карты на языке страницы; name остаётся английским для совпадения с данными карты
+  const LANG = document.documentElement.lang;
+  const T = {
+    es: { "United States":"Estados Unidos","Canada":"Canadá","Colombia":"Colombia","Chile":"Chile","United Kingdom":"Reino Unido","France":"Francia","Netherlands":"Países Bajos","Germany":"Alemania","Sweden":"Suecia","Ukraine":"Ucrania","Armenia":"Armenia","Russia":"Rusia","Japan":"Japón","South Korea":"Corea del Sur","Philippines":"Filipinas","New Zealand":"Nueva Zelanda","Bulk supply":"Suministro a granel","Private label":"Marca propia" },
+    ru: { "United States":"США","Canada":"Канада","Colombia":"Колумбия","Chile":"Чили","United Kingdom":"Великобритания","France":"Франция","Netherlands":"Нидерланды","Germany":"Германия","Sweden":"Швеция","Ukraine":"Украина","Armenia":"Армения","Russia":"Россия","Japan":"Япония","South Korea":"Южная Корея","Philippines":"Филиппины","New Zealand":"Новая Зеландия","Bulk supply":"Поставки наливом","Private label":"Собственная марка" }
+  }[LANG] || {};
+  const tr = t => t.split(" · ").map(x => T[x] || x).join(" · ");
   const box = document.getElementById("client-map");
   if (!box || !window.d3 || !window.topojson) return;
   const W = 1200, H = 600;
@@ -54,13 +61,13 @@
       const arc = arcs.append("path").attr("class", "arc").attr("d", `M${hx},${hy} Q${mx},${my} ${x},${y}`);
       const len = arc.node().getTotalLength();
       arc.attr("stroke-dasharray", len).attr("stroke-dashoffset", len);
-      c.arc = arc; c.len = len;
+      c.arc = arc; c.len = len; c.x = x;
       const g = dots.append("g").attr("class", "pt").attr("transform", `translate(${x},${y})`).attr("tabindex", 0);
       g.append("circle").attr("class", "pulse").attr("r", 5).style("animation-delay", (i * 0.35) + "s");
       g.append("circle").attr("class", "core").attr("r", 4.5);
       const show = () => {
         g.classed("hot", true); arc.classed("hot", true);
-        tip.html(`<b>${c.name}</b><span>${c.fmt}</span>`).style("left", (x / W * 100) + "%").style("top", ((y - VY) / VH * 100) + "%").classed("on", true);
+        tip.html(`<b>${tr(c.name)}</b><span>${tr(c.fmt)}</span>`).style("left", (x / W * 100) + "%").style("top", ((y - VY) / VH * 100) + "%").classed("on", true);
         list.selectAll("li").classed("hot", d => d === c);
       };
       const hide = () => { g.classed("hot", false); arc.classed("hot", false); tip.classed("on", false); list.selectAll("li").classed("hot", false); };
@@ -74,8 +81,10 @@
     home.append("text").attr("x", 0).attr("y", 26).attr("text-anchor", "middle").text("JALISCO");
 
     list.selectAll("li").data(CLIENTS).join("li")
-      .html(c => `<b>${c.name}</b><span>${c.fmt}</span>`)
-      .on("mouseenter", (e, c) => c.show()).on("mouseleave", (e, c) => c.hide());
+      .html(c => `<b>${tr(c.name)}</b><span>${tr(c.fmt)}</span>`)
+      .on("mouseenter", (e, c) => c.show()).on("mouseleave", (e, c) => c.hide())
+      .on("click", (e, c) => { c.show(); box.scrollTo({ left: c.x / W * box.scrollWidth - box.clientWidth / 2, behavior: "smooth" }); });
+    if (box.scrollWidth > box.clientWidth) box.scrollLeft = hx / W * box.scrollWidth - box.clientWidth * .28;  // телефон: старт от Мексики
 
     // линии рисуются, когда карта попадает в экран
     const io = new IntersectionObserver(es => {

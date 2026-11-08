@@ -4,11 +4,11 @@
 <title>Clients & Partners · Agave Advisory</title>
 <meta name="description" content="Clients and partners of Agave Advisory Agency">
 <meta name="robots" content="noindex,nofollow">
-<link rel="stylesheet" href="fonts.css?v=1794026116">
+<link rel="stylesheet" href="fonts.css?v=1794130111">
 <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="img/touch.png">
 <meta property="og:type" content="website"><meta property="og:site_name" content="Agave Advisory"><meta property="og:title" content="Clients & Partners · Agave Advisory"><meta property="og:description" content="Clients and partners of Agave Advisory Agency"><meta property="og:image" content="https://yurasnegovoy-hash.github.io/agave-advisory/img/og.jpg"><meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="style.css?v=1794026116">
-<link rel="stylesheet" href="fx.css?v=1794026116">
+<link rel="stylesheet" href="style.css?v=1794130111">
+<link rel="stylesheet" href="fx.css?v=1794130111">
 <link rel="alternate" hreflang="en" href="clients.html"><link rel="alternate" hreflang="es" href="es/clients.html"><link rel="alternate" hreflang="ru" href="ru/clients.html">
 </head><body>
 <svg width="0" height="0" style="position:absolute">
@@ -63,6 +63,7 @@
   <p class="lead rv">Distributors, retail chains and producers we work with, and the partners behind our projects</p></div>
 </section>
 <section class="pad"><div class="wrap"><div class="client-map-wrap">
+  <div class="map-swipe">Swipe the map</div>
   <div id="client-map" class="rv"></div>
   <div class="rv"><div class="label" style="margin-bottom:18px">Our clients are in</div><ul id="client-list"></ul><span class="draft">Draft countries</span></div>
 </div><div style="height:90px"></div><div class="logos rv"><div><b>ASKANELI BROTHERS</b><small>Client · logo pending</small></div><div><b>GLOBAL SPIRITS</b><small>Client · logo pending</small></div><div><b>MAGNIT</b><small>Client · logo pending</small></div><div><b>OLD BARREL</b><small>Barrel partner · logo pending</small></div><div><b>ARTESANAL DESTILERÍA</b><small>Distillery partner · logo pending</small></div><div><b>PATRIZIA LAMBORGHINI</b><small>Partner · logo pending</small></div></div><div class="reviews"><div class="review rv"><span class="q">“</span><p>Working with a team on the ground in Jalisco changed everything for us. Every stage was under control and we always knew where our project stood</p><cite>Distributor · name after approval</cite><span class="draft">Draft text</span></div><div class="review rv"><span class="q">“</span><p>They found the right liquid for our specification and organised the supply from samples to shipment</p><cite>Spirits producer · name after approval</cite><span class="draft">Draft text</span></div><div class="review rv"><span class="q">“</span><p>One partner for documents, components, production and delivery. Exactly what we needed to launch our own label</p><cite>Retail chain · name after approval</cite><span class="draft">Draft text</span></div></div></div></section>
@@ -108,9 +109,9 @@ const hdr=document.getElementById('hdr');const onS=()=>hdr.classList.toggle('sol
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*0.07+'s';io.observe(el)});
 </script>
-<script src="vendor/gsap.min.js"></script><script src="vendor/ScrollTrigger.min.js"></script><script src="fx.js?v=1794026116"></script>
+<script src="vendor/gsap.min.js"></script><script src="vendor/ScrollTrigger.min.js"></script><script src="fx.js?v=1794130111"></script>
 <script src="vendor/d3.min.js"></script>
 <script src="vendor/topojson-client.min.js"></script>
 <script src="vendor/world-110m.js"></script>
-<script src="map.js?v=1794026116"></script>
+<script src="map.js?v=1794130111"></script>
 </body></html>

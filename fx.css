@@ -286,3 +286,98 @@ body:has(.age:not(.hide)){overflow:hidden}
 /* подвал: печать в углу убрана, контурная надпись стоит отдельно над колонками и не залезает под навигацию глав */
 .seal-corner{display:none!important}
 .ftr .word{margin:30px 0 56px -6px;font-size:clamp(56px,8.4vw,168px);max-width:100%;overflow:hidden}
+
+/* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== */
+.map-swipe{display:none}
+@media (max-width:980px){
+  /* шаги 1–10: видео закреплено под шапкой, под ним ровно один шаг на экран */
+  .proc{display:flex;flex-direction:column;gap:0;margin:0 -20px}
+  .proc .vid-col{order:-1;position:sticky;top:68px;height:44vh;height:44svh;z-index:2;display:block;background:var(--bg)}
+  .proc .screen{aspect-ratio:auto;width:100%;height:100%;max-height:none;border:0;border-bottom:1px solid var(--line)}
+  .proc .screen::before{display:none}
+  .proc .screen::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:var(--p,10%);background:var(--gold);z-index:4;transition:width .5s ease}
+  .proc .screen .cap{left:20px;bottom:16px;font-size:10px;text-shadow:0 1px 8px rgba(0,0,0,.8)}
+  .proc .steps-col{padding:0 20px}
+  .proc .bar{display:none}
+  .proc .pstep{min-height:calc(56vh - 68px);min-height:calc(56svh - 68px);padding:26px 0 30px;justify-content:flex-start;opacity:.22}
+  .proc .pstep.on{opacity:1}
+  .proc .pstep .num{font-size:30px}
+  .proc .pstep h3{font-size:24px;margin:6px 0 8px;letter-spacing:.05em}
+  .proc .pstep .tagline{font-size:18px!important;margin-bottom:6px}
+  .proc .pstep p{font-size:17px;line-height:1.42;max-width:none}
+  /* карта мира листается пальцем и начинается от Мексики */
+  .map-swipe{display:block;font-family:var(--f-label);font-weight:300;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:-26px}
+  .map-swipe::after{content:" →"}
+  .client-map-wrap{margin-left:-20px;margin-right:-20px;gap:26px}
+  .client-map-wrap>.map-swipe,.client-map-wrap>div:last-child{padding:0 20px}
+  #client-map{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:none;border-left:0;border-right:0}
+  #client-map::-webkit-scrollbar{display:none}
+  #client-map .cm-inner{width:980px}
+  #client-map .pt .core{r:6.5}
+  #client-map .home text{font-size:13px}
+}
+@media (max-width:560px){
+  #client-list{columns:2;column-gap:18px}
+  #client-list li{padding:8px 0}
+  #client-list b{font-size:13px;letter-spacing:.05em}
+  #client-list span{display:none}
+}
+
+/* телефон: первый экран, две карты столбиком, плотнее отступы, подвал и логотипы */
+@media (max-width:760px){
+  .pad{padding:62px 0}
+  .hero .wrap{padding-top:92px;padding-bottom:34px}
+  .home-hero{min-height:100svh}
+  .hero .lead,.home-hero .lead{font-size:18px;line-height:1.45;margin-top:18px}
+  .hero-cta{margin-top:24px;gap:10px;flex-wrap:nowrap}
+  .hero-cta .btn{padding:15px 16px;font-size:10px;letter-spacing:.16em;white-space:nowrap;flex:1;text-align:center}
+  .hero-meta{margin-top:26px;gap:10px}
+  .hero-meta div{padding-top:14px;font-size:8.5px;letter-spacing:.1em;line-height:1.5}
+  .hero-meta strong{font-size:15px;letter-spacing:.03em;white-space:nowrap;margin-bottom:4px}
+  .maps{grid-template-columns:1fr!important;margin-top:36px}
+  .map-card{min-height:0;aspect-ratio:1/1}
+  .map-card .cap{left:20px;right:20px;bottom:18px}
+  .map-card .cap b{font-size:18px}
+  .map-card .cap span{font-size:10px;letter-spacing:.16em}
+  .film{height:44vh}
+  .film *{letter-spacing:.14em}
+  .logos{grid-template-columns:1fr 1fr}
+  .logos div{height:104px;padding:0 10px;text-align:center}
+  .logos b{font-size:13px;letter-spacing:.1em;line-height:1.3}
+  .logos small{font-size:8px;letter-spacing:.12em}
+  blockquote,.quote p{text-wrap:balance}
+  .ftr .word{font-size:8.7vw;margin:6px 0 34px -2px}
+  .ftr-top{grid-template-columns:1fr 1fr!important;gap:30px 18px}
+  .ftr-top>.seal,.ftr-top>span:first-child{grid-column:1/-1}
+  .ftr-top>div:nth-child(2){grid-column:1/-1}
+  .ftr-top a,.ftr-top p{font-size:16px;overflow-wrap:anywhere}
+  .ftr-bot{flex-direction:column;gap:8px}
+}
+
+/* телефон: блок видео шагов на всю ширину, почта в подвале целиком */
+@media (max-width:980px){.proc{align-items:stretch}.proc .vid-col,.proc .steps-col{width:100%}}
+@media (max-width:760px){.ftr-top>div:last-child{grid-column:1/-1}.ftr-top a,.ftr-top p{overflow-wrap:normal}}
+
+/* мобильное меню */
+.mnav{position:fixed;inset:0;z-index:45;background:#0E0C0A;padding:92px 24px 32px;display:flex;flex-direction:column;justify-content:space-between;overflow-y:auto;opacity:0;visibility:hidden;transform:translateY(-10px);transition:opacity .35s,transform .35s,visibility .35s}
+.mnav.on{opacity:1;visibility:visible;transform:none}
+.mnav-list>a{display:block;font-family:var(--f-head);font-size:21px;letter-spacing:.08em;color:var(--ivory);padding:13px 0;border-bottom:1px solid var(--line)}
+.mnav-sub{padding:8px 0 10px 14px;border-bottom:1px solid var(--line)}
+.mnav-sub a{display:block;font-size:17px;line-height:1.3;color:var(--muted);padding:6px 0}
+.mnav-foot{margin-top:26px;display:flex;flex-direction:column;gap:18px}
+.mnav-foot .lang{display:block!important;font-family:var(--f-label);font-size:14px;letter-spacing:.24em;color:var(--gold)}
+.mnav-foot .lang a{padding:8px 6px;display:inline-block;color:var(--gold)}
+.mnav-foot .lang b{padding:8px 6px;display:inline-block;color:var(--ivory);font-weight:400;text-decoration:underline;text-underline-offset:5px}
+.mnav-foot .btn{display:block!important;text-align:center}
+.burger{position:relative;cursor:pointer;padding:0;transition:border-color .3s}
+.burger::after{content:"";position:absolute;left:-10px;right:-10px;top:-16px;bottom:-16px}
+.burger.on{border-color:transparent}
+.burger::before{content:"";position:absolute;left:0;right:0;top:6px;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .3s}
+.burger.on::before{transform:scaleX(1) rotate(0)}
+@media (min-width:981px){.mnav{display:none}}
+/* внутренние страницы на телефоне: текст первого экрана на плотной подложке */
+@media (max-width:760px){
+  .hero.sub::after{background:linear-gradient(0deg,var(--bg) 4%,rgba(14,12,10,.82) 55%,rgba(14,12,10,.55))}
+  .hero.sub .lead{color:#E4E1D7;font-size:18px;line-height:1.45}
+  .hero.sub{min-height:0}
+}

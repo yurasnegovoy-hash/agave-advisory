@@ -151,6 +151,7 @@ MAP_JS = """<script src="vendor/d3.min.js"></script>
 
 def client_map_html():
     return """<div class="client-map-wrap">
+  <div class="map-swipe">Swipe the map</div>
   <div id="client-map" class="rv"></div>
   <div class="rv"><div class="label" style="margin-bottom:18px">Our clients are in</div><ul id="client-list"></ul><span class="draft">Draft countries</span></div>
 </div>"""
