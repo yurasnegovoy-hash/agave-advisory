@@ -25,8 +25,8 @@
   // подписи карты на языке страницы; name остаётся английским для совпадения с данными карты
   const LANG = document.documentElement.lang;
   const T = {
-    es: { "United States":"Estados Unidos","Canada":"Canadá","Colombia":"Colombia","Chile":"Chile","United Kingdom":"Reino Unido","France":"Francia","Netherlands":"Países Bajos","Germany":"Alemania","Sweden":"Suecia","Ukraine":"Ucrania","Armenia":"Armenia","Russia":"Rusia","Japan":"Japón","South Korea":"Corea del Sur","Philippines":"Filipinas","New Zealand":"Nueva Zelanda","Bulk supply":"Suministro a granel","Private label":"Marca propia" },
-    ru: { "United States":"США","Canada":"Канада","Colombia":"Колумбия","Chile":"Чили","United Kingdom":"Великобритания","France":"Франция","Netherlands":"Нидерланды","Germany":"Германия","Sweden":"Швеция","Ukraine":"Украина","Armenia":"Армения","Russia":"Россия","Japan":"Япония","South Korea":"Южная Корея","Philippines":"Филиппины","New Zealand":"Новая Зеландия","Bulk supply":"Поставки наливом","Private label":"Собственная марка" }
+    es: { "United States":"Estados Unidos","Canada":"Canadá","Colombia":"Colombia","Chile":"Chile","United Kingdom":"Reino Unido","France":"Francia","Netherlands":"Países Bajos","Germany":"Alemania","Sweden":"Suecia","Ukraine":"Ucrania","Armenia":"Armenia","Russia":"Rusia","Japan":"Japón","South Korea":"Corea del Sur","Philippines":"Filipinas","New Zealand":"Nueva Zelanda","Bulk supply":"Suministro a granel","Private label":"Marca privada" },
+    ru: { "United States":"США","Canada":"Канада","Colombia":"Колумбия","Chile":"Чили","United Kingdom":"Великобритания","France":"Франция","Netherlands":"Нидерланды","Germany":"Германия","Sweden":"Швеция","Ukraine":"Украина","Armenia":"Армения","Russia":"Россия","Japan":"Япония","South Korea":"Южная Корея","Philippines":"Филиппины","New Zealand":"Новая Зеландия","Bulk supply":"Поставки наливом","Private label":"Собственная торговая марка" }
   }[LANG] || {};
   const tr = t => t.split(" · ").map(x => T[x] || x).join(" · ");
   const box = document.getElementById("client-map");

@@ -189,7 +189,7 @@ def reviews_html():
 
 def cards_html():
     descr = {
-        "private-label": "Your own tequila brand from product development to bottled and delivered goods",
+        "private-label": "Your brand, from concept to global delivery",
         "bulk-tequila": "Tequila selected to your requirements: samples, agreed specification and organised supply",
         "brand-market-advisory": "Positioning, product line, price architecture and preparation for your markets",
         "rtd": "Tequila-based ready-to-drink products with the right production and packaging partners",
@@ -312,7 +312,7 @@ home = f"""
   <div class="wrap">
     <div class="sec-head">
       <div class="rv"><div class="label line">How we work</div><h2 class="sp">A clear path<br><span class="g">from brief to delivery</span></h2></div>
-      <p class="lead rv">One team manages every stage of your project, so you deal with one partner and one point of responsibility</p>
+      <p class="lead rv">Instead of coordinating multiple suppliers and consultants, you work with a single team that manages every stage of your project</p>
     </div>
     {steps_html()}
   </div>
@@ -343,7 +343,7 @@ home = f"""
 
 <section class="quote" style="background-image:url(img/ceo_50.jpg)">
   <div class="wrap rv"><span class="mark">“</span>
-    <blockquote>We stand where your tequila is made, <span class="g">so you do not have to</span></blockquote>
+    <blockquote>Creating a tequila brand is far more than producing a bottle. <span class="g">We manage the entire journey</span></blockquote>
     <cite class="label">Anastasia Strizheva · Founder &amp; CEO</cite>
   </div>
 </section>
