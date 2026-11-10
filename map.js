@@ -37,14 +37,14 @@
     .attr("aria-label", "Map of countries where Agave Advisory clients are based");
   const VY = 20, VH = 473;  // окно карты: от 84° с.ш. до 58° ю.ш., без Антарктиды
   svg.attr("viewBox", `0 ${VY} ${W} ${VH}`);
-  svg.append("image").attr("href", "img/map_world.jpg").attr("width", W).attr("height", H).attr("preserveAspectRatio", "none");
+  svg.append("image").attr("href", (window.AGAVE_BASE || "") + "img/map_world.jpg").attr("width", W).attr("height", H).attr("preserveAspectRatio", "none");
   const proj = d3.geoEquirectangular().scale(W / (2 * Math.PI)).translate([W / 2, H / 2]);  // совпадает с растром
   const path = d3.geoPath(proj);
   const tip = inner.append("div").attr("class", "map-tip");
   const list = d3.select("#client-list");
 
   // данные карты лежат локально в vendor/world-110m.js: внешние запросы на опубликованной странице блокируются
-  const load = window.WORLD ? Promise.resolve(window.WORLD) : fetch("vendor/countries-110m.json").then(r => r.json());
+  const load = window.WORLD ? Promise.resolve(window.WORLD) : fetch((window.AGAVE_BASE || "") + "vendor/countries-110m.json").then(r => r.json());
   load.then(world => {
     const countries = topojson.feature(world, world.objects.countries).features.filter(f => f.properties.name !== "Antarctica");
     const active = new Set(CLIENTS.map(c => c.name).concat(["Mexico"]));

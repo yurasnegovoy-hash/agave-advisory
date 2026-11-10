@@ -129,12 +129,12 @@
     const el = document.createElement("div"); el.className = "intro";
     el.innerHTML = `<div class="half l"></div><div class="half r"></div>
       <svg viewBox="0 0 200 250"><circle class="draw" cx="100" cy="100" r="92"/><circle class="draw" cx="100" cy="100" r="84" style="animation-delay:.3s"/>
-      <image class="ag" href="img/seal_core.svg" x="40" y="40" width="120" height="120"/><text x="100" y="238" text-anchor="middle">AGAVE ADVISORY</text></svg>`;
+      <image class="ag" href="${window.AGAVE_BASE || ""}img/seal_core.svg" x="40" y="40" width="120" height="120"/><text x="100" y="238" text-anchor="middle">AGAVE ADVISORY</text></svg>`;
     document.body.appendChild(el); document.body.classList.add("lock");
     setTimeout(() => { el.classList.add("go"); document.body.classList.remove("lock"); try { sessionStorage.setItem("intro", "1"); } catch (e) {} setTimeout(() => el.remove(), 1800); }, 2300);
   };
   // основное интро: кукурузник летит над агавой и разрезает экран, за хвостом открывается сайт
-  const base = (document.querySelector("base") || {}).href || "";
+  const base = window.AGAVE_BASE || (document.querySelector("base") || {}).href || "";  // в Тильде файлы лежат на внешнем хостинге
   const plane = document.createElement("video");
   plane.className = "plane"; plane.muted = true; plane.playsInline = true; plane.preload = "auto";
   plane.src = base + "video/plane.mp4";
@@ -189,8 +189,8 @@
 
   // золотая шторка при переходе на другую страницу сайта
   if (!reduce) {
-    const w = document.createElement("div"); w.className = "wipe"; w.innerHTML = '<span class="seal"><img src="img/seal_core.svg" alt=""></span>'; document.body.appendChild(w);
-    document.querySelectorAll('a[href$=".html"],a[href*=".html#"]').forEach(a => a.addEventListener("click", e => {
+    const w = document.createElement("div"); w.className = "wipe"; w.innerHTML = '<span class="seal"><img src="' + (window.AGAVE_BASE || "") + 'img/seal_core.svg" alt=""></span>'; document.body.appendChild(w);
+    document.querySelectorAll('a[href$=".html"],a[href*=".html#"],a[data-page]').forEach(a => a.addEventListener("click", e => {
       if (e.metaKey || e.ctrlKey || a.target === "_blank") return;
       e.preventDefault(); w.classList.add("on"); setTimeout(() => location.href = a.href, 560);
     }));
@@ -217,6 +217,7 @@
     const want = /(^|,)es/.test(nav) ? "es" : /(^|,)ru/.test(nav) ? "ru" : null;
     if (want) {
       try { localStorage.setItem("lang", want); } catch (e) {}
+      if (window.AGAVE_TILDA) { const p = location.pathname.replace(/\/$/, ""); location.replace("/" + want + p + location.hash); return; }  // в Тильде адреса вида /ru/about
       const page = location.pathname.split("/").pop() || "index.html";
       location.replace(location.pathname.replace(/[^/]*$/, "") + want + "/" + page + location.hash);
     }
