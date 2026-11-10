@@ -381,3 +381,7 @@ body:has(.age:not(.hide)){overflow:hidden}
   .hero.sub .lead{color:#E4E1D7;font-size:18px;line-height:1.45}
   .hero.sub{min-height:0}
 }
+
+/* подвал: контурная надпись всегда целиком в ширину контента, на любом экране */
+.ftr .word{font-size:clamp(56px,8.2vw,116px);max-width:none;overflow:visible}
+@media (max-width:760px){.ftr .word{font-size:8.7vw}}
