@@ -1,0 +1,200 @@
+[
+{
+"f": "en_index",
+"alias": "",
+"title": "Agave Advisory",
+"descr": "Agave Advisory Agency: one partner for creating and sourcing tequila products, from concept to global delivery. Los Altos de Jalisco, Mexico"
+},
+{
+"f": "en_about",
+"alias": "about",
+"title": "About Agave Advisory",
+"descr": "Anastasia Strizheva, Founder and CEO of Agave Advisory Agency, has worked in the tequila industry since 2007"
+},
+{
+"f": "en_private-label",
+"alias": "private-label",
+"title": "Private Label & Turnkey Development · Agave Advisory",
+"descr": "Your own tequila brand, produced in Jalisco and delivered to your market"
+},
+{
+"f": "en_bulk-tequila",
+"alias": "bulk-tequila",
+"title": "Bulk Tequila Supply · Agave Advisory",
+"descr": "Tequila selected to your requirements and supplied in bulk from trusted distilleries in Jalisco"
+},
+{
+"f": "en_brand-market-advisory",
+"alias": "brand-market-advisory",
+"title": "Brand & Market Advisory · Agave Advisory",
+"descr": "We help you shape a tequila product that fits your market: positioning, product line, price architecture and preparation for market entry"
+},
+{
+"f": "en_rtd",
+"alias": "rtd",
+"title": "RTD Development · Agave Advisory",
+"descr": "We coordinate the development of tequila-based ready-to-drink products and find the right production and packaging solutions for them"
+},
+{
+"f": "en_barrel-aging",
+"alias": "barrel-aging",
+"title": "Barrel & Aging Advisory · Agave Advisory",
+"descr": "The right wood, the right influence, the right character"
+},
+{
+"f": "en_how-we-work",
+"alias": "how-we-work",
+"title": "How We Work · Agave Advisory",
+"descr": "How Agave Advisory works: brief, assessment, proposal, development, production, delivery"
+},
+{
+"f": "en_clients",
+"alias": "clients",
+"title": "Clients & Partners · Agave Advisory",
+"descr": "Clients and partners of Agave Advisory Agency"
+},
+{
+"f": "en_contact",
+"alias": "contact",
+"title": "Contact · Agave Advisory",
+"descr": "Contact Agave Advisory Agency: e-mail, WhatsApp and offices in Guadalajara and Los Altos de Jalisco"
+},
+{
+"f": "en_privacy",
+"alias": "privacy",
+"title": "Privacy Notice · Agave Advisory",
+"descr": "Privacy notice of Agave Advisory Agency"
+},
+{
+"f": "es_index",
+"alias": "es",
+"title": "Agave Advisory",
+"descr": "Agave Advisory Agency: un solo socio para la creación y el abastecimiento de productos de tequila, desde el concepto hasta la entrega global. Los Altos de Jalisco, México"
+},
+{
+"f": "es_about",
+"alias": "es/about",
+"title": "Acerca de Agave Advisory",
+"descr": "Anastasia Strizheva, fundadora y directora general de Agave Advisory Agency, ha trabajado en la industria del tequila desde 2007"
+},
+{
+"f": "es_private-label",
+"alias": "es/private-label",
+"title": "Marca privada y desarrollo llave en mano · Agave Advisory",
+"descr": "Su propia marca de tequila, producida en Jalisco y entregada en su mercado"
+},
+{
+"f": "es_bulk-tequila",
+"alias": "es/bulk-tequila",
+"title": "Suministro de tequila a granel · Agave Advisory",
+"descr": "Tequila seleccionado según sus requerimientos y suministrado a granel desde destilerías de confianza en Jalisco"
+},
+{
+"f": "es_brand-market-advisory",
+"alias": "es/brand-market-advisory",
+"title": "Asesoría de marca y mercado · Agave Advisory",
+"descr": "Le ayudamos a dar forma a un producto de tequila que se adapte a su mercado: posicionamiento, línea de productos, arquitectura de precios y preparación para la entrada al mercado"
+},
+{
+"f": "es_rtd",
+"alias": "es/rtd",
+"title": "Desarrollo de bebidas RTD · Agave Advisory",
+"descr": "Coordinamos el desarrollo de bebidas listas para tomar a base de tequila y encontramos las soluciones adecuadas de producción y empaque"
+},
+{
+"f": "es_barrel-aging",
+"alias": "es/barrel-aging",
+"title": "Asesoría de barricas y añejamiento · Agave Advisory",
+"descr": "La madera adecuada, la influencia adecuada, el carácter adecuado"
+},
+{
+"f": "es_how-we-work",
+"alias": "es/how-we-work",
+"title": "Cómo trabajamos · Agave Advisory",
+"descr": "Cómo trabaja Agave Advisory: brief, evaluación, propuesta, desarrollo, producción, entrega"
+},
+{
+"f": "es_clients",
+"alias": "es/clients",
+"title": "Clientes y socios · Agave Advisory",
+"descr": "Clientes y socios de Agave Advisory Agency"
+},
+{
+"f": "es_contact",
+"alias": "es/contact",
+"title": "Contacto · Agave Advisory",
+"descr": "Contacte a Agave Advisory Agency: correo electrónico, WhatsApp y oficinas en Guadalajara y Los Altos de Jalisco"
+},
+{
+"f": "es_privacy",
+"alias": "es/privacy",
+"title": "Aviso de privacidad · Agave Advisory",
+"descr": "Aviso de privacidad de Agave Advisory Agency"
+},
+{
+"f": "ru_index",
+"alias": "ru",
+"title": "Agave Advisory",
+"descr": "Agave Advisory Agency: единый партнёр по созданию и поставкам текилы, от концепции до поставки на ваш рынок. Лос-Альтос-де-Халиско, Мексика"
+},
+{
+"f": "ru_about",
+"alias": "ru/about",
+"title": "Об Agave Advisory",
+"descr": "Анастасия Стрижева, основатель и генеральный директор Agave Advisory Agency, работает в текильной индустрии с 2007 года"
+},
+{
+"f": "ru_private-label",
+"alias": "ru/private-label",
+"title": "Частная марка под ключ · Agave Advisory",
+"descr": "Ваш бренд текилы, произведённый в Халиско и поставленный на ваш рынок"
+},
+{
+"f": "ru_bulk-tequila",
+"alias": "ru/bulk-tequila",
+"title": "Поставки текилы балком · Agave Advisory",
+"descr": "Текила под вашу спецификацию, балком, с проверенных заводов Халиско"
+},
+{
+"f": "ru_brand-market-advisory",
+"alias": "ru/brand-market-advisory",
+"title": "Консультации по бренду и рынку · Agave Advisory",
+"descr": "Помогаем создать текилу под ваш рынок: позиционирование, линейка, ценовая архитектура и подготовка к выходу на рынок"
+},
+{
+"f": "ru_rtd",
+"alias": "ru/rtd",
+"title": "Разработка RTD-напитков · Agave Advisory",
+"descr": "Координируем разработку готовых к употреблению напитков на основе текилы и подбираем производственные и упаковочные решения"
+},
+{
+"f": "ru_barrel-aging",
+"alias": "ru/barrel-aging",
+"title": "Консультации по бочкам и выдержке · Agave Advisory",
+"descr": "Правильная древесина, правильное влияние, правильный характер"
+},
+{
+"f": "ru_how-we-work",
+"alias": "ru/how-we-work",
+"title": "Как мы работаем · Agave Advisory",
+"descr": "Как работает Agave Advisory: бриф, оценка, предложение, разработка, производство, доставка"
+},
+{
+"f": "ru_clients",
+"alias": "ru/clients",
+"title": "Наши клиенты и партнёры · Agave Advisory",
+"descr": "Клиенты и партнёры Agave Advisory Agency"
+},
+{
+"f": "ru_contact",
+"alias": "ru/contact",
+"title": "Контакты · Agave Advisory",
+"descr": "Контакты Agave Advisory Agency: электронная почта, WhatsApp и офисы в Гвадалахаре и Лос-Альтос-де-Халиско"
+},
+{
+"f": "ru_privacy",
+"alias": "ru/privacy",
+"title": "Политика конфиденциальности · Agave Advisory",
+"descr": "Политика конфиденциальности Agave Advisory Agency"
+}
+]
