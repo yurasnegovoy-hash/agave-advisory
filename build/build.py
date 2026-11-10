@@ -153,7 +153,7 @@ def client_map_html():
     return """<div class="client-map-wrap">
   <div class="map-swipe">Swipe the map</div>
   <div id="client-map" class="rv"></div>
-  <div class="rv"><div class="label" style="margin-bottom:18px">Our clients are in</div><ul id="client-list"></ul><span class="draft">Draft countries</span></div>
+  <div class="rv"><div class="label" style="margin-bottom:18px">Our clients are in</div><ul id="client-list"></ul></div>
 </div>"""
 
 def maps_html():
@@ -177,15 +177,15 @@ def facts_html():
 
 LOGOS = [("Askaneli Brothers", "Client"), ("Global Spirits", "Client"), ("Magnit", "Client"), ("Old Barrel", "Barrel partner"), ("Artesanal Destilería", "Distillery partner"), ("Patrizia Lamborghini", "Partner")]
 def logos_html():
-    return '<div class="logos rv">' + "".join(f"<div><b>{n.upper()}</b><small>{r} · logo pending</small></div>" for n, r in LOGOS) + "</div>"
+    return '<div class="logos rv">' + "".join(f"<div><b>{n.upper()}</b><small>{r}</small></div>" for n, r in LOGOS) + "</div>"
 
 REVIEWS = [
-    ("Working with a team on the ground in Jalisco changed everything for us. Every stage was under control and we always knew where our project stood", "Distributor · name after approval"),
-    ("They found the right liquid for our specification and organised the supply from samples to shipment", "Spirits producer · name after approval"),
-    ("One partner for documents, components, production and delivery. Exactly what we needed to launch our own label", "Retail chain · name after approval"),
+    ("Working with a team on the ground in Jalisco changed everything for us. Every stage was under control and we always knew where our project stood", "Distributor"),
+    ("They found the right liquid for our specification and organised the supply from samples to shipment", "Spirits producer"),
+    ("One partner for documents, components, production and delivery. Exactly what we needed to launch our own label", "Retail chain"),
 ]
 def reviews_html():
-    return '<div class="reviews">' + "".join(f'<div class="review rv"><span class="q">“</span><p>{t}</p><cite>{a}</cite><span class="draft">Draft text</span></div>' for t, a in REVIEWS) + "</div>"
+    return '<div class="reviews">' + "".join(f'<div class="review rv"><span class="q">“</span><p>{t}</p><cite>{a}</cite></div>' for t, a in REVIEWS) + "</div>"
 
 def cards_html():
     descr = {
