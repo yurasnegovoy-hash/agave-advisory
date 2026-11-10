@@ -9,4 +9,5 @@ index_v1.html
 .DS_Store
 !robots.txt
 build/audit.js
-tilda/
+!tilda/*.txt
+tilda/_*

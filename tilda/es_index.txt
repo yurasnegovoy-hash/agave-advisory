@@ -1,0 +1,243 @@
+<!-- Agave Advisory · ES · index · вставить в блок T123 «HTML-код» -->
+<link rel="stylesheet" href="https://yurasnegovoy-hash.github.io/agave-advisory/fonts.css?v=1794314726">
+<link rel="stylesheet" href="https://yurasnegovoy-hash.github.io/agave-advisory/style.css?v=1794314726">
+<link rel="stylesheet" href="https://yurasnegovoy-hash.github.io/agave-advisory/fx.css?v=1794314726">
+<style>body.agave #allrecords{min-height:0!important;height:0;overflow:hidden}body.agave{margin:0}</style>
+<div id="agave-root">
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="i-agave" viewBox="0 0 64 50"><g fill="none" stroke="#C9A34E" stroke-width="1.3" stroke-linejoin="round"><path d="M32 47 L28 18 L32 2 L36 18 Z"/><path d="M31 47 L19 22 L16 7 L26 21 Z"/><path d="M33 47 L45 22 L48 7 L38 21 Z"/><path d="M30 47 L11 30 L3 18 L18 27 Z"/><path d="M34 47 L53 30 L61 18 L46 27 Z"/><path d="M29 47 L8 41 L1 35 L14 38 Z"/><path d="M35 47 L56 41 L63 35 L50 38 Z"/><path d="M32 47 V24"/></g></symbol>
+    <symbol id="i-globe" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2"><circle cx="24" cy="24" r="19"/><ellipse cx="24" cy="24" rx="8" ry="19"/><path d="M5 24h38M8 14h32M8 34h32M24 5v38"/></g></symbol>
+    <symbol id="i-diamond" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><path d="M6 18 L14 8 H34 L42 18 L24 41 Z"/><path d="M6 18 H42 M14 8 L19 18 L24 8 L29 18 L34 8 M19 18 L24 41 L29 18"/></g></symbol>
+    <symbol id="i-star" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><path d="M24 3 L27.5 20.5 L45 24 L27.5 27.5 L24 45 L20.5 27.5 L3 24 L20.5 20.5 Z"/><path d="M24 12 L26 22 L36 24 L26 26 L24 36 L22 26 L12 24 L22 22 Z" opacity=".55"/><circle cx="24" cy="24" r="1.8"/></g></symbol>
+    <symbol id="i-bottle" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><path d="M20 4h8v9l4 6v24a2 2 0 0 1-2 2H18a2 2 0 0 1-2-2V19l4-6z"/><path d="M20 8h8M16 25h16v10H16z"/></g></symbol>
+    <symbol id="i-barrel" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2"><path d="M12 6h24c3 6 3 30 0 36H12c-3-6-3-30 0-36z"/><path d="M9 15h30M9 33h30M18 6c-1.5 10-1.5 26 0 36M30 6c1.5 10 1.5 26 0 36M24 6v36"/></g></symbol>
+    <symbol id="i-hand" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"><path d="M3 20 L11 14 L19 17 L26 13 L37 14 L45 20"/><path d="M11 14 L4 27 L9 31"/><path d="M37 14 L44 27 L36 33"/><path d="M26 13 L19 21 Q21 24 25 21 L30 18 L39 27 Q40 30 37 30 L30 24"/><path d="M36 30 Q37 33 34 33 L28 28M33 33 Q33 36 30 35 L26 31M29 35 Q28 38 25 36 L22 33M9 31 L12 28 Q15 27 15 30 L13 33 Q16 33 16 35 L15 37 Q18 37 18 39 Q20 39 22 37"/></g></symbol>
+    <symbol id="i-glass" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><path d="M8 8h32L24 26z"/><path d="M24 26v16M15 42h18M13 13h22"/><circle cx="34" cy="6" r="3"/></g></symbol>
+    <symbol id="i-compass" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><circle cx="24" cy="8" r="3"/><path d="M22 11 L11 43 M26 11 L37 43 M15 31 Q24 36 33 31"/></g></symbol>
+    <symbol id="i-search" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2"><circle cx="21" cy="21" r="13"/><path d="M30.5 30.5 L42 42"/></g></symbol>
+    <symbol id="i-ship" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><path d="M5 30h38l-5 10H10z"/><path d="M11 30v-9h26v9M16 21v-7h16v7M22 14V8h4v6"/><path d="M4 44q5-3 10 0t10 0 10 0 10 0"/></g></symbol>
+    <symbol id="i-plane" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><path d="M44 6 L4 22 L18 27 L22 42 L28 31 L38 38 Z"/><path d="M18 27 L44 6"/></g></symbol>
+    <symbol id="i-scale" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><path d="M24 6v36M14 42h20M8 12h32"/><path d="M8 12 L2 26h12zM40 12 L34 26h12z"/><path d="M2 26q6 6 12 0M34 26q6 6 12 0"/></g></symbol>
+    <symbol id="i-box" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><path d="M6 14 L24 6 L42 14 V34 L24 42 L6 34Z"/><path d="M6 14 L24 22 L42 14M24 22v20M15 10 L33 18"/></g></symbol>
+    <symbol id="i-eye" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2"><path d="M3 24q21-24 42 0q-21 24-42 0z"/><circle cx="24" cy="24" r="7"/><circle cx="24" cy="24" r="2"/></g></symbol>
+    <symbol id="i-knight" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><path d="M14 42h22M16 38h18l-2-9c5-4 6-12 1-18-4-4-9-5-13-3l-3-3-1 6c-4 3-6 7-6 11l5 1 6-4c-1 4-4 7-5 10z"/><circle cx="23" cy="15" r="1"/></g></symbol>
+    <symbol id="i-target" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2"><circle cx="22" cy="26" r="17"/><circle cx="22" cy="26" r="10"/><circle cx="22" cy="26" r="3"/><path d="M22 26 L42 6M36 6h6v6"/></g></symbol>
+    <symbol id="i-nodes" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2"><circle cx="24" cy="10" r="5"/><circle cx="10" cy="38" r="5"/><circle cx="38" cy="38" r="5"/><path d="M21 14 L13 34M27 14 L35 34M15 38h18"/></g></symbol>
+    <symbol id="i-gear" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><circle cx="24" cy="24" r="7"/><path d="M21 4h6l1 6 5 2 5-4 4 4-4 5 2 5 6 1v6l-6 1-2 5 4 5-4 4-5-4-5 2-1 6h-6l-1-6-5-2-5 4-4-4 4-5-2-5-6-1v-6l6-1 2-5-4-5 4-4 5 4 5-2z"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.6"><path d="M24 44s14-14 14-25a14 14 0 0 0-28 0c0 11 14 25 14 25z"/><circle cx="24" cy="19" r="5"/></g></symbol>
+    <symbol id="i-phone" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.6" stroke-linejoin="round"><path d="M10 6h9l4 10-5 4q4 8 10 10l4-5 10 4v9q-1 4-5 4C21 42 6 27 6 11q0-4 4-5z"/></g></symbol>
+    <symbol id="i-mail" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.6" stroke-linejoin="round"><rect x="5" y="11" width="38" height="26"/><path d="M5 11 L24 27 L43 11"/></g></symbol>
+  </defs>
+</svg>
+<div class="sky"><video data-hd="https://yurasnegovoy-hash.github.io/agave-advisory/video/fly.mp4" data-sd="https://yurasnegovoy-hash.github.io/agave-advisory/video/fly_1280.mp4" poster="https://yurasnegovoy-hash.github.io/agave-advisory/video/fly.jpg" muted playsinline preload="auto"></video></div>
+<div class="age" id="age"><div class="age-box">
+  <span class="seal" style="width:130px;height:130px;margin:0 auto 26px"><img class="ring" src="https://yurasnegovoy-hash.github.io/agave-advisory/img/seal_ring.svg" alt=""><img src="https://yurasnegovoy-hash.github.io/agave-advisory/img/seal_core.svg" alt=""></span>
+  <h3>¿Tiene usted la edad legal para consumir alcohol?</h3>
+  <p>Este sitio web contiene información sobre bebidas alcohólicas</p>
+  <div class="row"><button class="btn fill" onclick="try{sessionStorage.setItem('age','1')}catch(e){};document.getElementById('age').classList.add('hide')">Sí, ingresar</button><a class="btn ghost" href="https://www.google.com">No</a></div>
+</div></div>
+<header class="hdr" id="hdr"><div class="wrap">
+  <a href="/es" data-page="1" class="logo"><svg><use href="#i-agave"/></svg><span><b>AGAVE</b><small>ADVISORY</small></span></a>
+  <nav class="nav">
+    <a href="/es/about" data-page="1">Nosotros</a>
+    <span class="dd"><a href="/es#services" data-page="1">Servicios</a><span class="dd-menu"><a href="/es/private-label" data-page="1">Marca privada y desarrollo llave en mano</a><a href="/es/bulk-tequila" data-page="1">Suministro de tequila a granel</a><a href="/es/brand-market-advisory" data-page="1">Asesoría de marca y mercado</a><a href="/es/rtd" data-page="1">Desarrollo de bebidas RTD</a><a href="/es/barrel-aging" data-page="1">Asesoría de barricas y añejamiento</a></span></span>
+    <a href="/es/how-we-work" data-page="1">Cómo trabajamos</a>
+    <a href="/es/clients" data-page="1">Clientes y socios</a>
+    <a href="/es/contact" data-page="1">Contacto</a>
+  </nav>
+  <div class="hdr-r"><span class="lang"><a href="/" data-page="1" data-lang="en">EN</a> · <b>ES</b> · <a href="/ru" data-page="1" data-lang="ru">RU</a></span><a href="#contact" class="btn ghost">Hablemos de su proyecto</a><button class="burger" aria-label="Menú"></button></div>
+</div></header>
+<main>
+
+<section data-ch="I / IX" data-title="Inicio" class="hero home-hero" id="top">
+  <video class="home-video" src="https://yurasnegovoy-hash.github.io/agave-advisory/video/hero.mp4" poster="https://yurasnegovoy-hash.github.io/agave-advisory/video/hero.jpg" autoplay muted loop playsinline preload="auto"></video>
+  <div class="side-txt">MÉXICO PARA EL MUNDO</div>
+  <div class="wrap">
+    <div class="label rv">Desarrollo de marcas de tequila · Los Altos de Jalisco</div>
+    <h1 class="sp" style="max-width:1000px"><span class="nw">Un solo socio. Cada detalle</span><br><span class="g">Desde el concepto hasta la entrega global</span></h1>
+    <p class="lead rv">Ayudamos a las empresas a crear y adquirir productos de tequila, coordinando cada etapa desde la selección del líquido y el empaque hasta la producción y la entrega internacional</p>
+    <div class="hero-cta rv"><a href="#contact" class="btn fill">Hablemos de su proyecto</a><a href="#services" class="btn ghost">Nuestros servicios</a></div>
+    <div class="hero-meta rv"><div><strong>Desde <span class="cnt" data-to="2007">2007</span></strong>En la industria del tequila</div><div><strong>Jalisco</strong>Sobre el terreno en México</div><div><strong>En todo el mundo</strong>Cualquier mercado, cualquier Incoterm</div></div>
+  </div>
+  <div class="scroll-hint">Sobrevuele los campos<i></i></div>
+</section>
+<div class="marquee"><div class="track"><span>México para el mundo</span><span>Desde 2007</span><span>Los Altos de Jalisco</span><span>Un solo socio. Cada detalle</span><span>Marca privada</span><span>Tequila a granel</span><span>Barrica y añejamiento</span><span>Desde el concepto hasta la entrega global</span><span>México para el mundo</span><span>Desde 2007</span><span>Los Altos de Jalisco</span><span>Un solo socio. Cada detalle</span><span>Marca privada</span><span>Tequila a granel</span><span>Barrica y añejamiento</span><span>Desde el concepto hasta la entrega global</span></div></div>
+
+<section data-ch="II / IX" data-title="Por qué una agencia" class="pad">
+  <div class="wrap split">
+    <div class="media frame mask" style="aspect-ratio:4/5"><img src="https://yurasnegovoy-hash.github.io/agave-advisory/img/ceo_66.jpg" alt="Anastasia Strizheva en los hornos de agave de una destilería asociada en Jalisco"></div>
+    <div class="rv">
+      <div class="label line">Por qué una agencia</div>
+      <h2 class="sp"><span class="nw">Sus ojos y oídos</span><br><span class="g">en Jalisco</span></h2>
+      <div class="rule"></div>
+      <p class="lead">Cuando usted vive en otro país, trabajar directamente con una destilería es difícil. Necesita personas que sean sus ojos y sus oídos y representen sus intereses</p>
+      <ul class="checks">
+        <li>Elegimos la destilería y los proveedores adecuados para su proyecto</li>
+        <li>Coordinamos documentos, componentes y producción</li>
+        <li>Controlamos la calidad in situ e informamos en cada etapa</li>
+        <li>Organizamos la exportación y la entrega a su mercado</li>
+      </ul>
+      <a href="/es/how-we-work" data-page="1" class="link">Cómo trabajamos</a>
+    </div>
+  </div>
+</section>
+
+<section data-ch="III / IX" data-title="Cómo se elabora el tequila" class="pad alt" id="process-steps">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="rv"><div class="label line">Cómo se elabora el tequila</div><h2 class="sp">Estamos presentes en cada etapa<br><span class="g">desde el campo hasta la botella</span></h2></div>
+      <p class="lead rv">Imágenes reales de los campos y destilerías de Los Altos de Jalisco, donde trabajamos todos los días</p>
+    </div>
+    <div class="proc">
+  <div class="steps-col"><div class="bar"><i></i></div><div class="pstep" data-cap="Cultivo"><span class="num">01</span><h3>Campos de Los Altos</h3><p class="tagline" style="font-size:19px">El agave crece de 6 a 10 años a 2000 metros</p><p>El agave azul Weber de Los Altos crece despacio en tierra volcánica roja. Piñas más grandes, más azúcar, más aroma</p></div><div class="pstep" data-cap="Jima"><span class="num">02</span><h3>Jima</h3><p class="tagline" style="font-size:19px">Los jimadores cortan la piña a mano con la coa</p><p>Solo se jiman plantas maduras. Una piña de Los Altos puede pesar hasta 110 kg</p></div><div class="pstep" data-cap="Cocción"><span class="num">03</span><h3>Cocción</h3><p class="tagline" style="font-size:19px">12 horas a 110 °C</p><p>La cocción lenta convierte los almidones de la piña en azúcares y establece la base del sabor</p></div><div class="pstep" data-cap="Molienda"><span class="num">04</span><h3>Molienda</h3><p class="tagline" style="font-size:19px">Aguamiel y bagazo</p><p>Las piñas cocidas se trituran en el molino. El jugo dulce, el aguamiel, pasa a la fermentación. La fibra, el bagazo, regresa al campo como abono</p></div><div class="pstep" data-cap="Fermentación"><span class="num">05</span><h3>Fermentación</h3><p class="tagline" style="font-size:19px">Hasta 72 horas con la levadura propia de la destilería</p><p>La levadura y el tiempo dan a cada tequila su aroma: cítricos, flores y fruta del agave, vainilla del proceso. Seguimos cada tanque junto con nuestra destilería asociada</p></div><div class="pstep" data-cap="Destilación"><span class="num">06</span><h3>Destilación</h3><p class="tagline" style="font-size:19px">Dos veces, en alambiques de cobre</p><p>La primera pasada elimina cabezas y colas, la segunda define la graduación. Los alambiques de cobre en nuestra destilería asociada tienen más de un siglo de antigüedad</p></div><div class="pstep" data-cap="Filtración"><span class="num">07</span><h3>Filtración</h3><p class="tagline" style="font-size:19px">Limpio, sin perder el agave</p><p>La filtración retira lo que no pertenece a la copa y conserva el agave</p></div><div class="pstep" data-cap="Añejamiento"><span class="num">08</span><h3>Añejamiento</h3><p class="tagline" style="font-size:19px">Roble americano y francés</p><p>Reposado a partir de 2 meses, añejo a partir de 1 año, extra añejo a partir de 3. Las barricas reposan en salas con humedad controlada</p></div><div class="pstep" data-cap="Embotellado"><span class="num">09</span><h3>Embotellado</h3><p class="tagline" style="font-size:19px">Bajo nuestra supervisión</p><p>Supervisamos la línea: control de empaque, inspección de calidad, reporte fotográfico y en video, y aprobación final antes del embarque</p></div><div class="pstep" data-cap="Entrega"><span class="num">10</span><h3>Entrega</h3><p class="tagline" style="font-size:19px">Hasta su mercado</p><p>Documentos de exportación, transportista, entrega en puerto y puerta a puerta bajo términos EXW, FOB, CIF u otros</p></div></div>
+  <div class="vid-col"><div class="screen"><video src="https://yurasnegovoy-hash.github.io/agave-advisory/video/aerial_rows.mp4" poster="https://yurasnegovoy-hash.github.io/agave-advisory/video/aerial_rows.jpg" muted loop playsinline preload="none"></video><video src="https://yurasnegovoy-hash.github.io/agave-advisory/video/jimadores.mp4" poster="https://yurasnegovoy-hash.github.io/agave-advisory/video/jimadores.jpg" muted loop playsinline preload="none"></video><video src="https://yurasnegovoy-hash.github.io/agave-advisory/video/cooking.mp4" poster="https://yurasnegovoy-hash.github.io/agave-advisory/video/cooking.jpg" muted loop playsinline preload="none"></video><video src="https://yurasnegovoy-hash.github.io/agave-advisory/video/milling.mp4" poster="https://yurasnegovoy-hash.github.io/agave-advisory/video/milling.jpg" muted loop playsinline preload="none"></video><video src="https://yurasnegovoy-hash.github.io/agave-advisory/video/ferment.mp4" poster="https://yurasnegovoy-hash.github.io/agave-advisory/video/ferment.jpg" muted loop playsinline preload="none"></video><video src="https://yurasnegovoy-hash.github.io/agave-advisory/video/distill.mp4" poster="https://yurasnegovoy-hash.github.io/agave-advisory/video/distill.jpg" muted loop playsinline preload="none"></video><video src="https://yurasnegovoy-hash.github.io/agave-advisory/video/lab.mp4" poster="https://yurasnegovoy-hash.github.io/agave-advisory/video/lab.jpg" muted loop playsinline preload="none"></video><video src="https://yurasnegovoy-hash.github.io/agave-advisory/video/barrels.mp4" poster="https://yurasnegovoy-hash.github.io/agave-advisory/video/barrels.jpg" muted loop playsinline preload="none"></video><video src="https://yurasnegovoy-hash.github.io/agave-advisory/video/bottling_line.mp4" poster="https://yurasnegovoy-hash.github.io/agave-advisory/video/bottling_line.jpg" muted loop playsinline preload="none"></video><video src="https://yurasnegovoy-hash.github.io/agave-advisory/video/port.mp4" poster="https://yurasnegovoy-hash.github.io/agave-advisory/video/port.jpg" muted loop playsinline preload="none"></video><div class="cap"></div></div></div>
+</div>
+  </div>
+</section>
+<div class="dia"></div>
+<section data-ch="IV / IX" data-title="Calidad" class="pad">
+  <div class="wrap split">
+    <div class="rv">
+      <div class="label line">Por qué es fundamental</div>
+      <h2 class="sp">Conozca de dónde<br><span class="g">proviene su tequila</span></h2>
+      <div class="rule"></div>
+      <p class="lead">Muchas marcas compran tequila a granel en distintas destilerías sin un estándar de calidad unificado. El sabor del tequila depende de cada etapa: el agave, la cocción, la levadura, la fermentación, la destilación y la filtración</p>
+      <p class="lead">El tequila solo puede producirse en cinco estados de México, y las tierras altas de Los Altos dan el agave más dulce. Trabajamos con destilerías de esa región, donde conocemos el origen del agave y cómo se elaboró el líquido. <em>Así es como la calidad se mantiene constante de un lote a otro</em></p>
+    </div>
+    <div class="media frame mask" style="aspect-ratio:4/5"><img src="https://yurasnegovoy-hash.github.io/agave-advisory/img/ceo_68.jpg" alt="Piña de agave cocida"></div>
+  </div>
+  <div class="wrap"><div class="facts"><div class="rv"><strong><span class="cnt" data-to="2000" data-suffix=" m">2000 m</span></strong><span>Altitud de los campos de agave de Los Altos</span></div><div class="rv"><strong>Más dulce</strong><span>El agave de Los Altos crece con mayor tamaño, mayor concentración de azúcar y mejor aroma</span></div><div class="rv"><strong><span class="cnt" data-to="1895">1895</span></strong><span>Legado de nuestra destilería asociada en Los Altos</span></div><div class="rv"><strong>Cobre</strong><span>Alambiques en operación por más de un siglo</span></div></div></div>
+</section>
+
+<section data-ch="V / IX" data-title="Servicios" class="pad alt" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="rv"><div class="label line">Lo que hacemos</div><h2 class="sp">Cinco formas<br><span class="g">de colaborar con nosotros</span></h2></div>
+      <p class="lead rv">Distribuidores, productores de espirituosos y clientes privados acuden a nosotros para crear su propio tequila o abastecerse en México</p>
+    </div>
+    <div class="cards"><a class="card rv" href="/es/private-label" data-page="1"><span class="num">01</span><svg><use href="#i-bottle"/></svg><h3>Marca privada y desarrollo llave en mano</h3><p>Su marca, desde el concepto hasta la entrega global</p><span class="link">Conozca más</span></a><a class="card rv" href="/es/bulk-tequila" data-page="1"><span class="num">02</span><svg><use href="#i-barrel"/></svg><h3>Suministro de tequila a granel</h3><p>Tequila seleccionado conforme a sus requerimientos: muestras, especificación acordada y suministro organizado</p><span class="link">Conozca más</span></a><a class="card rv" href="/es/brand-market-advisory" data-page="1"><span class="num">03</span><svg><use href="#i-compass"/></svg><h3>Asesoría de marca y mercado</h3><p>Posicionamiento, línea de productos, arquitectura de precios y preparación para sus mercados</p><span class="link">Conozca más</span></a><a class="card rv" href="/es/rtd" data-page="1"><span class="num">04</span><svg><use href="#i-glass"/></svg><h3>Desarrollo de bebidas RTD</h3><p>Bebidas listas para tomar a base de tequila con los socios adecuados de producción y empaque</p><span class="link">Conozca más</span></a><a class="card rv" href="/es/barrel-aging" data-page="1"><span class="num">05</span><svg><use href="#i-star"/></svg><h3>Asesoría de barricas y añejamiento</h3><p>Selección de barricas y asesoría en añejamiento para perfilar el sabor deseado</p><span class="link">Conozca más</span></a><div class="card cta-card rv"><h3>¿No sabe por dónde empezar?</h3><p>Compártanos su idea y le sugeriremos el formato adecuado</p><a href="#contact" class="btn ghost">Hablemos de su proyecto</a></div></div>
+  </div>
+</section>
+
+<div class="film"><img src="https://yurasnegovoy-hash.github.io/agave-advisory/img/field_sunset.jpg" alt=""><div class="cap"><span>Los Altos de Jalisco</span><small>Agave de Los Altos · 2000 m</small></div></div>
+<section data-ch="VI / IX" data-title="Fundadora" class="pad ceo">
+  <div class="wrap split rev">
+    <div class="media mask"><img src="https://yurasnegovoy-hash.github.io/agave-advisory/img/ceo_main.jpg" alt="Anastasia Strizheva, fundadora y directora general de Agave Advisory"></div>
+    <div class="rv">
+      <div class="label line">Fundadora y directora general</div>
+      <div class="name">Anastasia Strizheva</div>
+      <div class="role">Fundadora y directora general · Agave Advisory Agency</div>
+      <div class="ceo-stats"><div><strong>19 años</strong>en el tequila</div><div><strong>Desde 2007</strong>en la industria</div><div><strong>Jalisco</strong>sede principal</div></div>
+      <p class="lead">Anastasia ha trabajado en la industria del tequila desde 2007. Conoce la producción desde el campo de agave hasta la línea de embotellado y ha consolidado ventas de tequila en mercados internacionales</p>
+      <a href="/es/about" data-page="1" class="link">Sobre la agencia</a>
+    </div>
+  </div>
+</section>
+
+<section data-ch="VII / IX" data-title="Cómo trabajamos" class="pad alt" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="rv"><div class="label line">Cómo trabajamos</div><h2 class="sp">Un camino claro<br><span class="g">del brief a la entrega</span></h2></div>
+      <p class="lead rv">En lugar de coordinar a múltiples proveedores y consultores, usted trabaja con un solo equipo que gestiona cada etapa de su proyecto</p>
+    </div>
+    <div class="steps"><div class="step rv"><span class="c"><svg><use href="#i-search"/></svg></span><span class="num">01</span><h3>Brief</h3><p>Su idea, mercado y requerimientos</p></div><div class="step rv"><span class="c"><svg><use href="#i-eye"/></svg></span><span class="num">02</span><h3>Evaluación</h3><p>Revisamos el proyecto y sus requerimientos</p></div><div class="step rv"><span class="c"><svg><use href="#i-compass"/></svg></span><span class="num">03</span><h3>Propuesta</h3><p>Un plan de trabajo claro para su proyecto</p></div><div class="step rv"><span class="c"><svg><use href="#i-bottle"/></svg></span><span class="num">04</span><h3>Desarrollo</h3><p>Líquido, empaque y documentación</p></div><div class="step rv"><span class="c"><svg><use href="#i-barrel"/></svg></span><span class="num">05</span><h3>Producción</h3><p>Embotellado bajo nuestra supervisión en sitio</p></div><div class="step rv"><span class="c"><svg><use href="#i-globe"/></svg></span><span class="num">06</span><h3>Entrega</h3><p>Exportación y entrega en su mercado</p></div></div>
+  </div>
+</section>
+<div class="dia"></div>
+<section data-ch="VIII / IX" data-title="Dónde nos encontramos" class="pad">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:0">
+      <div class="rv"><div class="label line">Dónde nos encontramos</div><h2 class="sp">Arraigados en Jalisco<br><span class="g">Operando a nivel mundial</span></h2></div>
+      <p class="lead rv">Oficinas en Guadalajara y en Los Altos de Jalisco, junto a las destilerías con las que trabajamos</p>
+    </div>
+    <div class="maps" style="grid-template-columns:1fr 1fr">
+  <div class="map-card rv"><img class="lmap-img" src="https://yurasnegovoy-hash.github.io/agave-advisory/img/map_jalisco.jpg" alt="Mapa en relieve de Jalisco">
+<svg viewBox="0 0 1400 1229" preserveAspectRatio="xMidYMid slice">
+  <defs><radialGradient id="lm-v" cx="50%" cy="50%" r="70%"><stop offset="60%" stop-color="rgba(14,12,10,0)"/><stop offset="100%" stop-color="rgba(14,12,10,.6)"/></radialGradient></defs>
+  <rect width="1400" height="1229" fill="url(#lm-v)"/>
+  <ellipse cx="960" cy="625" rx="190" ry="120" fill="rgba(201,163,78,.10)" stroke="#C9A34E" stroke-width="2"/>
+  <text x="960" y="475" fill="#C9A34E" font-family="Oswald" font-size="28" letter-spacing="8" text-anchor="middle">LOS ALTOS DE JALISCO</text>
+  <path d="M729 637 Q813 547 897 594" fill="none" stroke="#C9A34E" stroke-width="2.5" stroke-dasharray="5 10"/>
+  <circle cx="729" cy="637" r="16" fill="#E2C88E"/><circle cx="729" cy="637" r="36" fill="none" stroke="rgba(226,200,142,.45)" stroke-width="2"/>
+  <text x="729" y="722" fill="#E4E1D7" font-family="Oswald" font-size="30" letter-spacing="8" text-anchor="middle">GUADALAJARA</text>
+  <circle cx="897" cy="594" r="14" fill="#C9A34E"/><circle cx="1014" cy="629" r="14" fill="#C9A34E"/><circle cx="969" cy="672" r="14" fill="#C9A34E"/>
+  <text x="700" y="90" fill="rgba(228,225,215,.55)" font-family="Oswald" font-size="26" letter-spacing="10" text-anchor="middle">JALISCO · MEXICO</text>
+</svg><div class="cap"><b>Nuestras oficinas</b><span>Guadalajara · Los Altos de Jalisco</span></div></div>
+  <div class="map-card rv graded" style="background:url(video/aerial_rows.jpg) center/cover"><div class="cap" style="background:linear-gradient(0deg,rgba(14,12,10,.9),transparent);margin:-26px -30px;padding:60px 30px 26px"><b>Cerca de los campos</b><span>Agave de Los Altos</span></div></div>
+</div>
+    <div class="client-map-wrap">
+  <div class="map-swipe">Deslice el mapa</div>
+  <div id="client-map" class="rv"></div>
+  <div class="rv"><div class="label" style="margin-bottom:18px">Nuestros clientes se encuentran en</div><ul id="client-list"></ul></div>
+</div>
+  </div>
+</section>
+
+<div class="film"><img src="https://yurasnegovoy-hash.github.io/agave-advisory/img/arches.jpg" alt=""><div class="cap"><span>México para el mundo</span><small>Desde 2007</small></div></div>
+<section data-ch="IX / IX" data-title="Clientes" class="pad alt" id="clients">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="rv"><div class="label line">Clientes y socios</div><h2 class="sp">La confianza de<br><span class="g">nuestros socios</span></h2></div>
+      <p class="lead rv">Distribuidores, cadenas comerciales y productores con los que colaboramos</p>
+    </div>
+    <div class="logos rv"><div><b>ASKANELI BROTHERS</b><small>Cliente</small></div><div><b>GLOBAL SPIRITS</b><small>Cliente</small></div><div><b>MAGNIT</b><small>Cliente</small></div><div><b>OLD BARREL</b><small>Socio de barricas</small></div><div><b>ARTESANAL DESTILERÍA</b><small>Destilería socia</small></div><div><b>PATRIZIA LAMBORGHINI</b><small>Socio</small></div></div>
+    <div class="reviews"><div class="review rv"><span class="q">“</span><p>Trabajar con un equipo en el terreno en Jalisco lo cambió todo para nosotros. Cada etapa estuvo bajo control y siempre supimos en qué situación se encontraba nuestro proyecto</p><cite>Distribuidor</cite></div><div class="review rv"><span class="q">“</span><p>Encontraron el líquido adecuado para nuestras especificaciones y organizaron el suministro desde las muestras hasta el envío</p><cite>Productor de espirituosos</cite></div><div class="review rv"><span class="q">“</span><p>Un solo socio para la documentación, los componentes, la producción y la entrega. Exactamente lo que necesitábamos para lanzar nuestra propia marca</p><cite>Cadena comercial</cite></div></div>
+  </div>
+</section>
+
+<section class="quote" style="background-image:url(https://yurasnegovoy-hash.github.io/agave-advisory/img/ceo_50.jpg)">
+  <div class="wrap rv"><span class="mark">“</span>
+    <blockquote>Crear una marca de tequila es mucho más que producir una botella. <span class="g">Nosotros nos encargamos de todo el camino</span></blockquote>
+    <cite class="label">Anastasia Strizheva · Fundadora y directora general</cite>
+  </div>
+</section>
+
+<section class="pad cta" id="contact"><div class="wrap cta-grid">
+  <div class="rv">
+    <div class="label line">Contacto</div>
+    <h2 style="margin-top:24px">Hablemos de <span class="g">su proyecto</span></h2>
+    <p class="lead" style="margin-top:26px">Cuéntenos qué le gustaría crear o adquirir. Nos pondremos en contacto con usted para indicarle los siguientes pasos</p>
+    <div class="contacts">
+      <div><span class="ic"><svg><use href="#i-pin"/></svg></span><span><small>Oficinas</small>Guadalajara · Los Altos de Jalisco, México</span></div>
+      <div><span class="ic"><svg><use href="#i-phone"/></svg></span><span><small>Teléfono · WhatsApp</small><a href="https://wa.me/523314201317">+52 33 1420 1317</a></span></div>
+      <div><span class="ic"><svg><use href="#i-mail"/></svg></span><span><small>Correo electrónico</small><a href="mailto:agaveadvisoryagency@gmail.com">agaveadvisoryagency@gmail.com</a></span></div>
+    </div>
+  </div>
+  <form class="form rv" action="https://formsubmit.co/ajax/agaveadvisoryagency@gmail.com" method="POST" onsubmit="return sendForm(event,this)" data-sending="Enviando…" data-ok="Gracias. Nos pondremos en contacto en breve" data-fail="No se pudo enviar. Escríbanos a agaveadvisoryagency@gmail.com">
+    <input type="hidden" name="_subject" value="New request from the Agave Advisory website"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+    <h3>Solicitar una consulta</h3>
+    <div class="f2"><div class="f"><label>Nombre</label><input name="name" required></div><div class="f"><label>Empresa</label><input name="company"></div></div>
+    <div class="f2"><div class="f"><label>Correo electrónico</label><input type="email" name="email" required></div><div class="f"><label>Teléfono · WhatsApp</label><input type="tel" name="phone"></div></div>
+    <div class="f"><label>Servicio</label><select name="service"><option>Marca privada y desarrollo llave en mano</option><option>Suministro de tequila a granel</option><option>Asesoría de marca y mercado</option><option>Desarrollo de bebidas RTD</option><option>Asesoría de barricas y añejamiento</option><option>Aún no lo defino</option></select></div>
+    <div class="f"><label>Cuéntenos acerca de su proyecto</label><textarea name="message" rows="2"></textarea></div>
+    <button class="btn fill" type="submit">Hablemos de su proyecto</button>
+    <p class="note">Su solicitud es confidencial</p>
+  </form>
+</div></section>
+</main>
+<footer class="ftr"><div class="wrap">
+  <div class="word">AGAVE ADVISORY</div>
+  <div class="ftr-top">
+    <span class="seal" style="width:140px;height:140px"><img class="ring" src="https://yurasnegovoy-hash.github.io/agave-advisory/img/seal_ring.svg" alt=""><img src="https://yurasnegovoy-hash.github.io/agave-advisory/img/seal_core.svg" alt="Agave Advisory"></span>
+    <div><h4>Servicios</h4><a href="/es/private-label" data-page="1">Marca privada y desarrollo llave en mano</a><a href="/es/bulk-tequila" data-page="1">Suministro de tequila a granel</a><a href="/es/brand-market-advisory" data-page="1">Asesoría de marca y mercado</a><a href="/es/rtd" data-page="1">Desarrollo de bebidas RTD</a><a href="/es/barrel-aging" data-page="1">Asesoría de barricas y añejamiento</a></div>
+    <div><h4>Agencia</h4><a href="/es/about" data-page="1">Nosotros</a><a href="/es/how-we-work" data-page="1">Cómo trabajamos</a><a href="/es/clients" data-page="1">Clientes y socios</a><a href="/es/contact" data-page="1">Contacto</a></div>
+    <div><h4>Síganos</h4><a href="https://www.linkedin.com/in/anastasia-strizheva-489446122/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com/hacienda.la.capilla" target="_blank" rel="noopener">Instagram</a><p>agaveadvisoryagency@gmail.com</p></div>
+  </div>
+  <div class="ftr-bot"><span>© 2026 Agave Advisory Agency</span><span>Guadalajara · Los Altos de Jalisco · México</span><a href="/es/privacy" data-page="1">Aviso de privacidad</a></div>
+</div></footer>
+<div class="seal-corner"><img class="ring" src="https://yurasnegovoy-hash.github.io/agave-advisory/img/seal_ring.svg" alt=""><img class="core" src="https://yurasnegovoy-hash.github.io/agave-advisory/img/seal_core.svg" alt=""></div>
+</div>
+<script>window.AGAVE_BASE="https://yurasnegovoy-hash.github.io/agave-advisory/";window.AGAVE_TILDA=1;document.documentElement.lang="es";(function(){var r=document.getElementById("agave-root"),a=document.getElementById("allrecords")||r;while(r.firstChild)document.body.insertBefore(r.firstChild,a);document.body.classList.add("agave");})();</script>
+<script>
+window.sendForm=async function(e,f){e.preventDefault();var n=f.querySelector(".note"),b=f.querySelector("button");b.disabled=true;n.textContent=f.dataset.sending;try{var r=await fetch(f.action,{method:"POST",headers:{Accept:"application/json"},body:new FormData(f)});if(!r.ok)throw 0;n.textContent=f.dataset.ok;f.reset()}catch(x){n.textContent=f.dataset.fail}b.disabled=false;return false};
+try{if(sessionStorage.getItem('age'))document.getElementById('age').classList.add('hide')}catch(e){}
+const hdr=document.getElementById('hdr');const onS=()=>hdr.classList.toggle('solid',scrollY>60);addEventListener('scroll',onS,{passive:true});onS();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*0.07+'s';io.observe(el)});
+</script>
+<script src="https://yurasnegovoy-hash.github.io/agave-advisory/vendor/gsap.min.js"></script><script src="https://yurasnegovoy-hash.github.io/agave-advisory/vendor/ScrollTrigger.min.js"></script><script src="https://yurasnegovoy-hash.github.io/agave-advisory/fx.js?v=1794314726"></script>
+<script src="https://yurasnegovoy-hash.github.io/agave-advisory/vendor/d3.min.js"></script>
+<script src="https://yurasnegovoy-hash.github.io/agave-advisory/vendor/topojson-client.min.js"></script>
+<script src="https://yurasnegovoy-hash.github.io/agave-advisory/vendor/world-110m.js"></script>
+<script src="https://yurasnegovoy-hash.github.io/agave-advisory/map.js?v=1794314726"></script>

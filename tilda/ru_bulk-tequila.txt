@@ -1,0 +1,135 @@
+<!-- Agave Advisory · RU · bulk-tequila · вставить в блок T123 «HTML-код» -->
+<link rel="stylesheet" href="https://yurasnegovoy-hash.github.io/agave-advisory/fonts.css?v=1794314726">
+<link rel="stylesheet" href="https://yurasnegovoy-hash.github.io/agave-advisory/style.css?v=1794314726">
+<link rel="stylesheet" href="https://yurasnegovoy-hash.github.io/agave-advisory/fx.css?v=1794314726">
+<style>body.agave #allrecords{min-height:0!important;height:0;overflow:hidden}body.agave{margin:0}</style>
+<div id="agave-root">
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="i-agave" viewBox="0 0 64 50"><g fill="none" stroke="#C9A34E" stroke-width="1.3" stroke-linejoin="round"><path d="M32 47 L28 18 L32 2 L36 18 Z"/><path d="M31 47 L19 22 L16 7 L26 21 Z"/><path d="M33 47 L45 22 L48 7 L38 21 Z"/><path d="M30 47 L11 30 L3 18 L18 27 Z"/><path d="M34 47 L53 30 L61 18 L46 27 Z"/><path d="M29 47 L8 41 L1 35 L14 38 Z"/><path d="M35 47 L56 41 L63 35 L50 38 Z"/><path d="M32 47 V24"/></g></symbol>
+    <symbol id="i-globe" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2"><circle cx="24" cy="24" r="19"/><ellipse cx="24" cy="24" rx="8" ry="19"/><path d="M5 24h38M8 14h32M8 34h32M24 5v38"/></g></symbol>
+    <symbol id="i-diamond" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><path d="M6 18 L14 8 H34 L42 18 L24 41 Z"/><path d="M6 18 H42 M14 8 L19 18 L24 8 L29 18 L34 8 M19 18 L24 41 L29 18"/></g></symbol>
+    <symbol id="i-star" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><path d="M24 3 L27.5 20.5 L45 24 L27.5 27.5 L24 45 L20.5 27.5 L3 24 L20.5 20.5 Z"/><path d="M24 12 L26 22 L36 24 L26 26 L24 36 L22 26 L12 24 L22 22 Z" opacity=".55"/><circle cx="24" cy="24" r="1.8"/></g></symbol>
+    <symbol id="i-bottle" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><path d="M20 4h8v9l4 6v24a2 2 0 0 1-2 2H18a2 2 0 0 1-2-2V19l4-6z"/><path d="M20 8h8M16 25h16v10H16z"/></g></symbol>
+    <symbol id="i-barrel" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2"><path d="M12 6h24c3 6 3 30 0 36H12c-3-6-3-30 0-36z"/><path d="M9 15h30M9 33h30M18 6c-1.5 10-1.5 26 0 36M30 6c1.5 10 1.5 26 0 36M24 6v36"/></g></symbol>
+    <symbol id="i-hand" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"><path d="M3 20 L11 14 L19 17 L26 13 L37 14 L45 20"/><path d="M11 14 L4 27 L9 31"/><path d="M37 14 L44 27 L36 33"/><path d="M26 13 L19 21 Q21 24 25 21 L30 18 L39 27 Q40 30 37 30 L30 24"/><path d="M36 30 Q37 33 34 33 L28 28M33 33 Q33 36 30 35 L26 31M29 35 Q28 38 25 36 L22 33M9 31 L12 28 Q15 27 15 30 L13 33 Q16 33 16 35 L15 37 Q18 37 18 39 Q20 39 22 37"/></g></symbol>
+    <symbol id="i-glass" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><path d="M8 8h32L24 26z"/><path d="M24 26v16M15 42h18M13 13h22"/><circle cx="34" cy="6" r="3"/></g></symbol>
+    <symbol id="i-compass" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><circle cx="24" cy="8" r="3"/><path d="M22 11 L11 43 M26 11 L37 43 M15 31 Q24 36 33 31"/></g></symbol>
+    <symbol id="i-search" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2"><circle cx="21" cy="21" r="13"/><path d="M30.5 30.5 L42 42"/></g></symbol>
+    <symbol id="i-ship" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><path d="M5 30h38l-5 10H10z"/><path d="M11 30v-9h26v9M16 21v-7h16v7M22 14V8h4v6"/><path d="M4 44q5-3 10 0t10 0 10 0 10 0"/></g></symbol>
+    <symbol id="i-plane" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><path d="M44 6 L4 22 L18 27 L22 42 L28 31 L38 38 Z"/><path d="M18 27 L44 6"/></g></symbol>
+    <symbol id="i-scale" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><path d="M24 6v36M14 42h20M8 12h32"/><path d="M8 12 L2 26h12zM40 12 L34 26h12z"/><path d="M2 26q6 6 12 0M34 26q6 6 12 0"/></g></symbol>
+    <symbol id="i-box" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><path d="M6 14 L24 6 L42 14 V34 L24 42 L6 34Z"/><path d="M6 14 L24 22 L42 14M24 22v20M15 10 L33 18"/></g></symbol>
+    <symbol id="i-eye" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2"><path d="M3 24q21-24 42 0q-21 24-42 0z"/><circle cx="24" cy="24" r="7"/><circle cx="24" cy="24" r="2"/></g></symbol>
+    <symbol id="i-knight" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><path d="M14 42h22M16 38h18l-2-9c5-4 6-12 1-18-4-4-9-5-13-3l-3-3-1 6c-4 3-6 7-6 11l5 1 6-4c-1 4-4 7-5 10z"/><circle cx="23" cy="15" r="1"/></g></symbol>
+    <symbol id="i-target" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2"><circle cx="22" cy="26" r="17"/><circle cx="22" cy="26" r="10"/><circle cx="22" cy="26" r="3"/><path d="M22 26 L42 6M36 6h6v6"/></g></symbol>
+    <symbol id="i-nodes" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2"><circle cx="24" cy="10" r="5"/><circle cx="10" cy="38" r="5"/><circle cx="38" cy="38" r="5"/><path d="M21 14 L13 34M27 14 L35 34M15 38h18"/></g></symbol>
+    <symbol id="i-gear" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.2" stroke-linejoin="round"><circle cx="24" cy="24" r="7"/><path d="M21 4h6l1 6 5 2 5-4 4 4-4 5 2 5 6 1v6l-6 1-2 5 4 5-4 4-5-4-5 2-1 6h-6l-1-6-5-2-5 4-4-4 4-5-2-5-6-1v-6l6-1 2-5-4-5 4-4 5 4 5-2z"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.6"><path d="M24 44s14-14 14-25a14 14 0 0 0-28 0c0 11 14 25 14 25z"/><circle cx="24" cy="19" r="5"/></g></symbol>
+    <symbol id="i-phone" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.6" stroke-linejoin="round"><path d="M10 6h9l4 10-5 4q4 8 10 10l4-5 10 4v9q-1 4-5 4C21 42 6 27 6 11q0-4 4-5z"/></g></symbol>
+    <symbol id="i-mail" viewBox="0 0 48 48"><g fill="none" stroke="#C9A34E" stroke-width="1.6" stroke-linejoin="round"><rect x="5" y="11" width="38" height="26"/><path d="M5 11 L24 27 L43 11"/></g></symbol>
+  </defs>
+</svg>
+<div class="sky"><video data-hd="https://yurasnegovoy-hash.github.io/agave-advisory/video/fly.mp4" data-sd="https://yurasnegovoy-hash.github.io/agave-advisory/video/fly_1280.mp4" poster="https://yurasnegovoy-hash.github.io/agave-advisory/video/fly.jpg" muted playsinline preload="auto"></video></div>
+<div class="age" id="age"><div class="age-box">
+  <span class="seal" style="width:130px;height:130px;margin:0 auto 26px"><img class="ring" src="https://yurasnegovoy-hash.github.io/agave-advisory/img/seal_ring.svg" alt=""><img src="https://yurasnegovoy-hash.github.io/agave-advisory/img/seal_core.svg" alt=""></span>
+  <h3>Достигли ли вы совершеннолетия?</h3>
+  <p>Этот сайт содержит информацию об алкогольной продукции</p>
+  <div class="row"><button class="btn fill" onclick="try{sessionStorage.setItem('age','1')}catch(e){};document.getElementById('age').classList.add('hide')">Да, войти</button><a class="btn ghost" href="https://www.google.com">Нет</a></div>
+</div></div>
+<header class="hdr" id="hdr"><div class="wrap">
+  <a href="/ru" data-page="1" class="logo"><svg><use href="#i-agave"/></svg><span><b>AGAVE</b><small>ADVISORY</small></span></a>
+  <nav class="nav">
+    <a href="/ru/about" data-page="1">О компании</a>
+    <span class="dd"><a href="/ru#services" data-page="1" class="on">Услуги</a><span class="dd-menu"><a href="/ru/private-label" data-page="1">Частная марка под ключ</a><a href="/ru/bulk-tequila" data-page="1">Поставки текилы балком</a><a href="/ru/brand-market-advisory" data-page="1">Консультации по бренду и рынку</a><a href="/ru/rtd" data-page="1">Разработка RTD-напитков</a><a href="/ru/barrel-aging" data-page="1">Консультации по бочкам и выдержке</a></span></span>
+    <a href="/ru/how-we-work" data-page="1">Как мы работаем</a>
+    <a href="/ru/clients" data-page="1">Клиенты и партнёры</a>
+    <a href="/ru/contact" data-page="1">Контакты</a>
+  </nav>
+  <div class="hdr-r"><span class="lang"><a href="/bulk-tequila" data-page="1" data-lang="en">EN</a> · <a href="/es/bulk-tequila" data-page="1" data-lang="es">ES</a> · <b>RU</b></span><a href="#contact" class="btn ghost">Обсудить проект</a><button class="burger" aria-label="Меню"></button></div>
+</div></header>
+<main>
+
+<section class="hero sub">
+  <div class="hero-bg"><video class="hero-video" src="https://yurasnegovoy-hash.github.io/agave-advisory/video/tanks.mp4" poster="https://yurasnegovoy-hash.github.io/agave-advisory/video/tanks.jpg" muted loop playsinline autoplay></video></div>
+  <div class="wrap"><div class="label rv">Услуга 02</div><h1 class="sp">Поставки<br><span class="g">текилы балком</span></h1>
+  <p class="lead rv">Текила под вашу спецификацию, балком, с проверенных заводов Халиско. Сначала образцы, затем согласованная спецификация и налаженные поставки</p><div class="hero-cta rv"><a href="#contact" class="btn fill">Обсудить проект</a></div></div>
+</section>
+<section class="pad">
+  <div class="wrap">
+    <div class="sec-head"><div class="rv"><div class="label line">Что мы берём на себя</div><h2 class="sp">Поставки текилы балком</h2></div><p class="lead rv">Для заводов розлива, производителей алкоголя и дистрибьюторов, которым нужна текила балком, в нужном объёме и со стабильным профилем от партии к партии</p></div>
+    <div class="svc-grid" style="grid-template-columns:repeat(2,1fr)"><div class="rv"><span class="num">01</span><h3>Подбор под ваши требования</h3><p>Категория, профиль и характер по вашему брифу. Текила 100% de agave. Высокогорная агава Лос-Альтос крупнее и слаще</p></div><div class="rv"><span class="num">02</span><h3>Образцы</h3><p>Вы дегустируете и утверждаете образцы до любых обязательств. Отправляем их курьерской службой</p></div><div class="rv"><span class="num">03</span><h3>Спецификация</h3><p>Согласуем спецификацию с заводом и держим её: та же агава, та же технология, тот же результат</p></div><div class="rv"><span class="num">04</span><h3>Контроль качества</h3><p>Лабораторный анализ и дегустация перед каждой отгрузкой. Вы точно знаете, что в танке</p></div><div class="rv"><span class="num">05</span><h3>Организация поставок</h3><p>Розлив, экспортные документы и логистика на необходимых вам условиях. Регулярные поставки по графику</p></div><div class="rv"><span class="num">06</span><h3>Конфиденциальность</h3><p>Какой завод, какая спецификация, какой объём: всё это остаётся между нами</p></div></div>
+  </div>
+</section>
+<section class="pad alt">
+  <div class="wrap split">
+    <div class="media frame mask" style="aspect-ratio:4/5"><video src="https://yurasnegovoy-hash.github.io/agave-advisory/video/lab.mp4" poster="https://yurasnegovoy-hash.github.io/agave-advisory/video/lab.jpg" muted loop playsinline autoplay preload="metadata" style="width:100%;height:100%;object-fit:cover"></video></div>
+    <div class="rv"><div class="label line">Почему выбирают нас</div><h2 class="sp">Один партнёр<br><span class="g">на месте</span></h2><div class="rule"></div><ul class="checks"><li>Многие покупают текилу балком на разных заводах, без единого стандарта. Мы работаем с заводами, где знаем происхождение агавы и то, как сделан дистиллят</li><li>Вы утверждаете дистиллят по образцам, а не по описанию</li><li>Каждая партия проходит проверку до отгрузки из Мексики</li></ul></div>
+  </div>
+</section>
+<section class="pad">
+  <div class="wrap split" style="align-items:start">
+    <div class="rv"><div class="label line">Что нам необходимо от вас</div><h2 class="sp">Для старта</h2><ul class="checks"><li>Категория и целевой профиль</li><li>Объём и частота</li><li>Рынок и условия поставки</li></ul></div>
+    <div class="rv"><div class="label line">Что вы получаете</div><h2 class="sp">Результат<br><span class="g">в ваших руках</span></h2><ul class="checks"><li>Утверждённые образцы</li><li>Согласованная спецификация</li><li>Организованные регулярные поставки</li><li>Экспортные документы для вашего рынка</li></ul><p class="tagline">Один партнёр. Один процесс. Одна ответственность</p></div>
+  </div>
+</section>
+<section class="pad alt">
+  <div class="wrap">
+    <div class="sec-head"><div class="rv"><div class="label line">Как это работает</div><h2 class="sp">От брифа<br><span class="g">до поставки</span></h2></div><p class="lead rv">Шесть этапов, одна команда. Вы получаете отчёты на каждом этапе и утверждаете образцы до любых обязательств</p></div>
+    <div class="steps"><div class="step rv"><span class="c"><svg><use href="#i-search"/></svg></span><span class="num">01</span><h3>Бриф</h3><p>Ваша идея, рынок и требования</p></div><div class="step rv"><span class="c"><svg><use href="#i-eye"/></svg></span><span class="num">02</span><h3>Оценка</h3><p>Изучаем проект и его требования</p></div><div class="step rv"><span class="c"><svg><use href="#i-compass"/></svg></span><span class="num">03</span><h3>Предложение</h3><p>Чёткий план работы над вашим проектом</p></div><div class="step rv"><span class="c"><svg><use href="#i-bottle"/></svg></span><span class="num">04</span><h3>Разработка</h3><p>Дистиллят, комплектующие и документы</p></div><div class="step rv"><span class="c"><svg><use href="#i-barrel"/></svg></span><span class="num">05</span><h3>Производство</h3><p>Розлив под нашим контролем на линии</p></div><div class="step rv"><span class="c"><svg><use href="#i-globe"/></svg></span><span class="num">06</span><h3>Поставка</h3><p>Экспорт и поставка на ваш рынок</p></div></div>
+  </div>
+</section>
+<section class="pad"><div class="wrap split" style="align-items:start">
+  <div class="rv"><div class="label line">Вопросы</div><h2 class="sp">Полезно<br><span class="g">знать</span></h2></div>
+  <div class="faq rv"><details><summary>Какие категории вы можете поставлять?</summary><p>Blanco, reposado, añejo, extra añejo и cristalino. Другие дистилляты агавы по запросу</p></details><details><summary>Это текила 100% de agave?</summary><p>Да. Мы работаем только с текилой из 100% голубой агавы Вебер</p></details><details><summary>Удержите ли вы профиль стабильным от поставки к поставке?</summary><p>Да. Для этого и нужны согласованная спецификация и завод, который мы знаем</p></details><details><summary>На каких условиях вы поставляете?</summary><p>EXW, FOB, CIF или на других условиях, требуемых вашим рынком</p></details><details><summary>Конфиденциален ли мой проект?</summary><p>Да. Ваш проект, поставщики и спецификации остаются между нами</p></details><details><summary>С чего начать?</summary><p>Отправьте нам короткий бриф через форму ниже. Мы свяжемся с вами и обсудим дальнейшие шаги</p></details></div>
+</div></section>
+<section class="pad alt"><div class="wrap">
+  <div class="label line rv" style="margin-bottom:36px">Другие услуги</div>
+  <div class="others"><a href="/ru/private-label" data-page="1" class="rv"><svg><use href="#i-bottle"/></svg><b>Частная марка под ключ</b></a><a href="/ru/brand-market-advisory" data-page="1" class="rv"><svg><use href="#i-compass"/></svg><b>Консультации по бренду и рынку</b></a><a href="/ru/rtd" data-page="1" class="rv"><svg><use href="#i-glass"/></svg><b>Разработка RTD-напитков</b></a><a href="/ru/barrel-aging" data-page="1" class="rv"><svg><use href="#i-star"/></svg><b>Консультации по бочкам и выдержке</b></a></div>
+</div></section>
+
+<section class="pad cta" id="contact"><div class="wrap cta-grid">
+  <div class="rv">
+    <div class="label line">Контакты</div>
+    <h2 style="margin-top:24px">Обсудить <span class="g">ваш проект</span></h2>
+    <p class="lead" style="margin-top:26px">Расскажите, что вы хотите создать или закупить. Мы свяжемся с вами и предложим дальнейшие шаги</p>
+    <div class="contacts">
+      <div><span class="ic"><svg><use href="#i-pin"/></svg></span><span><small>Офисы</small>Гвадалахара · Лос-Альтос-де-Халиско, Мексика</span></div>
+      <div><span class="ic"><svg><use href="#i-phone"/></svg></span><span><small>Телефон · WhatsApp</small><a href="https://wa.me/523314201317">+52 33 1420 1317</a></span></div>
+      <div><span class="ic"><svg><use href="#i-mail"/></svg></span><span><small>Электронная почта</small><a href="mailto:agaveadvisoryagency@gmail.com">agaveadvisoryagency@gmail.com</a></span></div>
+    </div>
+  </div>
+  <form class="form rv" action="https://formsubmit.co/ajax/agaveadvisoryagency@gmail.com" method="POST" onsubmit="return sendForm(event,this)" data-sending="Отправляем…" data-ok="Спасибо. Мы скоро свяжемся с вами" data-fail="Не удалось отправить. Напишите на agaveadvisoryagency@gmail.com">
+    <input type="hidden" name="_subject" value="New request from the Agave Advisory website"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+    <h3>Запросить консультацию</h3>
+    <div class="f2"><div class="f"><label>Имя</label><input name="name" required></div><div class="f"><label>Компания</label><input name="company"></div></div>
+    <div class="f2"><div class="f"><label>Электронная почта</label><input type="email" name="email" required></div><div class="f"><label>Телефон · WhatsApp</label><input type="tel" name="phone"></div></div>
+    <div class="f"><label>Услуга</label><select name="service"><option>Частная марка под ключ</option><option selected>Поставки текилы балком</option><option>Консультации по бренду и рынку</option><option>Разработка RTD-напитков</option><option>Консультации по бочкам и выдержке</option><option>Пока не определились</option></select></div>
+    <div class="f"><label>Расскажите нам о вашем проекте</label><textarea name="message" rows="2"></textarea></div>
+    <button class="btn fill" type="submit">Обсудить проект</button>
+    <p class="note">Ваш запрос остаётся конфиденциальным</p>
+  </form>
+</div></section>
+</main>
+<footer class="ftr"><div class="wrap">
+  <div class="word">AGAVE ADVISORY</div>
+  <div class="ftr-top">
+    <span class="seal" style="width:140px;height:140px"><img class="ring" src="https://yurasnegovoy-hash.github.io/agave-advisory/img/seal_ring.svg" alt=""><img src="https://yurasnegovoy-hash.github.io/agave-advisory/img/seal_core.svg" alt="Agave Advisory"></span>
+    <div><h4>Услуги</h4><a href="/ru/private-label" data-page="1">Частная марка под ключ</a><a href="/ru/bulk-tequila" data-page="1">Поставки текилы балком</a><a href="/ru/brand-market-advisory" data-page="1">Консультации по бренду и рынку</a><a href="/ru/rtd" data-page="1">Разработка RTD-напитков</a><a href="/ru/barrel-aging" data-page="1">Консультации по бочкам и выдержке</a></div>
+    <div><h4>Агентство</h4><a href="/ru/about" data-page="1">О компании</a><a href="/ru/how-we-work" data-page="1">Как мы работаем</a><a href="/ru/clients" data-page="1">Клиенты и партнёры</a><a href="/ru/contact" data-page="1">Контакты</a></div>
+    <div><h4>Мы в соцсетях</h4><a href="https://www.linkedin.com/in/anastasia-strizheva-489446122/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com/hacienda.la.capilla" target="_blank" rel="noopener">Instagram</a><p>agaveadvisoryagency@gmail.com</p></div>
+  </div>
+  <div class="ftr-bot"><span>© 2026 Agave Advisory Agency</span><span>Гвадалахара · Лос-Альтос-де-Халиско · Мексика</span><a href="/ru/privacy" data-page="1">Политика конфиденциальности</a></div>
+</div></footer>
+<div class="seal-corner"><img class="ring" src="https://yurasnegovoy-hash.github.io/agave-advisory/img/seal_ring.svg" alt=""><img class="core" src="https://yurasnegovoy-hash.github.io/agave-advisory/img/seal_core.svg" alt=""></div>
+</div>
+<script>window.AGAVE_BASE="https://yurasnegovoy-hash.github.io/agave-advisory/";window.AGAVE_TILDA=1;document.documentElement.lang="ru";(function(){var r=document.getElementById("agave-root"),a=document.getElementById("allrecords")||r;while(r.firstChild)document.body.insertBefore(r.firstChild,a);document.body.classList.add("agave");})();</script>
+<script>
+window.sendForm=async function(e,f){e.preventDefault();var n=f.querySelector(".note"),b=f.querySelector("button");b.disabled=true;n.textContent=f.dataset.sending;try{var r=await fetch(f.action,{method:"POST",headers:{Accept:"application/json"},body:new FormData(f)});if(!r.ok)throw 0;n.textContent=f.dataset.ok;f.reset()}catch(x){n.textContent=f.dataset.fail}b.disabled=false;return false};
+try{if(sessionStorage.getItem('age'))document.getElementById('age').classList.add('hide')}catch(e){}
+const hdr=document.getElementById('hdr');const onS=()=>hdr.classList.toggle('solid',scrollY>60);addEventListener('scroll',onS,{passive:true});onS();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*0.07+'s';io.observe(el)});
+</script>
+<script src="https://yurasnegovoy-hash.github.io/agave-advisory/vendor/gsap.min.js"></script><script src="https://yurasnegovoy-hash.github.io/agave-advisory/vendor/ScrollTrigger.min.js"></script><script src="https://yurasnegovoy-hash.github.io/agave-advisory/fx.js?v=1794314726"></script>
+
