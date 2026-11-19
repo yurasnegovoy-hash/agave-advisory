@@ -24,7 +24,7 @@ def block(lang, page):
     css = re.findall(r'<link rel="stylesheet" href="([^"]+)">', src)
     body = src[src.index("<body>") + 6:src.index("</body>")]
     k = body.index('<script>\nwindow.sendForm'); markup, scripts = body[:k], body[k:]
-    fix = lambda t: re.sub(r'((?:src|poster|data-hd|data-sd|href)=")(' + ASSET + ")", r"\1" + BASE + r"\2", t).replace("url(img/", f"url({BASE}img/")
+    fix = lambda t: re.sub(r'((?:src|poster|data-hd|data-sd|href)=")(' + ASSET + ")", r"\1" + BASE + r"\2", t).replace("url(img/", f"url({BASE}img/").replace("url(video/", f"url({BASE}video/")
     markup, scripts = fix(markup), fix(scripts)
     markup = re.sub(r'href="(es/|ru/)?(' + "|".join(PAGES) + r')\.html(#[^"]*)?"', link, markup)
     head = "".join(f'<link rel="stylesheet" href="{BASE}{h}">\n' for h in css)
