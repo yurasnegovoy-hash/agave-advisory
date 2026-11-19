@@ -6,6 +6,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://yurasnegovoy-hash.github.io/agave-advisory/"
 PAGES = ["index", "about", "private-label", "bulk-tequila", "brand-market-advisory", "rtd", "barrel-aging", "how-we-work", "clients", "contact", "privacy"]
 LANGS = ["en", "es", "ru"]
+FORM_SERVICE = "84a04eb14732414162335bcb400d3e94"  # приёмник Tilda CRM «Agave Advisory: заявки с сайта» проекта 56941609
 OUT = f"{ROOT}/tilda"; os.makedirs(OUT, exist_ok=True)
 ASSET = r"(?:img/|video/|vendor/|fonts/|fx\.js|map\.js|style\.css|fonts\.css|fx\.css|favicon)"
 
@@ -23,7 +24,7 @@ def block(lang, page):
     desc = re.search(r'<meta name="description" content="([^"]*)"', src).group(1)
     css = re.findall(r'<link rel="stylesheet" href="([^"]+)">', src)
     body = src[src.index("<body>") + 6:src.index("</body>")]
-    k = body.index('<script>\nwindow.sendForm'); markup, scripts = body[:k], body[k:]
+    k = body.index('<script>\nwindow.agaveTilda'); markup, scripts = body[:k], body[k:]
     fix = lambda t: re.sub(r'((?:src|poster|data-hd|data-sd|href)=")(' + ASSET + ")", r"\1" + BASE + r"\2", t).replace("url(img/", f"url({BASE}img/").replace("url(video/", f"url({BASE}video/")
     markup, scripts = fix(markup), fix(scripts)
     markup = re.sub(r'href="(es/|ru/)?(' + "|".join(PAGES) + r')\.html(#[^"]*)?"', link, markup)
@@ -31,9 +32,20 @@ def block(lang, page):
     boot = ('<script>window.AGAVE_BASE="' + BASE + '";window.AGAVE_TILDA=1;document.documentElement.lang="' + lang + '";'
             '(function(){var r=document.getElementById("agave-root"),a=document.getElementById("allrecords")||r;'
             'while(r.firstChild)document.body.insertBefore(r.firstChild,a);document.body.classList.add("agave");})();</script>')
+    # скрытая родная форма Тильды: наша форма передаёт в неё поля, заявки идут в приёмники сайта (Настройки сайта → Формы)
+    inp = lambda n, t="text": f'<div class="t-input-group" data-field-name="{n}"><div class="t-input-block"><input type="{t}" name="{n}" class="t-input" value=""></div><div class="t-input-error"></div></div>'
+    errs = "".join(f'<li class="t-form__errorbox-item js-rule-error js-rule-error-{r}"></li>' for r in ("all", "req", "email", "name", "phone", "minlength", "string"))
+    tform = ('<div id="agave-tform-wrap" aria-hidden="true"><form id="agave-tform" name="agave-tform" role="form" action="" method="POST" data-formactiontype="2" '
+             'data-inputbox=".t-input-group" class="t-form js-form-proccess" data-success-callback="agaveFormOk">'
+             f'<input type="hidden" name="formservices[]" value="{FORM_SERVICE}" class="js-formaction-services">'
+             '<div class="js-successbox t-form__successbox" style="display:none;"></div><div class="t-form__inputsbox">'
+             + inp("Name") + inp("Company") + inp("Email", "email") + inp("Phone", "tel") + inp("Service") + inp("Message") + inp("Language") + inp("Page")
+             + f'<div class="t-form__errorbox-middle"><div class="js-errorbox-all t-form__errorbox-wrapper" style="display:none;"><ul class="t-form__errorbox-text">{errs}</ul></div></div>'
+             '<div class="t-form__submit"><button class="t-submit" type="submit" tabindex="-1">Send</button></div></div></form></div>\n'
+             '<script src="https://static.tildacdn.pub/js/tilda-forms-1.0.min.js" charset="utf-8"></script>\n')
     html = (f"<!-- Agave Advisory · {lang.upper()} · {page} · вставить в блок T123 «HTML-код» -->\n{head}"
             "<style>body.agave #allrecords{min-height:0!important;height:0;overflow:hidden}body.agave{margin:0}</style>\n"
-            f'<div id="agave-root">{markup}</div>\n{boot}\n{scripts}')
+            f'<div id="agave-root">{markup}</div>\n{tform}{boot}\n{scripts}')
     return title, desc, html
 
 rows = []
