@@ -36,7 +36,7 @@ TIMELINE = [
     ("Today", "Agave Advisory Agency", "An agency that represents foreign companies in Mexico: one partner for creating and sourcing tequila, from concept to delivery"),
 ]
 about = f"""
-{hero("About us", 'Nineteen years<br><span class="g">in tequila</span>', "Agave Advisory Agency represents foreign companies in Mexico. We create and source tequila for distributors, retail chains, spirits producers and private clients", video="distill", cta=False)}
+{hero("About us", 'Nineteen years<br><span class="g">in tequila</span>', "Agave Advisory Agency represents foreign companies in Mexico. We create ready-made brands and private labels, supply bulk tequila and barrels, develop RTD cocktails including alcohol-free ones, and advise on brand and market", video="distill", cta=False)}
 
 <section class="pad ceo">
   <div class="wrap split">
@@ -105,7 +105,7 @@ STAGES = [
     ("Delivery", "Export documents, forwarder, port and delivery to your market on the agreed terms. Shipment monitoring until arrival", "Receiving the goods", "Your tequila in your market"),
 ]
 how = f"""
-{hero("How we work", 'Six stages<br><span class="g">one responsibility</span>', "From the first call to the delivered pallet, one team manages the project and reports to you at every stage", video="warehouse", cta=False)}
+{hero("How we work", 'Six stages<br><span class="g">one responsibility</span>', "From the first call to the delivered pallet, one team manages the project and reports to you at every stage", video="port", cta=False)}
 <section class="pad"><div class="wrap">{steps_html()}</div></section>
 <section class="pad alt"><div class="wrap">
   <div class="sec-head"><div class="rv"><div class="label line">Stage by stage</div><h2 class="sp">What happens<br><span class="g">and what you get</span></h2></div></div>
@@ -150,20 +150,19 @@ SVC = {
    h1='Bulk<br><span class="g">tequila supply</span>',
    lead="Tequila selected to your requirements and supplied in bulk from trusted distilleries in Jalisco. Samples first, specification agreed, supply organised",
    who="For bottlers, spirits producers and distributors who need tequila as a liquid, in volumes and with a profile that stays the same from batch to batch",
-   grid=[("Selection to your requirements", "Category, profile and character to your brief. 100% agave. Highland agave of Los Altos is larger and sweeter"),
+   grid=[("Selection to your requirements", "Profile, strength and character to your brief. Highland agave of Los Altos is larger and sweeter"),
          ("Samples", "You taste and approve samples before any commitment. We send them by courier"),
          ("Specification", "We agree the specification with the distillery and keep it: same agave, same process, same result"),
          ("Quality control", "Laboratory analysis and tasting before every shipment. You know what is in the tank"),
          ("Supply organisation", "Filling, export documents and logistics on the terms you need. Regular supply on a schedule"),
          ("Confidentiality", "Which distillery, which specification, which volume: it all stays between us")],
    why=["Many bulk buyers take tequila from different distilleries with no single standard. We work with distilleries where we know where the agave grew and how the liquid was made", "You approve the liquid on samples, not on a description", "Every batch is checked before it leaves Mexico"],
-   need=["Category and target profile", "Volume and frequency", "Market and delivery terms"],
+   need=["Target profile and strength", "Volume and frequency", "Market and delivery terms"],
    result=["Approved samples", "Agreed specification", "Organised regular supply", "Export documents for your market"],
-   faq=[("Which categories can you supply?", "Blanco, reposado, añejo, extra añejo and cristalino. Other agave spirits on request"),
-        ("Is the tequila 100% agave?", "Yes. We work with 100% Blue Weber agave tequila"),
+   faq=[("Which tequila can you supply in bulk?", "For export in bulk we supply blanco tequila of the mixto category, from 35 to 55% alcohol. Tequila 100% de agave is not exported in bulk: it is bottled in Mexico, and we produce it under your brand as a private label"),
         ("Can you keep the profile consistent over time?", "Yes. That is the point of an agreed specification and a distillery we know"),
         ("On which terms do you deliver?", "EXW, FOB, CIF or other terms your market needs")]),
- "brand-market-advisory": dict(video="warehouse", side="ceo_still.jpg",
+ "brand-market-advisory": dict(video="tasting", side="ceo_still.jpg",
    h1='Brand<br><span class="g">&amp; market advisory</span>',
    lead="We help you shape a tequila product that fits your market: positioning, product line, price architecture and preparation for market entry",
    who="For companies preparing a tequila launch or expanding their range, and for brands that want to enter a new market with the right product",
@@ -181,34 +180,39 @@ SVC = {
         ("Do you design labels and packaging?", "We coordinate the design and advise on what works in production and on the shelf")]),
  "rtd": dict(video="ferment", side="video:bottling_line",
    h1='RTD<br><span class="g">development</span>',
-   lead="We coordinate the development of tequila-based ready-to-drink products and find the right production and packaging solutions for them",
-   who="For brands and producers who want a tequila RTD in their portfolio: cocktails, hard seltzers and mixed drinks for modern markets and new generations",
+   lead="We coordinate the development of ready-to-drink cocktails: tequila-based cocktails and alcohol-free cocktails on agave mixes, with the right production and packaging solutions",
+   who="For brands and producers who want an agave RTD in their portfolio: tequila cocktails, hard seltzers, mixed drinks and alcohol-free cocktails for modern markets and new generations",
    grid=[("Concept", "The drink, its profile and the format it comes in. Which tequila, which mixers, which strength"),
+         ("Alcohol-free cocktails", "Cocktails on agave mixes with no alcohol and no sucrose. A fit product for those who choose what they drink"),
          ("Development coordination", "Work with technologists and producers on the recipe and stability of the product"),
          ("Tequila base", "The right tequila for the drink: category, profile, volume and consistent supply"),
-         ("Production partners", "Manufacturers in Mexico that fit your product, format and volume"),
-         ("Packaging solutions", "Cans, bottles and secondary packaging. Suppliers, prices and lead times"),
+         ("Production and packaging", "Manufacturers in Mexico that fit your product, format and volume. Cans, bottles and secondary packaging"),
          ("Regulatory and export", "Documents for your market and delivery on the terms you need")],
    why=["We know where the tequila comes from, so the base of your drink is consistent", "We know producers and packaging suppliers in Mexico", "One partner from recipe to pallet"],
    need=["Concept of the drink and target market", "Format and volume", "Approval of samples"],
    result=["A developed RTD product", "Production and packaging partners", "Tequila supply for the drink", "A product ready for your market"],
-   faq=[("Can the RTD be made with my existing tequila brand?", "Yes. We can build the drink on your tequila or source the base for it"),
+   faq=[("Which RTD cocktails can you make?", "Two lines: cocktails based on tequila, and alcohol-free cocktails based on agave mixes, with no sucrose"),
+        ("Can the RTD be made with my existing tequila brand?", "Yes. We can build the drink on your tequila or source the base for it"),
         ("Which formats are possible?", "Cans, glass bottles and other formats available with our production partners")]),
- "barrel-aging": dict(video="barrels", side="video:distill",
-   h1='Barrel<br><span class="g">&amp; aging advisory</span>',
-   lead="The right wood, the right influence, the right character. We select barrels and advise on aging to shape the flavour profile you want",
-   who="For distilleries and brands working on reposado, añejo and extra añejo expressions, and for anyone who needs barrels delivered to a distillery in Mexico",
-   grid=[("Barrel selection", "American white oak ex-bourbon barrels, 53 gal / 200 L, from leading Kentucky and Tennessee producers. French oak on request"),
-         ("Quality of every barrel", "Freshly dumped, used once, checked for leaks and physical damage. Phytosanitary certificates provided"),
+ "barrel-aging": dict(video="barrels", side="ceo_cellar.jpg",
+   h1='Barrel supply<br><span class="g">&amp; aging advisory</span>',
+   lead="We sell bourbon and Mizunara oak barrels directly from our American supplier to distilleries anywhere in the world, and advise on aging to shape the flavour profile you want",
+   who="For distilleries and brands working on reposado, añejo and extra añejo expressions, and for any producer in the world who needs barrels for aging",
+   strip='<div class="strip rv"><div class="mask"><img src="img/barrel_rack.jpg" alt="Bourbon barrel on a rack in the warehouse"></div><div class="mask"><img src="img/barrel_fire.jpg" alt="Charring of an oak barrel"></div><div class="mask"><img src="img/barrel_mizunara.jpg" alt="Mizunara oak barrels"></div></div>',
+   grid=[("Bourbon barrels for sale", "Classic 53 gal / 200 L barrels of American white oak, freshly dumped after one fill of 4 to 6 years on average. From leading bourbon makers of Kentucky and Tennessee"),
+         ("Barrel makers and origin", "Barrels built by leading makers such as ISC, ZAK, Speyside and Kelvin. Among them genuine Jim Beam, Maker's Mark, Knob Creek and Booker's barrels"),
+         ("Quality of every barrel", "Every barrel is checked for leaks and physical damage. Phytosanitary certificates provided"),
+         ("Mizunara oak barrels", "Extremely rare Japanese oak from the island of Hokkaido, 250 L. Mizunara takes 200 to 500 years to mature and only a handful of barrels are made each year. Also 200 L barrels made in the US from Japanese Mizunara oak. Limited quantity, on request"),
          ("Aging recommendations", "How long and in which wood to age: reposado from 2 months, añejo from 1 year, extra añejo from 3 years"),
          ("Flavour profile", "How barrel and time shape the character: vanilla, roasted coffee, chocolate, nuts, coconut"),
          ("Storage conditions", "Barrels rest in rooms with controlled humidity and no light. We advise on the setup"),
-         ("Delivery to the distillery", "From the cooperage to your distillery in Mexico. Container quantities and schedule")],
-   why=["We know what the barrel does to tequila, not only where to buy it", "Barrels come from leading bourbon producers, checked one by one", "We can advise, supply and oversee the aging together with the distillery"],
+         ("Worldwide delivery", "From warehouses in Kentucky and Tennessee to your distillery anywhere in the world, by container or truck")],
+   why=["We sell barrels and we know what the barrel does to tequila", "Barrels come directly from our American supplier, checked one by one", "We can advise, supply and oversee the aging together with the distillery"],
    need=["Your tequila and the profile you want", "Volume to be aged", "Where the barrels go"],
-   result=["Barrels that fit your profile", "An aging plan with timing and wood", "Barrels delivered to your distillery"],
-   faq=[("Which barrels do you supply?", "Classic 53 gal / 200 L ex-bourbon barrels from American white oak, from leading Kentucky and Tennessee producers. French oak on request"),
-        ("How are the barrels delivered?", "By container or truck, from the cooperage to your distillery in Mexico. We will propose what fits your project"),
+   result=["Barrels that fit your profile", "An aging plan with timing and wood", "Barrels delivered to your distillery, anywhere in the world"],
+   faq=[("Which barrels do you sell?", "Classic 53 gal / 200 L bourbon barrels of American white oak from leading Kentucky and Tennessee producers, and rare Japanese Mizunara oak barrels. French oak on request"),
+        ("What is special about Mizunara oak?", "It is the rarest and most sought-after barrel in the whisky industry. The oak grows on the island of Hokkaido and takes 200 to 500 years to mature, so only a handful of barrels are made each year. Available in limited quantity, on request"),
+        ("Where do you deliver?", "Worldwide. By container or truck, directly from our American supplier to your distillery. We will propose what fits your project"),
         ("Can you advise without supplying barrels?", "Yes. Aging advisory is available as a standalone service")]),
 }
 
@@ -220,6 +224,7 @@ for n, (slug, title, icon) in enumerate(SERVICES):
   <div class="wrap">
     <div class="sec-head"><div class="rv"><div class="label line">What we cover</div><h2 class="sp">{title}</h2></div><p class="lead rv">{s['who']}</p></div>
     {grid(s['grid'])}
+    {s.get('strip', '')}
   </div>
 </section>
 <section class="pad alt">

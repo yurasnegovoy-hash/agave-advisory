@@ -33,13 +33,13 @@
 "f": "en_rtd",
 "alias": "rtd",
 "title": "RTD Development · Agave Advisory",
-"descr": "We coordinate the development of tequila-based ready-to-drink products and find the right production and packaging solutions for them"
+"descr": "We coordinate the development of ready-to-drink cocktails: tequila-based cocktails and alcohol-free cocktails on agave mixes, with the right production and packaging solutions"
 },
 {
 "f": "en_barrel-aging",
 "alias": "barrel-aging",
-"title": "Barrel & Aging Advisory · Agave Advisory",
-"descr": "The right wood, the right influence, the right character"
+"title": "Barrel Supply & Aging Advisory · Agave Advisory",
+"descr": "We sell bourbon and Mizunara oak barrels directly from our American supplier to distilleries anywhere in the world, and advise on aging to shape the flavour profile you want"
 },
 {
 "f": "en_how-we-work",
@@ -99,13 +99,13 @@
 "f": "es_rtd",
 "alias": "es/rtd",
 "title": "Desarrollo de bebidas RTD · Agave Advisory",
-"descr": "Coordinamos el desarrollo de bebidas listas para tomar a base de tequila y encontramos las soluciones adecuadas de producción y empaque"
+"descr": "Coordinamos el desarrollo de cocteles listos para tomar: cocteles a base de tequila y cocteles sin alcohol a base de mezclas de agave, con las soluciones adecuadas de producción y empaque"
 },
 {
 "f": "es_barrel-aging",
 "alias": "es/barrel-aging",
-"title": "Asesoría de barricas y añejamiento · Agave Advisory",
-"descr": "La madera adecuada, la influencia adecuada, el carácter adecuado"
+"title": "Suministro de barricas y asesoría de añejamiento · Agave Advisory",
+"descr": "Vendemos barricas de bourbon y de roble Mizunara directamente de nuestro proveedor estadounidense a destilerías de todo el mundo, y asesoramos en el añejamiento para lograr el perfil de sabor que usted busca"
 },
 {
 "f": "es_how-we-work",
@@ -165,13 +165,13 @@
 "f": "ru_rtd",
 "alias": "ru/rtd",
 "title": "Разработка RTD-напитков · Agave Advisory",
-"descr": "Координируем разработку готовых к употреблению напитков на основе текилы и подбираем производственные и упаковочные решения"
+"descr": "Координируем разработку готовых коктейлей RTD: на основе текилы и безалкогольных на миксах из агавы, и подбираем производственные и упаковочные решения"
 },
 {
 "f": "ru_barrel-aging",
 "alias": "ru/barrel-aging",
-"title": "Консультации по бочкам и выдержке · Agave Advisory",
-"descr": "Правильная древесина, правильное влияние, правильный характер"
+"title": "Поставка бочек и консультации по выдержке · Agave Advisory",
+"descr": "Мы продаём бочки из-под бурбона и из дуба мидзунара напрямую от американского поставщика заводам по всему миру и консультируем по выдержке под нужный вкусовой профиль"
 },
 {
 "f": "ru_how-we-work",

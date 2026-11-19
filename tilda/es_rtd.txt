@@ -1,7 +1,7 @@
 <!-- Agave Advisory · ES · rtd · вставить в блок T123 «HTML-код» -->
-<link rel="stylesheet" href="https://yurasnegovoy-hash.github.io/agave-advisory/fonts.css?v=1794314726">
-<link rel="stylesheet" href="https://yurasnegovoy-hash.github.io/agave-advisory/style.css?v=1794314726">
-<link rel="stylesheet" href="https://yurasnegovoy-hash.github.io/agave-advisory/fx.css?v=1794314726">
+<link rel="stylesheet" href="https://yurasnegovoy-hash.github.io/agave-advisory/fonts.css?v=1795078916">
+<link rel="stylesheet" href="https://yurasnegovoy-hash.github.io/agave-advisory/style.css?v=1795078916">
+<link rel="stylesheet" href="https://yurasnegovoy-hash.github.io/agave-advisory/fx.css?v=1795078916">
 <style>body.agave #allrecords{min-height:0!important;height:0;overflow:hidden}body.agave{margin:0}</style>
 <div id="agave-root">
 <svg width="0" height="0" style="position:absolute">
@@ -41,7 +41,7 @@
   <a href="/es" data-page="1" class="logo"><svg><use href="#i-agave"/></svg><span><b>AGAVE</b><small>ADVISORY</small></span></a>
   <nav class="nav">
     <a href="/es/about" data-page="1">Nosotros</a>
-    <span class="dd"><a href="/es#services" data-page="1" class="on">Servicios</a><span class="dd-menu"><a href="/es/private-label" data-page="1">Marca privada y desarrollo llave en mano</a><a href="/es/bulk-tequila" data-page="1">Suministro de tequila a granel</a><a href="/es/brand-market-advisory" data-page="1">Asesoría de marca y mercado</a><a href="/es/rtd" data-page="1">Desarrollo de bebidas RTD</a><a href="/es/barrel-aging" data-page="1">Asesoría de barricas y añejamiento</a></span></span>
+    <span class="dd"><a href="/es#services" data-page="1" class="on">Servicios</a><span class="dd-menu"><a href="/es/private-label" data-page="1">Marca privada y desarrollo llave en mano</a><a href="/es/bulk-tequila" data-page="1">Suministro de tequila a granel</a><a href="/es/brand-market-advisory" data-page="1">Asesoría de marca y mercado</a><a href="/es/rtd" data-page="1">Desarrollo de bebidas RTD</a><a href="/es/barrel-aging" data-page="1">Suministro de barricas y asesoría de añejamiento</a></span></span>
     <a href="/es/how-we-work" data-page="1">Cómo trabajamos</a>
     <a href="/es/clients" data-page="1">Clientes y socios</a>
     <a href="/es/contact" data-page="1">Contacto</a>
@@ -53,12 +53,13 @@
 <section class="hero sub">
   <div class="hero-bg"><video class="hero-video" src="https://yurasnegovoy-hash.github.io/agave-advisory/video/ferment.mp4" poster="https://yurasnegovoy-hash.github.io/agave-advisory/video/ferment.jpg" muted loop playsinline autoplay></video></div>
   <div class="wrap"><div class="label rv">Servicio 04</div><h1 class="sp">RTD<br><span class="g">desarrollo de bebidas</span></h1>
-  <p class="lead rv">Coordinamos el desarrollo de bebidas listas para tomar a base de tequila y encontramos las soluciones adecuadas de producción y empaque</p><div class="hero-cta rv"><a href="#contact" class="btn fill">Hablemos de su proyecto</a></div></div>
+  <p class="lead rv">Coordinamos el desarrollo de cocteles listos para tomar: cocteles a base de tequila y cocteles sin alcohol a base de mezclas de agave, con las soluciones adecuadas de producción y empaque</p><div class="hero-cta rv"><a href="#contact" class="btn fill">Hablemos de su proyecto</a></div></div>
 </section>
 <section class="pad">
   <div class="wrap">
-    <div class="sec-head"><div class="rv"><div class="label line">Lo que cubrimos</div><h2 class="sp">Desarrollo de bebidas RTD</h2></div><p class="lead rv">Para marcas y productores que desean un RTD de tequila en su portafolio: cocteles, hard seltzers y bebidas mezcladas para los mercados actuales y las nuevas generaciones</p></div>
-    <div class="svc-grid" style="grid-template-columns:repeat(2,1fr)"><div class="rv"><span class="num">01</span><h3>Concepto</h3><p>La bebida, su perfil y el formato en el que se presenta. Qué tequila, qué mezcladores, qué graduación alcohólica</p></div><div class="rv"><span class="num">02</span><h3>Coordinación de desarrollo</h3><p>Trabajo con tecnólogos y productores en la receta y la estabilidad del producto</p></div><div class="rv"><span class="num">03</span><h3>Base de tequila</h3><p>El tequila adecuado para la bebida: categoría, perfil, volumen y suministro constante</p></div><div class="rv"><span class="num">04</span><h3>Socios de producción</h3><p>Fabricantes en México que se ajusten a su producto, formato y volumen</p></div><div class="rv"><span class="num">05</span><h3>Soluciones de empaque</h3><p>Latas, botellas y empaque secundario. Proveedores, precios y tiempos de entrega</p></div><div class="rv"><span class="num">06</span><h3>Regulación y exportación</h3><p>Documentos para su mercado y entrega en los términos que requiera</p></div></div>
+    <div class="sec-head"><div class="rv"><div class="label line">Lo que cubrimos</div><h2 class="sp">Desarrollo de bebidas RTD</h2></div><p class="lead rv">Para marcas y productores que quieren un RTD de agave en su portafolio: cocteles de tequila, hard seltzers, bebidas mezcladas y cocteles sin alcohol para mercados modernos y nuevas generaciones</p></div>
+    <div class="svc-grid" style="grid-template-columns:repeat(2,1fr)"><div class="rv"><span class="num">01</span><h3>Concepto</h3><p>La bebida, su perfil y el formato en el que se presenta. Qué tequila, qué mezcladores, qué graduación alcohólica</p></div><div class="rv"><span class="num">02</span><h3>Cocteles sin alcohol</h3><p>Cocteles a base de mezclas de agave, sin alcohol y sin sacarosa. Un producto fit para quienes eligen lo que beben</p></div><div class="rv"><span class="num">03</span><h3>Coordinación de desarrollo</h3><p>Trabajo con tecnólogos y productores en la receta y la estabilidad del producto</p></div><div class="rv"><span class="num">04</span><h3>Base de tequila</h3><p>El tequila adecuado para la bebida: categoría, perfil, volumen y suministro constante</p></div><div class="rv"><span class="num">05</span><h3>Producción y empaque</h3><p>Fabricantes en México que se ajustan a su producto, formato y volumen. Latas, botellas y empaque secundario</p></div><div class="rv"><span class="num">06</span><h3>Regulación y exportación</h3><p>Documentos para su mercado y entrega en los términos que requiera</p></div></div>
+    
   </div>
 </section>
 <section class="pad alt">
@@ -81,11 +82,11 @@
 </section>
 <section class="pad"><div class="wrap split" style="align-items:start">
   <div class="rv"><div class="label line">Preguntas</div><h2 class="sp">Información<br><span class="g">de interés</span></h2></div>
-  <div class="faq rv"><details><summary>¿Se puede elaborar el RTD con mi marca de tequila existente?</summary><p>Sí. Podemos construir la bebida con su tequila o conseguir la base para esta</p></details><details><summary>¿Qué formatos son posibles?</summary><p>Latas, botellas de vidrio y otros formatos disponibles con nuestros socios de producción</p></details><details><summary>¿Mi proyecto es confidencial?</summary><p>Sí. Su proyecto, sus proveedores y sus especificaciones se quedan entre nosotros</p></details><details><summary>¿Cómo comenzamos?</summary><p>Envíenos un resumen breve a través del formulario. Nos pondremos en contacto con usted para indicarle los siguientes pasos</p></details></div>
+  <div class="faq rv"><details><summary>¿Qué cocteles RTD pueden elaborar?</summary><p>Dos líneas: cocteles a base de tequila y cocteles sin alcohol a base de mezclas de agave, sin sacarosa</p></details><details><summary>¿Se puede elaborar el RTD con mi marca de tequila existente?</summary><p>Sí. Podemos construir la bebida con su tequila o conseguir la base para esta</p></details><details><summary>¿Qué formatos son posibles?</summary><p>Latas, botellas de vidrio y otros formatos disponibles con nuestros socios de producción</p></details><details><summary>¿Mi proyecto es confidencial?</summary><p>Sí. Su proyecto, sus proveedores y sus especificaciones se quedan entre nosotros</p></details><details><summary>¿Cómo comenzamos?</summary><p>Envíenos un resumen breve a través del formulario. Nos pondremos en contacto con usted para indicarle los siguientes pasos</p></details></div>
 </div></section>
 <section class="pad alt"><div class="wrap">
   <div class="label line rv" style="margin-bottom:36px">Otros servicios</div>
-  <div class="others"><a href="/es/private-label" data-page="1" class="rv"><svg><use href="#i-bottle"/></svg><b>Marca privada y desarrollo llave en mano</b></a><a href="/es/bulk-tequila" data-page="1" class="rv"><svg><use href="#i-barrel"/></svg><b>Suministro de tequila a granel</b></a><a href="/es/brand-market-advisory" data-page="1" class="rv"><svg><use href="#i-compass"/></svg><b>Asesoría de marca y mercado</b></a><a href="/es/barrel-aging" data-page="1" class="rv"><svg><use href="#i-star"/></svg><b>Asesoría de barricas y añejamiento</b></a></div>
+  <div class="others"><a href="/es/private-label" data-page="1" class="rv"><svg><use href="#i-bottle"/></svg><b>Marca privada y desarrollo llave en mano</b></a><a href="/es/bulk-tequila" data-page="1" class="rv"><svg><use href="#i-barrel"/></svg><b>Suministro de tequila a granel</b></a><a href="/es/brand-market-advisory" data-page="1" class="rv"><svg><use href="#i-compass"/></svg><b>Asesoría de marca y mercado</b></a><a href="/es/barrel-aging" data-page="1" class="rv"><svg><use href="#i-star"/></svg><b>Suministro de barricas y asesoría de añejamiento</b></a></div>
 </div></section>
 
 <section class="pad cta" id="contact"><div class="wrap cta-grid">
@@ -104,7 +105,7 @@
     <h3>Solicitar una consulta</h3>
     <div class="f2"><div class="f"><label>Nombre</label><input name="name" required></div><div class="f"><label>Empresa</label><input name="company"></div></div>
     <div class="f2"><div class="f"><label>Correo electrónico</label><input type="email" name="email" required></div><div class="f"><label>Teléfono · WhatsApp</label><input type="tel" name="phone"></div></div>
-    <div class="f"><label>Servicio</label><select name="service"><option>Marca privada y desarrollo llave en mano</option><option>Suministro de tequila a granel</option><option>Asesoría de marca y mercado</option><option selected>Desarrollo de bebidas RTD</option><option>Asesoría de barricas y añejamiento</option><option>Aún no lo defino</option></select></div>
+    <div class="f"><label>Servicio</label><select name="service"><option>Marca privada y desarrollo llave en mano</option><option>Suministro de tequila a granel</option><option>Asesoría de marca y mercado</option><option selected>Desarrollo de bebidas RTD</option><option>Suministro de barricas y asesoría de añejamiento</option><option>Aún no lo defino</option></select></div>
     <div class="f"><label>Cuéntenos acerca de su proyecto</label><textarea name="message" rows="2"></textarea></div>
     <button class="btn fill" type="submit">Hablemos de su proyecto</button>
     <p class="note">Su solicitud es confidencial</p>
@@ -115,7 +116,7 @@
   <div class="word">AGAVE ADVISORY</div>
   <div class="ftr-top">
     <span class="seal" style="width:140px;height:140px"><img class="ring" src="https://yurasnegovoy-hash.github.io/agave-advisory/img/seal_ring.svg" alt=""><img src="https://yurasnegovoy-hash.github.io/agave-advisory/img/seal_core.svg" alt="Agave Advisory"></span>
-    <div><h4>Servicios</h4><a href="/es/private-label" data-page="1">Marca privada y desarrollo llave en mano</a><a href="/es/bulk-tequila" data-page="1">Suministro de tequila a granel</a><a href="/es/brand-market-advisory" data-page="1">Asesoría de marca y mercado</a><a href="/es/rtd" data-page="1">Desarrollo de bebidas RTD</a><a href="/es/barrel-aging" data-page="1">Asesoría de barricas y añejamiento</a></div>
+    <div><h4>Servicios</h4><a href="/es/private-label" data-page="1">Marca privada y desarrollo llave en mano</a><a href="/es/bulk-tequila" data-page="1">Suministro de tequila a granel</a><a href="/es/brand-market-advisory" data-page="1">Asesoría de marca y mercado</a><a href="/es/rtd" data-page="1">Desarrollo de bebidas RTD</a><a href="/es/barrel-aging" data-page="1">Suministro de barricas y asesoría de añejamiento</a></div>
     <div><h4>Agencia</h4><a href="/es/about" data-page="1">Nosotros</a><a href="/es/how-we-work" data-page="1">Cómo trabajamos</a><a href="/es/clients" data-page="1">Clientes y socios</a><a href="/es/contact" data-page="1">Contacto</a></div>
     <div><h4>Síganos</h4><a href="https://www.linkedin.com/in/anastasia-strizheva-489446122/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com/hacienda.la.capilla" target="_blank" rel="noopener">Instagram</a><p>agaveadvisoryagency@gmail.com</p></div>
   </div>
@@ -131,5 +132,5 @@ const hdr=document.getElementById('hdr');const onS=()=>hdr.classList.toggle('sol
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*0.07+'s';io.observe(el)});
 </script>
-<script src="https://yurasnegovoy-hash.github.io/agave-advisory/vendor/gsap.min.js"></script><script src="https://yurasnegovoy-hash.github.io/agave-advisory/vendor/ScrollTrigger.min.js"></script><script src="https://yurasnegovoy-hash.github.io/agave-advisory/fx.js?v=1794314726"></script>
+<script src="https://yurasnegovoy-hash.github.io/agave-advisory/vendor/gsap.min.js"></script><script src="https://yurasnegovoy-hash.github.io/agave-advisory/vendor/ScrollTrigger.min.js"></script><script src="https://yurasnegovoy-hash.github.io/agave-advisory/fx.js?v=1795078916"></script>
 

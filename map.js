@@ -20,13 +20,14 @@
     { name: "South Korea", lon: 127.8, lat: 36.0, fmt: "Private label" },
     { name: "Philippines", lon: 122.0, lat: 12.9, fmt: "Private label" },
     { name: "New Zealand", lon: 174.9, lat: -40.9, fmt: "Private label" },
+    { name: "Australia", lon: 134.5, lat: -25.3, fmt: "RTD" },
   ];
 
   // подписи карты на языке страницы; name остаётся английским для совпадения с данными карты
   const LANG = document.documentElement.lang;
   const T = {
-    es: { "United States":"Estados Unidos","Canada":"Canadá","Colombia":"Colombia","Chile":"Chile","United Kingdom":"Reino Unido","France":"Francia","Netherlands":"Países Bajos","Germany":"Alemania","Sweden":"Suecia","Ukraine":"Ucrania","Armenia":"Armenia","Russia":"Rusia","Japan":"Japón","South Korea":"Corea del Sur","Philippines":"Filipinas","New Zealand":"Nueva Zelanda","Bulk supply":"Suministro a granel","Private label":"Marca privada" },
-    ru: { "United States":"США","Canada":"Канада","Colombia":"Колумбия","Chile":"Чили","United Kingdom":"Великобритания","France":"Франция","Netherlands":"Нидерланды","Germany":"Германия","Sweden":"Швеция","Ukraine":"Украина","Armenia":"Армения","Russia":"Россия","Japan":"Япония","South Korea":"Южная Корея","Philippines":"Филиппины","New Zealand":"Новая Зеландия","Bulk supply":"Поставки балком","Private label":"Частная марка" }
+    es: { "United States":"Estados Unidos","Canada":"Canadá","Colombia":"Colombia","Chile":"Chile","United Kingdom":"Reino Unido","France":"Francia","Netherlands":"Países Bajos","Germany":"Alemania","Sweden":"Suecia","Ukraine":"Ucrania","Armenia":"Armenia","Russia":"Rusia","Japan":"Japón","South Korea":"Corea del Sur","Philippines":"Filipinas","New Zealand":"Nueva Zelanda","Australia":"Australia","Bulk supply":"Suministro a granel","Private label":"Marca privada" },
+    ru: { "United States":"США","Canada":"Канада","Colombia":"Колумбия","Chile":"Чили","United Kingdom":"Великобритания","France":"Франция","Netherlands":"Нидерланды","Germany":"Германия","Sweden":"Швеция","Ukraine":"Украина","Armenia":"Армения","Russia":"Россия","Japan":"Япония","South Korea":"Южная Корея","Philippines":"Филиппины","New Zealand":"Новая Зеландия","Australia":"Австралия","Bulk supply":"Поставки балком","Private label":"Частная марка" }
   }[LANG] || {};
   const tr = t => t.split(" · ").map(x => T[x] || x).join(" · ");
   const box = document.getElementById("client-map");

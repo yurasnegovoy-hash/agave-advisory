@@ -10,7 +10,7 @@ SERVICES = [
     ("bulk-tequila", "Bulk Tequila Supply", "barrel"),
     ("brand-market-advisory", "Brand & Market Advisory", "compass"),
     ("rtd", "RTD Development", "glass"),
-    ("barrel-aging", "Barrel & Aging Advisory", "star"),
+    ("barrel-aging", "Barrel Supply & Aging Advisory", "star"),
 ]
 
 def ic(name):
@@ -175,7 +175,7 @@ FACTS = [("<span class=\"cnt\" data-to=\"2000\" data-suffix=\" m\">2000 m</span>
 def facts_html():
     return '<div class="facts">' + "".join(f'<div class="rv"><strong>{a}</strong><span>{b}</span></div>' for a, b in FACTS) + "</div>"
 
-LOGOS = [("Askaneli Brothers", "Client"), ("Global Spirits", "Client"), ("Magnit", "Client"), ("Old Barrel", "Barrel partner"), ("Artesanal Destilería", "Distillery partner"), ("Patrizia Lamborghini", "Partner")]
+LOGOS = [("Askaneli Brothers", "Client"), ("Global Spirits", "Client"), ("Hacienda La Capilla Destilería", "Partner distillery"), ("Old Barrel", "Barrel partner"), ("Artesanal Destilería", "Distillery partner"), ("Patrizia Lamborghini Distribuzione", "Client")]
 def logos_html():
     return '<div class="logos rv">' + "".join(f"<div><b>{n.upper()}</b><small>{r}</small></div>" for n, r in LOGOS) + "</div>"
 
@@ -192,8 +192,8 @@ def cards_html():
         "private-label": "Your brand, from concept to global delivery",
         "bulk-tequila": "Tequila selected to your requirements: samples, agreed specification and organised supply",
         "brand-market-advisory": "Positioning, product line, price architecture and preparation for your markets",
-        "rtd": "Tequila-based ready-to-drink products with the right production and packaging partners",
-        "barrel-aging": "Barrel selection and aging guidance to shape the flavour profile you want",
+        "rtd": "Tequila-based cocktails and alcohol-free cocktails on agave mixes, with the right production and packaging partners",
+        "barrel-aging": "Bourbon and Mizunara oak barrels supplied worldwide, with aging guidance for the flavour profile you want",
     }
     out = '<div class="cards">'
     for n, (s, t, i) in enumerate(SERVICES):
@@ -207,7 +207,7 @@ MARQ = "".join(f"<span>{t}</span>" for t in ["Mexico to the world","Since 2007",
 PROCESS = [
     ("aerial_rows", "Highland fields", "Agave grows for 6 to 10 years at 2000 metres", "Blue Weber agave of Los Altos grows slowly in red volcanic soil. Bigger piñas, more sugar, more aroma", "Cultivation"),
     ("jimadores", "Harvest", "Jimadores cut the piña by hand with the coa", "Only ripe plants are harvested. A highland piña can weigh up to 110 kg", "Harvest"),
-    ("cooking", "Cooking", "12 hours at 110 °C", "Slow cooking turns the starches of the piña into sugars and sets the foundation of flavour", "Cooking"),
+    ("cooking", "Cooking", "From 12 to 48 hours, in autoclaves or in stone ovens", "Slow cooking turns the starches of the piña into sugars and sets the foundation of flavour", "Cooking"),
     ("milling", "Milling", "Agua miel and bagazo", "The cooked piñas are crushed in the mill. The sweet juice, agua miel, goes to fermentation. The fibre, bagazo, returns to the fields as fertiliser", "Milling"),
     ("ferment", "Fermentation", "Up to 72 hours on the distillery's own yeast", "Yeast and time give each tequila its aroma: citrus, flowers and fruit from the agave, vanilla from the process. We follow every tank with our partner distillery", "Fermentation"),
     ("distill", "Distillation", "Twice, in copper", "The first run removes heads and tails, the second sets the strength. Copper stills at our partner distillery are over a century old", "Distillation"),
@@ -230,9 +230,9 @@ home = f"""
   <video class="home-video" src="video/hero.mp4" poster="video/hero.jpg" autoplay muted loop playsinline preload="auto"></video>
   <div class="side-txt">MEXICO TO THE WORLD</div>
   <div class="wrap">
-    <div class="label rv">Tequila brand development · Los Altos de Jalisco</div>
+    <div class="label rv">Tequila and agave projects · Los Altos de Jalisco</div>
     <h1 class="sp" style="max-width:1000px"><span class="nw">One partner. Every detail</span><br><span class="g">From concept to global delivery</span></h1>
-    <p class="lead rv">We help companies create and source tequila products, coordinating every stage from liquid selection and packaging to production and international delivery</p>
+    <p class="lead rv">We take on any agave project: ready-made brands, private labels, bulk tequila, RTD cocktails including alcohol-free ones, and barrel supply. One team coordinates every stage, from the liquid and packaging to production and international delivery</p>
     <div class="hero-cta rv"><a href="#contact" class="btn fill">Discuss your project</a><a href="#services" class="btn ghost">Our services</a></div>
     <div class="hero-meta rv"><div><strong>Since <span class="cnt" data-to="2007">2007</span></strong>In the tequila industry</div><div><strong>Jalisco</strong>On the ground in Mexico</div><div><strong>Worldwide</strong>Any market, any Incoterms</div></div>
   </div>

@@ -1,7 +1,7 @@
 <!-- Agave Advisory · EN · barrel-aging · вставить в блок T123 «HTML-код» -->
-<link rel="stylesheet" href="https://yurasnegovoy-hash.github.io/agave-advisory/fonts.css?v=1794314726">
-<link rel="stylesheet" href="https://yurasnegovoy-hash.github.io/agave-advisory/style.css?v=1794314726">
-<link rel="stylesheet" href="https://yurasnegovoy-hash.github.io/agave-advisory/fx.css?v=1794314726">
+<link rel="stylesheet" href="https://yurasnegovoy-hash.github.io/agave-advisory/fonts.css?v=1795078916">
+<link rel="stylesheet" href="https://yurasnegovoy-hash.github.io/agave-advisory/style.css?v=1795078916">
+<link rel="stylesheet" href="https://yurasnegovoy-hash.github.io/agave-advisory/fx.css?v=1795078916">
 <style>body.agave #allrecords{min-height:0!important;height:0;overflow:hidden}body.agave{margin:0}</style>
 <div id="agave-root">
 <svg width="0" height="0" style="position:absolute">
@@ -41,7 +41,7 @@
   <a href="/" data-page="1" class="logo"><svg><use href="#i-agave"/></svg><span><b>AGAVE</b><small>ADVISORY</small></span></a>
   <nav class="nav">
     <a href="/about" data-page="1">About</a>
-    <span class="dd"><a href="/#services" data-page="1" class="on">Services</a><span class="dd-menu"><a href="/private-label" data-page="1">Private Label & Turnkey Development</a><a href="/bulk-tequila" data-page="1">Bulk Tequila Supply</a><a href="/brand-market-advisory" data-page="1">Brand & Market Advisory</a><a href="/rtd" data-page="1">RTD Development</a><a href="/barrel-aging" data-page="1">Barrel & Aging Advisory</a></span></span>
+    <span class="dd"><a href="/#services" data-page="1" class="on">Services</a><span class="dd-menu"><a href="/private-label" data-page="1">Private Label & Turnkey Development</a><a href="/bulk-tequila" data-page="1">Bulk Tequila Supply</a><a href="/brand-market-advisory" data-page="1">Brand & Market Advisory</a><a href="/rtd" data-page="1">RTD Development</a><a href="/barrel-aging" data-page="1">Barrel Supply & Aging Advisory</a></span></span>
     <a href="/how-we-work" data-page="1">How we work</a>
     <a href="/clients" data-page="1">Clients &amp; partners</a>
     <a href="/contact" data-page="1">Contact</a>
@@ -52,25 +52,26 @@
 
 <section class="hero sub">
   <div class="hero-bg"><video class="hero-video" src="https://yurasnegovoy-hash.github.io/agave-advisory/video/barrels.mp4" poster="https://yurasnegovoy-hash.github.io/agave-advisory/video/barrels.jpg" muted loop playsinline autoplay></video></div>
-  <div class="wrap"><div class="label rv">Service 05</div><h1 class="sp">Barrel<br><span class="g">&amp; aging advisory</span></h1>
-  <p class="lead rv">The right wood, the right influence, the right character. We select barrels and advise on aging to shape the flavour profile you want</p><div class="hero-cta rv"><a href="#contact" class="btn fill">Discuss your project</a></div></div>
+  <div class="wrap"><div class="label rv">Service 05</div><h1 class="sp">Barrel supply<br><span class="g">&amp; aging advisory</span></h1>
+  <p class="lead rv">We sell bourbon and Mizunara oak barrels directly from our American supplier to distilleries anywhere in the world, and advise on aging to shape the flavour profile you want</p><div class="hero-cta rv"><a href="#contact" class="btn fill">Discuss your project</a></div></div>
 </section>
 <section class="pad">
   <div class="wrap">
-    <div class="sec-head"><div class="rv"><div class="label line">What we cover</div><h2 class="sp">Barrel & Aging Advisory</h2></div><p class="lead rv">For distilleries and brands working on reposado, añejo and extra añejo expressions, and for anyone who needs barrels delivered to a distillery in Mexico</p></div>
-    <div class="svc-grid" style="grid-template-columns:repeat(2,1fr)"><div class="rv"><span class="num">01</span><h3>Barrel selection</h3><p>American white oak ex-bourbon barrels, 53 gal / 200 L, from leading Kentucky and Tennessee producers. French oak on request</p></div><div class="rv"><span class="num">02</span><h3>Quality of every barrel</h3><p>Freshly dumped, used once, checked for leaks and physical damage. Phytosanitary certificates provided</p></div><div class="rv"><span class="num">03</span><h3>Aging recommendations</h3><p>How long and in which wood to age: reposado from 2 months, añejo from 1 year, extra añejo from 3 years</p></div><div class="rv"><span class="num">04</span><h3>Flavour profile</h3><p>How barrel and time shape the character: vanilla, roasted coffee, chocolate, nuts, coconut</p></div><div class="rv"><span class="num">05</span><h3>Storage conditions</h3><p>Barrels rest in rooms with controlled humidity and no light. We advise on the setup</p></div><div class="rv"><span class="num">06</span><h3>Delivery to the distillery</h3><p>From the cooperage to your distillery in Mexico. Container quantities and schedule</p></div></div>
+    <div class="sec-head"><div class="rv"><div class="label line">What we cover</div><h2 class="sp">Barrel Supply & Aging Advisory</h2></div><p class="lead rv">For distilleries and brands working on reposado, añejo and extra añejo expressions, and for any producer in the world who needs barrels for aging</p></div>
+    <div class="svc-grid" style="grid-template-columns:repeat(2,1fr)"><div class="rv"><span class="num">01</span><h3>Bourbon barrels for sale</h3><p>Classic 53 gal / 200 L barrels of American white oak, freshly dumped after one fill of 4 to 6 years on average. From leading bourbon makers of Kentucky and Tennessee</p></div><div class="rv"><span class="num">02</span><h3>Barrel makers and origin</h3><p>Barrels built by leading makers such as ISC, ZAK, Speyside and Kelvin. Among them genuine Jim Beam, Maker's Mark, Knob Creek and Booker's barrels</p></div><div class="rv"><span class="num">03</span><h3>Quality of every barrel</h3><p>Every barrel is checked for leaks and physical damage. Phytosanitary certificates provided</p></div><div class="rv"><span class="num">04</span><h3>Mizunara oak barrels</h3><p>Extremely rare Japanese oak from the island of Hokkaido, 250 L. Mizunara takes 200 to 500 years to mature and only a handful of barrels are made each year. Also 200 L barrels made in the US from Japanese Mizunara oak. Limited quantity, on request</p></div><div class="rv"><span class="num">05</span><h3>Aging recommendations</h3><p>How long and in which wood to age: reposado from 2 months, añejo from 1 year, extra añejo from 3 years</p></div><div class="rv"><span class="num">06</span><h3>Flavour profile</h3><p>How barrel and time shape the character: vanilla, roasted coffee, chocolate, nuts, coconut</p></div><div class="rv"><span class="num">07</span><h3>Storage conditions</h3><p>Barrels rest in rooms with controlled humidity and no light. We advise on the setup</p></div><div class="rv"><span class="num">08</span><h3>Worldwide delivery</h3><p>From warehouses in Kentucky and Tennessee to your distillery anywhere in the world, by container or truck</p></div></div>
+    <div class="strip rv"><div class="mask"><img src="https://yurasnegovoy-hash.github.io/agave-advisory/img/barrel_rack.jpg" alt="Bourbon barrel on a rack in the warehouse"></div><div class="mask"><img src="https://yurasnegovoy-hash.github.io/agave-advisory/img/barrel_fire.jpg" alt="Charring of an oak barrel"></div><div class="mask"><img src="https://yurasnegovoy-hash.github.io/agave-advisory/img/barrel_mizunara.jpg" alt="Mizunara oak barrels"></div></div>
   </div>
 </section>
 <section class="pad alt">
   <div class="wrap split">
-    <div class="media frame mask" style="aspect-ratio:4/5"><video src="https://yurasnegovoy-hash.github.io/agave-advisory/video/distill.mp4" poster="https://yurasnegovoy-hash.github.io/agave-advisory/video/distill.jpg" muted loop playsinline autoplay preload="metadata" style="width:100%;height:100%;object-fit:cover"></video></div>
-    <div class="rv"><div class="label line">Why with us</div><h2 class="sp">One partner<br><span class="g">on the ground</span></h2><div class="rule"></div><ul class="checks"><li>We know what the barrel does to tequila, not only where to buy it</li><li>Barrels come from leading bourbon producers, checked one by one</li><li>We can advise, supply and oversee the aging together with the distillery</li></ul></div>
+    <div class="media frame mask" style="aspect-ratio:4/5"><img src="https://yurasnegovoy-hash.github.io/agave-advisory/img/ceo_cellar.jpg" alt=""></div>
+    <div class="rv"><div class="label line">Why with us</div><h2 class="sp">One partner<br><span class="g">on the ground</span></h2><div class="rule"></div><ul class="checks"><li>We sell barrels and we know what the barrel does to tequila</li><li>Barrels come directly from our American supplier, checked one by one</li><li>We can advise, supply and oversee the aging together with the distillery</li></ul></div>
   </div>
 </section>
 <section class="pad">
   <div class="wrap split" style="align-items:start">
     <div class="rv"><div class="label line">What we need from you</div><h2 class="sp">To start</h2><ul class="checks"><li>Your tequila and the profile you want</li><li>Volume to be aged</li><li>Where the barrels go</li></ul></div>
-    <div class="rv"><div class="label line">What you get</div><h2 class="sp">The result<br><span class="g">in your hands</span></h2><ul class="checks"><li>Barrels that fit your profile</li><li>An aging plan with timing and wood</li><li>Barrels delivered to your distillery</li></ul><p class="tagline">One partner. One process. One responsibility</p></div>
+    <div class="rv"><div class="label line">What you get</div><h2 class="sp">The result<br><span class="g">in your hands</span></h2><ul class="checks"><li>Barrels that fit your profile</li><li>An aging plan with timing and wood</li><li>Barrels delivered to your distillery, anywhere in the world</li></ul><p class="tagline">One partner. One process. One responsibility</p></div>
   </div>
 </section>
 <section class="pad alt">
@@ -81,7 +82,7 @@
 </section>
 <section class="pad"><div class="wrap split" style="align-items:start">
   <div class="rv"><div class="label line">Questions</div><h2 class="sp">Good<br><span class="g">to know</span></h2></div>
-  <div class="faq rv"><details><summary>Which barrels do you supply?</summary><p>Classic 53 gal / 200 L ex-bourbon barrels from American white oak, from leading Kentucky and Tennessee producers. French oak on request</p></details><details><summary>How are the barrels delivered?</summary><p>By container or truck, from the cooperage to your distillery in Mexico. We will propose what fits your project</p></details><details><summary>Can you advise without supplying barrels?</summary><p>Yes. Aging advisory is available as a standalone service</p></details><details><summary>Is my project confidential?</summary><p>Yes. Your project, suppliers and specifications stay between us</p></details><details><summary>How do we start?</summary><p>Send us a short brief through the form below. We will come back to you with the next steps</p></details></div>
+  <div class="faq rv"><details><summary>Which barrels do you sell?</summary><p>Classic 53 gal / 200 L bourbon barrels of American white oak from leading Kentucky and Tennessee producers, and rare Japanese Mizunara oak barrels. French oak on request</p></details><details><summary>What is special about Mizunara oak?</summary><p>It is the rarest and most sought-after barrel in the whisky industry. The oak grows on the island of Hokkaido and takes 200 to 500 years to mature, so only a handful of barrels are made each year. Available in limited quantity, on request</p></details><details><summary>Where do you deliver?</summary><p>Worldwide. By container or truck, directly from our American supplier to your distillery. We will propose what fits your project</p></details><details><summary>Can you advise without supplying barrels?</summary><p>Yes. Aging advisory is available as a standalone service</p></details><details><summary>Is my project confidential?</summary><p>Yes. Your project, suppliers and specifications stay between us</p></details><details><summary>How do we start?</summary><p>Send us a short brief through the form below. We will come back to you with the next steps</p></details></div>
 </div></section>
 <section class="pad alt"><div class="wrap">
   <div class="label line rv" style="margin-bottom:36px">Other services</div>
@@ -104,7 +105,7 @@
     <h3>Request a consultation</h3>
     <div class="f2"><div class="f"><label>Name</label><input name="name" required></div><div class="f"><label>Company</label><input name="company"></div></div>
     <div class="f2"><div class="f"><label>E-mail</label><input type="email" name="email" required></div><div class="f"><label>Phone · WhatsApp</label><input type="tel" name="phone"></div></div>
-    <div class="f"><label>Service</label><select name="service"><option>Private Label & Turnkey Development</option><option>Bulk Tequila Supply</option><option>Brand & Market Advisory</option><option>RTD Development</option><option selected>Barrel & Aging Advisory</option><option>Not sure yet</option></select></div>
+    <div class="f"><label>Service</label><select name="service"><option>Private Label & Turnkey Development</option><option>Bulk Tequila Supply</option><option>Brand & Market Advisory</option><option>RTD Development</option><option selected>Barrel Supply & Aging Advisory</option><option>Not sure yet</option></select></div>
     <div class="f"><label>Tell us about your project</label><textarea name="message" rows="2"></textarea></div>
     <button class="btn fill" type="submit">Discuss your project</button>
     <p class="note">Your request stays confidential</p>
@@ -115,7 +116,7 @@
   <div class="word">AGAVE ADVISORY</div>
   <div class="ftr-top">
     <span class="seal" style="width:140px;height:140px"><img class="ring" src="https://yurasnegovoy-hash.github.io/agave-advisory/img/seal_ring.svg" alt=""><img src="https://yurasnegovoy-hash.github.io/agave-advisory/img/seal_core.svg" alt="Agave Advisory"></span>
-    <div><h4>Services</h4><a href="/private-label" data-page="1">Private Label & Turnkey Development</a><a href="/bulk-tequila" data-page="1">Bulk Tequila Supply</a><a href="/brand-market-advisory" data-page="1">Brand & Market Advisory</a><a href="/rtd" data-page="1">RTD Development</a><a href="/barrel-aging" data-page="1">Barrel & Aging Advisory</a></div>
+    <div><h4>Services</h4><a href="/private-label" data-page="1">Private Label & Turnkey Development</a><a href="/bulk-tequila" data-page="1">Bulk Tequila Supply</a><a href="/brand-market-advisory" data-page="1">Brand & Market Advisory</a><a href="/rtd" data-page="1">RTD Development</a><a href="/barrel-aging" data-page="1">Barrel Supply & Aging Advisory</a></div>
     <div><h4>Agency</h4><a href="/about" data-page="1">About</a><a href="/how-we-work" data-page="1">How we work</a><a href="/clients" data-page="1">Clients &amp; partners</a><a href="/contact" data-page="1">Contact</a></div>
     <div><h4>Follow</h4><a href="https://www.linkedin.com/in/anastasia-strizheva-489446122/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com/hacienda.la.capilla" target="_blank" rel="noopener">Instagram</a><p>agaveadvisoryagency@gmail.com</p></div>
   </div>
@@ -131,5 +132,5 @@ const hdr=document.getElementById('hdr');const onS=()=>hdr.classList.toggle('sol
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*0.07+'s';io.observe(el)});
 </script>
-<script src="https://yurasnegovoy-hash.github.io/agave-advisory/vendor/gsap.min.js"></script><script src="https://yurasnegovoy-hash.github.io/agave-advisory/vendor/ScrollTrigger.min.js"></script><script src="https://yurasnegovoy-hash.github.io/agave-advisory/fx.js?v=1794314726"></script>
+<script src="https://yurasnegovoy-hash.github.io/agave-advisory/vendor/gsap.min.js"></script><script src="https://yurasnegovoy-hash.github.io/agave-advisory/vendor/ScrollTrigger.min.js"></script><script src="https://yurasnegovoy-hash.github.io/agave-advisory/fx.js?v=1795078916"></script>
 

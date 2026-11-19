@@ -385,3 +385,10 @@ body:has(.age:not(.hide)){overflow:hidden}
 /* подвал: контурная надпись всегда целиком в ширину контента, на любом экране */
 .ftr .word{font-size:clamp(56px,8.2vw,116px);max-width:none;overflow:visible}
 @media (max-width:760px){.ftr .word{font-size:8.7vw}}
+
+/* плитки клиентов: длинные названия в две строки по центру, с отступом от рамки */
+.logos div{padding:0 26px;text-align:center}
+.logos b{line-height:1.4;text-wrap:balance}
+@media (min-width:761px){.logos b{font-size:19px;letter-spacing:.18em}}
+/* лента фото на странице бочек */
+.svc-grid + .strip{margin-top:60px}
