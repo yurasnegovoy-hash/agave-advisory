@@ -392,3 +392,4 @@ body:has(.age:not(.hide)){overflow:hidden}
 @media (min-width:761px){.logos b{font-size:19px;letter-spacing:.18em}}
 /* лента фото на странице бочек */
 .svc-grid + .strip{margin-top:60px}
+@media (max-width:760px){.strip .mask{height:200px}.strip .mask:first-child{grid-column:1/-1;height:250px}.svc-grid + .strip{margin-top:36px}}
