@@ -6,7 +6,12 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://yurasnegovoy-hash.github.io/agave-advisory/"
 PAGES = ["index", "about", "private-label", "bulk-tequila", "brand-market-advisory", "rtd", "barrel-aging", "how-we-work", "clients", "contact", "privacy"]
 LANGS = ["en", "es", "ru"]
-FORM_SERVICE = "84a04eb14732414162335bcb400d3e94"  # приёмник Tilda CRM «Agave Advisory: заявки с сайта» проекта 56941609
+# приёмники заявок проекта 56941609 (Настройки сайта → Формы). Новый приёмник: добавить его ключ сюда и перезалить страницы.
+# Ключ виден в редакторе любой родной формы: Контент → значение галочки сервиса (черновая страница page400817209)
+FORM_SERVICES = [
+    "84a04eb14732414162335bcb400d3e94",  # Tilda CRM «Agave Advisory: заявки с сайта»
+    "9b182517268ede3eb7640f20b58edb07",  # Telegram, группа app-id -5320058829
+]
 OUT = f"{ROOT}/tilda"; os.makedirs(OUT, exist_ok=True)
 ASSET = r"(?:img/|video/|vendor/|fonts/|fx\.js|map\.js|style\.css|fonts\.css|fx\.css|favicon)"
 
@@ -37,7 +42,7 @@ def block(lang, page):
     errs = "".join(f'<li class="t-form__errorbox-item js-rule-error js-rule-error-{r}"></li>' for r in ("all", "req", "email", "name", "phone", "minlength", "string"))
     tform = ('<div id="agave-tform-wrap" aria-hidden="true"><form id="agave-tform" name="agave-tform" role="form" action="" method="POST" data-formactiontype="2" '
              'data-inputbox=".t-input-group" class="t-form js-form-proccess" data-success-callback="agaveFormOk">'
-             f'<input type="hidden" name="formservices[]" value="{FORM_SERVICE}" class="js-formaction-services">'
+             + "".join(f'<input type="hidden" name="formservices[]" value="{s}" class="js-formaction-services">' for s in FORM_SERVICES) +
              '<div class="js-successbox t-form__successbox" style="display:none;"></div><div class="t-form__inputsbox">'
              + inp("Name") + inp("Company") + inp("Email", "email") + inp("Phone", "tel") + inp("Service") + inp("Message") + inp("Language") + inp("Page")
              + f'<div class="t-form__errorbox-middle"><div class="js-errorbox-all t-form__errorbox-wrapper" style="display:none;"><ul class="t-form__errorbox-text">{errs}</ul></div></div>'
